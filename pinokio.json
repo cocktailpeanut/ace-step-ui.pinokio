@@ -1,0 +1,19 @@
+{
+  "title": "ACE-Step UI",
+  "description": "Open source UI for ACE-Step 1.5 music generation.",
+  "links": [
+    {
+      "title": "Project",
+      "links": [
+        {
+          "title": "ACE-Step UI",
+          "value": "https://github.com/fspecii/ace-step-ui"
+        },
+        {
+          "title": "ACE-Step 1.5",
+          "value": "https://github.com/ace-step/ACE-Step-1.5"
+        }
+      ]
+    }
+  ]
+}
