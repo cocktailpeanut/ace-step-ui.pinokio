@@ -3,7 +3,7 @@ module.exports = {
   title: "ACE-Step UI",
   description: "Open source UI for ACE-Step 1.5 music generation.",
   menu: async (kernel, info) => {
-    let installed = info.exists("app/node_modules") && info.exists("app/server/node_modules") && info.exists("app/ACE-Step-1.5/.venv")
+    let installed = info.exists("app/node_modules") && info.exists("app/server/node_modules") && info.exists("app/ACE-Step-1.5/env")
     let running = {
       install: info.running("install.js"),
       start: info.running("start.js"),

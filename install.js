@@ -38,9 +38,10 @@ module.exports = {
     {
       method: "shell.run",
       params: {
+        venv: "env",
+        venv_python: "3.11",
         path: "app/ACE-Step-1.5",
         message: [
-          "uv venv --python 3.11",
           "uv pip install -e ."
         ]
       }
