@@ -1,6 +1,7 @@
 {
   "title": "ACE-Step UI",
   "description": "Open source UI for ACE-Step 1.5 music generation.",
+  "icon": "icon.jpeg",
   "links": [
     {
       "title": "Project",
