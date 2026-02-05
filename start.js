@@ -16,6 +16,7 @@ module.exports = {
         path: "app/ACE-Step-1.5",
         buffer: 10240,
         env: {
+          ACESTEP_USE_FLASH_ATTENTION: "false",
           MASTER_ADDR: "127.0.0.1",
           VLLM_HOST_IP: "127.0.0.1"
         },
