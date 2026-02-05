@@ -45,6 +45,18 @@ module.exports = {
           "uv pip install -e ."
         ]
       }
+    },
+    {
+      method: "fs.link",
+      params: {
+        drive: {
+          checkpoints: "app/ACE-Step-1.5/checkpoints"
+        },
+        peers: [
+          "https://github.com/cocktailpeanut/ace-step.pinokio.git",
+          "https://github.com/cocktailpeanut/ace-step-ui.pinokio.git"
+        ]
+      }
     }
   ]
 }
