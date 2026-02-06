@@ -17,7 +17,9 @@ module.exports = {
         buffer: 10240,
         env: {
           MASTER_ADDR: "127.0.0.1",
-          VLLM_HOST_IP: "127.0.0.1"
+          VLLM_HOST_IP: "127.0.0.1",
+          ACESTEP_LM_BACKEND: "pt",
+          ACESTEP_LM_OFFLOAD_TO_CPU: "true"
         },
         message: [
           "acestep-api --port {{local.api_port}}"
