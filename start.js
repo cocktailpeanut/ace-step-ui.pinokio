@@ -17,13 +17,15 @@ module.exports = {
         buffer: 10240,
         env: {
           MASTER_ADDR: "127.0.0.1",
-          VLLM_HOST_IP: "127.0.0.1"
+          VLLM_HOST_IP: "127.0.0.1",
+          ACESTEP_LM_BACKEND: "pt",
+          ACESTEP_LM_OFFLOAD_TO_CPU: "true"
         },
         message: [
-          "acestep-api --port {{local.api_port}}"
+          "acestep --port {{local.api_port}} --enable-api --backend pt --server-name 127.0.0.1"
         ],
         on: [{
-          event: "/Uvicorn running/i",
+          event: "/API endpoints enabled/i",
           done: true
         }, {
           event: "/system error/i",
