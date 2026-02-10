@@ -4,7 +4,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone -b gradio-experimental https://github.com/fspecii/ace-step-ui app"
+          "git clone https://github.com/fspecii/ace-step-ui app"
         ]
       }
     },
