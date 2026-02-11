@@ -42,7 +42,8 @@ module.exports = {
         venv_python: "3.11",
         path: "app/ACE-Step-1.5",
         message: [
-          "uv pip install -e ."
+          "uv pip install -e .",
+          "uv pip install --upgrade --force-reinstall \"torchao<0.16\""
         ]
       }
     },
