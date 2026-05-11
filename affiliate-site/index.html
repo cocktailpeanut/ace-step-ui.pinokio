@@ -114,7 +114,7 @@
       <p data-i18n="heroDesc">Trusted by a musician with over 20 years of experience on the world's biggest stages — from Glastonbury to Broadway, Abbey Road to the silver screen.</p>
       <div class="hero-actions">
         <a href="#guides" class="btn-primary" data-i18n="heroCta">Browse Gear →</a>
-        <a href="#about" class="btn-secondary" data-i18n="heroStory">My Story</a>
+        <a href="#about" onclick="event.preventDefault();document.getElementById('about').scrollIntoView({behavior:'smooth',block:'start'})" class="btn-secondary" data-i18n="heroStory">My Story</a>
       </div>
     </div>
   </section>
@@ -266,7 +266,7 @@
     <div class="footer-bottom">
       <p data-i18n="footerDisclosureText"><strong>TopMusicianGear</strong> is a participant in affiliate programs including Thomann, Plugin Boutique, Loopmasters, Gear4Music, and Sweetwater. As an affiliate, we earn from qualifying purchases at no additional cost to you. <a href="#" id="disclosureLink">More info</a></p>
       <p style="margin-top:8px;">&copy; 2026 TopMusicianGear. All rights reserved. <span data-i18n="footerTagline">Built by a musician, for musicians.</span></p>
-      <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" data-i18n="backToTop"><i class="fa-solid fa-arrow-up"></i> Back to top</button>
+      <button class="back-to-top" onclick="document.body.scrollIntoView({behavior:'smooth',block:'start'});window.scrollTo({top:0,behavior:'smooth'})" data-i18n="backToTop"><i class="fa-solid fa-arrow-up"></i> Back to top</button>
     </div>
   </footer>
 

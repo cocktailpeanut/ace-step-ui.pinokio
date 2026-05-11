@@ -1211,11 +1211,11 @@ footer ul li a:hover { color: var(--accent); }
 .mobile-nav {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   position: fixed;
   top: 0;
   right: 16px;
-  padding-top: 8px;
+  padding-top: 4px;
   z-index: 101;
   opacity: 0;
   pointer-events: none;
@@ -1827,7 +1827,9 @@ footer ul li a:hover { color: var(--accent); }
   .audio-mini { display: none; }
   .hamburger { display: flex; }
   .hero { padding: 20px 20px 56px; }
-  .hero h1 { font-size: 30px; }
+  .hero h1 { font-size: 30px; margin-bottom: 4px; }
+  .hero p { margin-bottom: 16px; }
+  .hero-badge { margin-bottom: 8px; }
   .hero-instruments { gap: 14px; font-size: 17px; }
   .bass-icon { font-size: 24px; }
   .hero-actions { flex-direction: column; align-items: center; }
