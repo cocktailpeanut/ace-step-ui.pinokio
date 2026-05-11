@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TopMusicianGear</title>
+  <script>
+    var path = window.location.pathname.replace(/\/+$/, '');
+    var guide = path.split('/').pop();
+    if (guide && guide !== '404.html') {
+      window.location.replace('/?g=' + guide);
+    } else {
+      window.location.replace('/');
+    }
+  </script>
+</head>
+<body></body>
+</html>
