@@ -169,6 +169,8 @@ function renderProductCard(id) {
 
 function renderGuideGrid() {
   currentGuideId = null;
+  const btn = document.getElementById("backToGuidesBtn");
+  if (btn) btn.style.display = "";
   const grid = document.getElementById("guideGrid");
   const count = document.getElementById("guideCount");
   const container = document.getElementById("guideContainer");
@@ -221,6 +223,8 @@ function renderGuideDetail(id) {
   const guide = guides.find(g => g.id === id);
   if (!guide) return;
   currentGuideId = guide.id;
+  const btn = document.getElementById("backToGuidesBtn");
+  if (btn) btn.style.display = "none";
   const grid = document.getElementById("guideGrid");
   grid.style.display = "block";
   const container = document.getElementById("guideContainer");
@@ -253,7 +257,7 @@ function renderGuideDetail(id) {
   grid.innerHTML = `
     <div class="guide-detail">
       <div class="guide-back-row">
-        <button class="guide-back-btn" id="guideBackBtn"><i class="fa-solid fa-arrow-left"></i> ${t("backToGuides")}</button>
+        <button class="guide-back-btn" id="guideBackBtn1"><i class="fa-solid fa-arrow-left"></i> ${t("backToGuides")}</button>
       </div>
       <div class="guide-detail-header">
         <h1 class="guide-detail-title">${currentLang === 'es' && guide.title_es ? guide.title_es : guide.title}</h1>
@@ -270,9 +274,18 @@ function renderGuideDetail(id) {
         <h3>${t("finalThoughts")}</h3>
         <p>${currentLang === 'es' && guide.conclusion_es ? guide.conclusion_es : guide.conclusion}</p>
       </div>
+      <button class="guide-back-btn" id="guideBackBtn2"><i class="fa-solid fa-arrow-left"></i> ${t("backToGuides")}</button>
     </div>
   `;
-  document.getElementById("guideBackBtn").addEventListener("click", () => {
+  const btn1 = document.getElementById("guideBackBtn1");
+  if (btn1) btn1.addEventListener("click", () => {
+    history.pushState({}, '', '/');
+    renderGuideGrid();
+    const el = document.getElementById("guides");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  });
+  const btn2 = document.getElementById("guideBackBtn2");
+  if (btn2) btn2.addEventListener("click", () => {
     history.pushState({}, '', '/');
     renderGuideGrid();
     const el = document.getElementById("guides");
@@ -388,6 +401,56 @@ function handleNavClick(target) {
   }
 }
 
+function initVideoIntro() {
+  const video = document.getElementById("aboutVideo");
+  const overlay = document.getElementById("videoIntroOverlay");
+  if (!video || !overlay) return;
+  video.volume = 0;
+
+  video.addEventListener("play", () => {
+    fadeVideoAudio(video, 1, 1500);
+  });
+
+  video.addEventListener("timeupdate", () => {
+    const remaining = video.duration - video.currentTime;
+    if (remaining < 3 && remaining > 0 && !video.paused && video.volume > 0.05) {
+      fadeVideoAudio(video, 0, 1500);
+    }
+    if (remaining < 3 && remaining > 0 && !video.paused) {
+      overlay.classList.add("outro");
+      requestAnimationFrame(() => {
+        overlay.classList.add("show");
+      });
+    }
+    if (remaining >= 3 && overlay.classList.contains("outro")) {
+      overlay.classList.remove("outro", "show");
+    }
+  });
+
+  video.addEventListener("ended", () => {
+    overlay.classList.remove("outro", "show");
+    video.volume = 0;
+  });
+
+  video.addEventListener("seeked", () => {
+    if (video.currentTime < video.duration - 3) {
+      video.volume = 1;
+    }
+  });
+}
+
+function fadeVideoAudio(video, target, duration) {
+  const start = video.volume;
+  const startTime = performance.now();
+  function step(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    video.volume = start + (target - start) * progress;
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   document.documentElement.lang = currentLang;
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
@@ -414,6 +477,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderAudioMini();
   renderMySetup();
   renderAbout();
+  initVideoIntro();
   translatePage();
 
   document.getElementById("searchInput").addEventListener("input", e => {
@@ -468,6 +532,16 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll('video:not(.bg-video)').forEach(v => { v.pause(); });
     }
   }, true);
+
+  document.addEventListener('keydown', e => {
+    if (e.code === 'Space' && document.activeElement === document.body) {
+      const video = document.getElementById('aboutVideo');
+      if (video && (video.paused ? video.currentTime > 0 : true)) {
+        e.preventDefault();
+        video.paused ? video.play() : video.pause();
+      }
+    }
+  });
 
   initialLoad = false;
 });

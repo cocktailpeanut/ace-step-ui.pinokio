@@ -123,7 +123,7 @@
   <div class="stats-bar">
     <div class="stats-inner">
       <div class="stat-item">
-        <div class="stat-number">200+</div>
+        <div class="stat-number">100+</div>
         <div class="stat-label" data-i18n="stat1">Products Tested</div>
       </div>
       <div class="stat-item">
@@ -163,6 +163,10 @@
     </div>
   </section>
 
+  <div style="text-align:center; padding: 0 16px;" id="backToGuidesBtn">
+    <button class="back-to-top" onclick="document.getElementById('guides').scrollIntoView({behavior:'smooth',block:'start'})" data-i18n="backToGuides"><i class="fa-solid fa-arrow-up"></i> Back to Guides</button>
+  </div>
+
   <!-- My Setup Section -->
   <section class="my-setup" id="mysetup">
     <div class="section-header">
@@ -180,8 +184,14 @@
   </section>
 
   <div class="stores-video">
-    <div class="about-video-circle">
-      <video controls preload="none" controlslist="nodownload nofullscreen">
+    <div class="about-video-circle" id="aboutVideoContainer">
+      <div class="video-intro-overlay" id="videoIntroOverlay">
+        <div class="video-intro-logo">
+          <img src="img/favicon.svg" alt="TG" class="video-intro-icon">
+          <span class="video-intro-brand"><span class="txt-blue">Top</span>MusicianGear</span>
+        </div>
+      </div>
+      <video id="aboutVideo" controls preload="none" controlslist="nodownload nofullscreen">
         <source src="video/about-video.mp4" type="video/mp4">
       </video>
     </div>

@@ -1409,23 +1409,23 @@ footer ul li a:hover { color: var(--accent); }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 10px 20px;
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  color: var(--text-secondary);
-  font-size: 13px;
-  font-weight: 600;
-  font-family: inherit;
+  margin-top: 12px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: var(--accent);
+  border: none;
+  color: white;
   cursor: pointer;
-  transition: var(--transition);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s;
   white-space: nowrap;
 }
 
 .guide-back-btn:hover {
-  border-color: var(--accent);
-  color: var(--white);
-  background: rgba(59,130,246,.08);
+  background: #2563eb;
+  color: white;
 }
 
 .guide-detail-header {
@@ -1759,10 +1759,11 @@ footer ul li a:hover { color: var(--accent); }
 
 /* Guide Conclusion */
 .guide-conclusion {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 32px;
+  background: rgba(59,130,246,.08);
+  border: 1px solid rgba(59,130,246,.2);
+  border-radius: var(--radius);
+  padding: 14px 22px;
+  margin-bottom: 20px;
 }
 
 .guide-conclusion h3 {
@@ -1847,7 +1848,7 @@ footer ul li a:hover { color: var(--accent); }
   .newsletter-card { padding: 32px 20px; }
   .newsletter-form { flex-direction: column; }
   .newsletter-form button { width: 100%; }
-  footer { padding: 40px 16px 20px; }
+  footer { padding: 40px 16px 6px; }
   .footer-grid { gap: 12px; justify-content: center; flex-wrap: nowrap; }
   .footer-col { flex: 1 1 33%; text-align: center; overflow-wrap: break-word; }
   footer h3 { font-size: 11px; margin-bottom: 10px; }
@@ -2082,6 +2083,67 @@ html[lang="es"] .lang-show-en { display: none; }
   width: 100%;
   display: block;
   background: #000;
+  transition: opacity 0.4s ease;
+}
+
+/* Video intro/outro overlay */
+.about-video-circle {
+  position: relative;
+}
+
+.video-intro-overlay {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+  border-radius: var(--radius);
+}
+
+.video-intro-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.video-intro-overlay.outro {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.video-intro-overlay.outro.show {
+  opacity: 1;
+}
+
+.video-intro-logo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.video-intro-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.video-intro-brand {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.5px;
+  color: #111;
+}
+
+.video-intro-brand .txt-blue {
+  color: var(--accent);
 }
 
 .about-photo-col {
