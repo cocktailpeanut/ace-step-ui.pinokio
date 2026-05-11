@@ -525,11 +525,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener('play', e => {
-    if (e.target.tagName === 'VIDEO') {
+    if (e.target.tagName === 'VIDEO' && !e.target.classList.contains('bg-video')) {
       document.querySelectorAll('audio').forEach(a => { a.pause(); });
+      const bg = document.querySelector('.bg-video');
+      if (bg) bg.pause();
     }
     if (e.target.tagName === 'AUDIO') {
       document.querySelectorAll('video:not(.bg-video)').forEach(v => { v.pause(); });
+    }
+  }, true);
+
+  document.addEventListener('pause', e => {
+    if (e.target.tagName === 'VIDEO' && !e.target.classList.contains('bg-video')) {
+      const bg = document.querySelector('.bg-video');
+      if (bg && bg.paused) bg.play();
     }
   }, true);
 
