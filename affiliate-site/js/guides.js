@@ -64,15 +64,15 @@ const guides = [
       {
         heading: "Best Character: SSL 2+",
         heading_es: "Mejor Carácter: SSL 2+",
-        content: "SSL made their name with the world's best console preamps. The SSL 2+ gives you that same 4K Legacy channel strip — a switchable analogue EQ that adds presence and punch. I used this on a recent session and the vocals sat in the mix with zero effort. The built-in talkback mic is a bonus for directing sessions.",
+        content: "SSL made their name with the world's best console preamps. The SSL 2+ gives you that same 4K Legacy channel strip — a switchable analogue EQ that adds presence and punch. The vocals sit in the mix with zero effort. The built-in talkback mic is a bonus for directing sessions.",
         content_es: "SSL se hizo un nombre con los mejores preamplificadores de consola del mundo. La SSL 2+ te da ese mismo channel strip 4K Legacy — un ecualizador analógico conmutable que añade presencia y pegada. La usé en una sesión reciente y las voces se asentaron en la mezcla sin esfuerzo. El micrófono talkback incorporado es un extra para dirigir sesiones.",
         products: [18]
       },
       {
         heading: "Best Prosumer: Universal Audio Apollo Twin X",
         heading_es: "Mejor Prosumer: Universal Audio Apollo Twin X",
-        content: "This is what I use in my personal rig. The Apollo Twin X gives you real-time UAD DSP processing — you can track through compressors, EQs, and reverb with near-zero latency. The Unison preamps actually change their impedance to match legendary hardware. It's expensive but it's pro-level. If you're serious about recording quality, this is the move.",
-        content_es: "Esto es lo que uso en mi equipo personal. La Apollo Twin X te da procesamiento UAD DSP en tiempo real — puedes grabar a través de compresores, EQs y reverb con latencia casi nula. Los preamplificadores Unison realmente cambian su impedancia para igualar hardware legendario. Es cara pero es nivel profesional. Si te tomas en serio la calidad de grabación, esta es la decisión.",
+        content: "The Apollo Twin X gives you real-time UAD DSP processing — you can track through compressors, EQs, and reverb with near-zero latency. The Unison preamps actually change their impedance to match legendary hardware. It's expensive but it's pro-level. If you're serious about recording quality, this is the move.",
+        content_es: "La Apollo Twin X te da procesamiento UAD DSP en tiempo real — puedes grabar a través de compresores, EQs y reverb con latencia casi nula. Los preamplificadores Unison realmente cambian su impedancia para igualar hardware legendario. Es cara pero es nivel profesional. Si te tomas en serio la calidad de grabación, esta es la decisión.",
         products: [16]
       },
       {
@@ -124,11 +124,11 @@ const guides = [
         heading: "Best Budget: Sony MDR-7506",
         heading_es: "Mejor Económico: Sony MDR-7506",
         content: "The MDR-7506 has been everywhere since 1991 — broadcast trucks, film sets, podcast studios. They're $99, fold flat, and sound remarkably good. The mids are forward, which makes vocals cut through, and they're brutally honest about flaws. I keep a pair in my travel bag at all times.",
-        content_es: "Los MDR-7506 han estado en todas partes desde 1991 — camiones de transmisión, sets de filmación, estudios de podcast. Cuestan $99, se pliegan planos y suenan notablemente bien. Los medios son frontales, lo que hace que las voces destaquen, y son brutalmente honestos sobre los defectos. Siempre tengo un par en mi bolsa de viaje.",
+        content_es: "Los MDR-7506 han estado en todas partes desde 1991 — camiones de transmisión, sets de filmación, estudios de podcast. Cuestan $99, se pliegan planos y suenan notablemente bien. Los medios son frontales, lo que hace que las voces destaquen, y son brutalmente honestos sobre los defectos.",
         products: [26]
       }
     ],
-    conclusion: "Need one pair for everything? Get the DT 770 Pro. Mixing only? HD 600. Starting out? ATH-M50x. Budget? MDR-7506. I own all four and reach for different ones depending on the job. If I could only keep one, it'd be the HD 600 — but that's because I mix more than I track.",
+    conclusion: "Need one pair for everything? Get the DT 770 Pro. Mixing only? HD 600. Starting out? ATH-M50x. Budget? MDR-7506. Each has its strengths depending on the job. If I could only keep one, it'd be the HD 600 — but that's because I mix more than I track.",
     conclusion_es: "¿Necesitas un par para todo? Consigue los DT 770 Pro. ¿Solo mezcla? HD 600. ¿Empezando? ATH-M50x. ¿Presupuesto? MDR-7506. Tengo los cuatro y uso diferentes según el trabajo. Si solo pudiera quedarme con uno, sería el HD 600 — pero es porque mezclo más de lo que grabo.",
     verdict: "DT 770 Pro for versatility, HD 600 for mixing",
     verdict_es: "DT 770 Pro para versatilidad, HD 600 para mezcla",
@@ -327,7 +327,7 @@ const guides = [
       {
         heading: "Mic Stands & Clips: Rock-Solid Support",
         heading_es: "Soportes de Mic y Clips: Soporte Sólido Como Roca",
-        content: "Nothing worse than a mic stand slowly sinking during a vocal take or a loose clip dropping your mic. I use K&M stands exclusively — German engineering, zinc die-cast bases, and they last decades. The 210/2 is the standard for good reason. Pair it with a Shure A25D mic clip for SM57/SM58 mics — it's break-resistant and grips the mic like a vise. For studio monitors, the K&M 26725 stands get your speakers to ear height with decoupling spikes for cleaner low end.",
+        content: "Nothing worse than a mic stand slowly sinking during a vocal take or a loose clip dropping your mic. K&M stands are the industry standard — German engineering, zinc die-cast bases, and they last decades. The 210/2 is the standard for good reason. Pair it with a Shure A25D mic clip for SM57/SM58 mics — it's break-resistant and grips the mic like a vise. For studio monitors, the K&M 26725 stands get your speakers to ear height with decoupling spikes for cleaner low end.",
         content_es: "Nada peor que un soporte de micrófono hundiéndose lentamente durante una toma vocal o un clip suelto dejando caer tu micrófono. Uso soportes K&M exclusivamente — ingeniería alemana, bases de zinc fundido a presión, y duran décadas. El 210/2 es el estándar por buenas razones. Combínalo con un clip de micrófono Shure A25D para micrófonos SM57/SM58 — es resistente a roturas y agarra el micrófono como un tornillo de banco. Para monitores de estudio, los soportes K&M 26725 ponen tus altavoces a la altura del oído con puntas de desacoplamiento para graves más limpios.",
         products: [38]
       },
@@ -857,8 +857,8 @@ const guides = [
       {
         heading: "The DSP Powerhouse: Universal Audio Apollo Twin X",
         heading_es: "La Potencia DSP: Universal Audio Apollo Twin X",
-        content: "The Apollo Twin X is what I use in my personal studio. Real-time UAD DSP processing lets you track through emulations of vintage Neve preamps, LA-2A compressors, Pultec EQs, and EMT reverbs with near-zero latency. The Unison preamp technology physically changes impedance to match the hardware being modeled — it's not just an EQ curve, it's the actual analog behavior. The Apollo ecosystem includes over 200 UAD plugins that run on the interface's DSP, offloading your computer. For serious projects, this is the interface pros choose for home studios.",
-        content_es: "La Apollo Twin X es lo que uso en mi estudio personal. El procesamiento DSP UAD en tiempo real te permite grabar a través de emulaciones de preamplificadores Neve vintage, compresores LA-2A, ecualizadores Pultec y reverbs EMT con latencia casi nula. La tecnología de preamplificador Unison cambia físicamente la impedancia para igualar el hardware que se modela — no es solo una curva de ecualización, es el comportamiento analógico real. El ecosistema Apollo incluye más de 200 plugins UAD que se ejecutan en el DSP de la interfaz. Para proyectos serios, esta es la interfaz que los profesionales eligen para estudios caseros.",
+        content: "The Apollo Twin X gives you real-time UAD DSP processing — tracking through emulations of vintage Neve preamps, LA-2A compressors, Pultec EQs, and EMT reverbs with near-zero latency. The Unison preamp technology physically changes impedance to match the hardware being modeled — it's not just an EQ curve, it's the actual analog behavior. The Apollo ecosystem includes over 200 UAD plugins that run on the interface's DSP, offloading your computer. For serious projects, this is the interface pros choose for home studios.",
+        content_es: "La Apollo Twin X ofrece procesamiento UAD DSP en tiempo real — puedes grabar a través de emulaciones de preamplificadores Neve vintage, compresores LA-2A, ecualizadores Pultec y reverbs EMT con latencia casi nula. La tecnología de preamplificador Unison cambia físicamente la impedancia para igualar el hardware que se modela — no es solo una curva de ecualización, es el comportamiento analógico real. El ecosistema Apollo incluye más de 200 plugins UAD que se ejecutan en el DSP de la interfaz. Para proyectos serios, esta es la interfaz que los profesionales eligen para estudios caseros.",
         products: [16]
       },
       {
@@ -895,7 +895,7 @@ const guides = [
       {
         heading: "The Broadcast Truth: Sony MDR-7506",
         heading_es: "La Verdad de Transmisión: Sony MDR-7506",
-        content: "The MDR-7506 has been the broadcast standard since 1991, and for good reason — its forward midrange reveals flaws that other headphones smooth over. When you're evaluating whether a wireless headphone is studio-usable, A/B it against the MDR-7506. If the wireless pair masks mouth noises, softens transient attacks, or adds a bass hump, you'll hear it instantly. At $99, the MDR-7506 is the cheapest lie detector in audio. I use it to calibrate my ears before judging any monitoring system — wireless or otherwise. The truth is wired, and this is where you find it.",
+        content: "The MDR-7506 has been the broadcast standard since 1991, and for good reason — its forward midrange reveals flaws that other headphones smooth over. When you're evaluating whether a wireless headphone is studio-usable, A/B it against the MDR-7506. If the wireless pair masks mouth noises, softens transient attacks, or adds a bass hump, you'll hear it instantly. At $99, the MDR-7506 is the cheapest lie detector in audio. The truth is wired, and this is where you find it.",
         content_es: "Los MDR-7506 han sido el estándar de transmisión desde 1991, y con buena razón — su rango medio frontal revela defectos que otros auriculares suavizan. Cuando estás evaluando si un auricular inalámbrico es utilizable en estudio, compáralo con los MDR-7506. Si el par inalámbrico enmascara ruidos de boca, suaviza los ataques transitorios o añade un bulto en los graves, lo escucharás instantáneamente. A $99, los MDR-7506 son el detector de mentiras más barato en audio. Los uso para calibrar mis oídos antes de juzgar cualquier sistema de monitoreo — inalámbrico o no. La verdad tiene cable, y aquí es donde la encuentras.",
         products: [26]
       }

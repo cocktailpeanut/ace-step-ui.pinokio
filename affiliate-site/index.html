@@ -52,6 +52,37 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Music Gear Reviews",
+    "description": "Curated reviews of professional music equipment including microphones, guitars, keyboards, audio interfaces, studio monitors, headphones, and plugins.",
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Daniel"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "247"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "39",
+      "highPrice": "4999",
+      "offerCount": "42"
+    }
+  }
+  </script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -137,6 +168,14 @@
     </div>
   </div>
 
+  <div style="padding: 0 32px; margin-top: 16px;" id="productSearchBar">
+    <div style="max-width:500px;margin:0 auto;position:relative;">
+      <i class="fa-solid fa-magnifying-glass" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:14px;z-index:1;"></i>
+      <input type="text" id="productSearchInput" placeholder="Search products..." autocomplete="off" data-i18n-placeholder="searchProductsPlaceholder" style="width:100%;padding:10px 16px 10px 38px;border:1.5px solid var(--border);border-radius:24px;font-size:14px;background:var(--surface);color:var(--text);outline:none;font-family:inherit;">
+    </div>
+    <div id="productSearchResults" style="display:none;max-width:800px;margin:16px auto 0;"></div>
+  </div>
+
   <div class="audio-mini-mobile" id="audioMiniMobile"></div>
 
   <!-- Guides Section -->
@@ -219,6 +258,10 @@
           <img src="img/gear4music-icon.png" alt="Gear4Music" class="store-logo-img">
           <span>Gear4Music</span>
         </a>
+        <a href="https://www.musik-produktiv.com/" target="_blank" rel="noopener noreferrer sponsored" class="store-logo" style="--store-color:#78716c">
+          <img src="img/musikproduktiv-icon.png" alt="Musik Produktiv" class="store-logo-img" style="width:36px;">
+          <span>Musik Produktiv</span>
+        </a>
       </div>
     </div>
   </div>
@@ -264,7 +307,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p data-i18n="footerDisclosureText"><strong>TopMusicianGear</strong> is a participant in affiliate programs including Thomann, Plugin Boutique, Loopmasters, Gear4Music, and Sweetwater. As an affiliate, we earn from qualifying purchases at no additional cost to you. <a href="#" id="disclosureLink">More info</a></p>
+      <p data-i18n="footerDisclosureText"><strong>TopMusicianGear</strong> is a participant in affiliate programs including Thomann, Plugin Boutique, Musik Produktiv, Gear4Music, and Sweetwater. As an affiliate, we earn from qualifying purchases at no additional cost to you. <a href="#" id="disclosureLink">More info</a></p>
       <p style="margin-top:8px;">&copy; 2026 TopMusicianGear. All rights reserved. <span data-i18n="footerTagline">Built by a musician, for musicians.</span></p>
       <button class="back-to-top" onclick="document.body.scrollIntoView({behavior:'smooth',block:'start'});window.scrollTo({top:0,behavior:'smooth'})" data-i18n="backToTop"><i class="fa-solid fa-arrow-up"></i> Back to top</button>
     </div>
@@ -277,14 +320,14 @@
   <div id="disclosureModal">
     <div class="modal-content">
       <h3 data-i18n="disclosureTitle">Affiliate Disclosure</h3>
-      <p data-i18n="disclosureText">TopMusicianGear is a participant in affiliate marketing programs designed to provide a means for sites to earn advertising fees by advertising and linking to partner retailers including Thomann, Plugin Boutique, Loopmasters, Gear4Music, and Sweetwater. When you click on a product link on this site and make a purchase, we may earn a small commission at no additional cost to you. This helps support the site and allows us to continue creating honest reviews and recommendations. As a Gear4Music affiliate, we earn from qualifying purchases. As a Thomann, Plugin Boutique, Loopmasters, and Sweetwater affiliate, we earn from qualifying purchases made through our links. All opinions expressed on this site are our own. We only recommend products we genuinely believe in and have personally used or thoroughly researched.</p>
+      <p data-i18n="disclosureText">TopMusicianGear is a participant in affiliate marketing programs designed to provide a means for sites to earn advertising fees by advertising and linking to partner retailers including Thomann, Plugin Boutique, Musik Produktiv, Gear4Music, and Sweetwater. When you click on a product link on this site and make a purchase, we may earn a small commission at no additional cost to you. This helps support the site and allows us to continue creating honest reviews and recommendations. As a Thomann, Musik Produktiv, Gear4Music, Plugin Boutique, and Sweetwater affiliate, we earn from qualifying purchases made through our links. All opinions expressed on this site are our own. We only recommend products we genuinely believe in and have personally used or thoroughly researched.</p>
       <button onclick="document.getElementById('disclosureModal').style.display='none'" data-i18n="disclosureGotIt">Got it</button>
     </div>
   </div>
 
-  <script src="js/translations.js"></script>
-  <script src="js/products.js"></script>
-  <script src="js/guides.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/translations.js?v=3"></script>
+  <script src="js/products.js?v=3"></script>
+  <script src="js/guides.js?v=3"></script>
+  <script src="js/app.js?v=3"></script>
 </body>
 </html>

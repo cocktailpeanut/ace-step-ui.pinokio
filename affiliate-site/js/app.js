@@ -127,6 +127,8 @@ function getResolvedStores(product) {
   Object.entries(product.stores).forEach(([key, url]) => {
     if (key === 'gear4music' && url === 'https://www.gear4music.com/search') {
       s[key] = `https://www.gear4music.com/search?q=${encodeURIComponent(product.title)}`;
+    } else if (key === 'musikproduktiv' && url === 'https://www.musik-produktiv.de/search') {
+      s[key] = `https://www.musik-produktiv.de/search?q=${encodeURIComponent(product.title)}`;
     } else {
       s[key] = url;
     }
@@ -363,6 +365,7 @@ function renderAbout() {
         <span class="credit-badge"><i class="fa-solid fa-microphone"></i> ${t("credit_topaz")}</span>
         <span class="credit-badge"><i class="fa-solid fa-compact-disc"></i> ${t("credit_warner")}</span>
         <span class="credit-badge"><i class="fa-solid fa-star"></i> ${t("credit_columbia")}</span>
+        <span class="credit-badge"><i class="fa-solid fa-flag-usa"></i> ${t("credit_usatours")}</span>
       </div>
     </div>
   `;
@@ -483,6 +486,30 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("searchInput").addEventListener("input", e => {
     searchQuery = e.target.value;
     renderGuideGrid();
+  });
+
+  document.getElementById("productSearchInput").addEventListener("input", e => {
+    const q = e.target.value.toLowerCase().trim();
+    const results = document.getElementById("productSearchResults");
+    if (!q) {
+      results.style.display = "none";
+      return;
+    }
+    const filtered = products.filter(p => {
+      const t = p.title.toLowerCase();
+      const te = (p.title_es || "").toLowerCase();
+      const d = p.desc.toLowerCase();
+      const de = (p.desc_es || "").toLowerCase();
+      return t.includes(q) || te.includes(q) || d.includes(q) || de.includes(q);
+    });
+    if (filtered.length === 0) {
+      results.style.display = "block";
+      results.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:20px;">No products found</p>';
+      return;
+    }
+    results.style.display = "block";
+    results.innerHTML = '<div class="guide-products-cards">' + filtered.map(p => renderProductCard(p.id)).join("") + '</div>';
+    results.querySelectorAll(".guide-products-title").forEach(el => el.remove());
   });
 
   document.querySelectorAll(".nav-link[data-nav]").forEach(btn => {
