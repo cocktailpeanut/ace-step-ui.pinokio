@@ -128,7 +128,7 @@ function getResolvedStores(product) {
     if (key === 'gear4music' && url === 'https://www.gear4music.com/search') {
       s[key] = `https://www.gear4music.com/search?q=${encodeURIComponent(product.title)}`;
     } else if (key === 'musikproduktiv' && url === 'https://www.musik-produktiv.de/search') {
-      s[key] = `https://www.musik-produktiv.de/search?q=${encodeURIComponent(product.title)}`;
+      s[key] = `https://www.musik-produktiv.de/`;
     } else {
       s[key] = url;
     }

@@ -772,9 +772,7 @@ const products = [
     desc_es: "Tres Cubano de grado profesional con tapa sólida de abeto para claridad, sustain y definición excepcionales. Sin cutaway para máxima resonancia. Incrustaciones de nácar alrededor de la boca, mástil de caoba, fondo y aros de nogal. El estándar de estudio para sonido cubano auténtico.",
     img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/336551.jpg",
     stores: {
-      thomann: "https://www.thomann.co.uk/thomann_tres_cubano_deluxe.htm",
-
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      thomann: "https://www.thomann.co.uk/thomann_tres_cubano_deluxe.htm"
     }
   },
   {
@@ -790,9 +788,7 @@ const products = [
     desc_es: "Tres Cubano con tapa sólida de acacia. Mástil de arce, diapasón y puente de acacia. Incluye funda de transporte. Afinación: G-B-E o G-C-E. Excelente relación calidad-precio para estudiantes y músicos de gira.",
     img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/415715.jpg",
     stores: {
-      thomann: "https://www.thomann.co.uk/thomann_tres_cubano_standard_acacia.htm",
-
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      thomann: "https://www.thomann.co.uk/thomann_tres_cubano_standard_acacia.htm"
     }
   },
   {
@@ -808,9 +804,7 @@ const products = [
     desc_es: "Tres Cubano con cutaway para acceso a trastes superiores. Tapa de cedro, fondo y aros de sapeli, mástil de arce con diapasón de acacia. Sistema de pastilla incorporado. Afinación: G-B-E o G-C-E. Excelente opción de gama media con electrónica lista para el escenario.",
     img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/357834.jpg",
     stores: {
-      thomann: "https://www.thomann.co.uk/thomann_tres_cubano_standard_ccw.htm",
-
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      thomann: "https://www.thomann.co.uk/thomann_tres_cubano_standard_ccw.htm"
     }
   },
   {
@@ -826,9 +820,7 @@ const products = [
     desc_es: "Tres Cubano premium con cutaway. Tapa de cedro, fondo y aros de nogal, mástil de arce con diapasón de acacia. Sistema de pastilla incorporado. El tres Thomann de más alta gama para músicos que necesitan acceso al cutaway y electrónica lista para el escenario.",
     img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/357835.jpg",
     stores: {
-      thomann: "https://www.thomann.co.uk/thomann_tres_cubano_deluxe_ccw.htm",
-
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      thomann: "https://www.thomann.co.uk/thomann_tres_cubano_deluxe_ccw.htm"
     }
   }
 ];
@@ -850,23 +842,23 @@ const categoryInfo = {
 const storeNames = {
   thomann: "Thomann",
   pluginboutique: "Plugin Boutique",
-  loopmasters: "Loopmasters",
   gear4music: "Gear4Music",
-  sweetwater: "Sweetwater"
+  sweetwater: "Sweetwater",
+  musikproduktiv: "Musik Produktiv"
 };
 
 const storeColors = {
   thomann: "#3b82f6",
   pluginboutique: "#6366f1",
-  loopmasters: "#475569",
   gear4music: "#8b5cf6",
-  sweetwater: "#6b7280"
+  sweetwater: "#6b7280",
+  musikproduktiv: "#78716c"
 };
 
 const storeIcons = {
   thomann: '<img src="img/thomann-icon.png" alt="Thomann" class="store-icon-img">',
   pluginboutique: '<img src="img/pluginboutique-icon.png" alt="Plugin Boutique" class="store-icon-img">',
-  loopmasters: '<i class="fa-solid fa-arrows-rotate"></i>',
   gear4music: '<img src="img/gear4music-icon.png" alt="Gear4Music" class="store-icon-img">',
-  sweetwater: '<img src="img/sweetwater-icon.png" alt="Sweetwater" class="store-icon-img">'
+  sweetwater: '<img src="img/sweetwater-icon.png" alt="Sweetwater" class="store-icon-img">',
+  musikproduktiv: '<img src="img/musikproduktiv-icon.png" alt="Musik Produktiv" class="store-icon-img" style="width:28px">'
 };
