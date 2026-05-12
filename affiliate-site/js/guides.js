@@ -81,6 +81,27 @@ const guides = [
         content: "RME is legendary for rock-solid drivers and pristine conversion. The Babyface Pro FS fits in a backpack but delivers studio-grade sound. I've taken this on tour and used it in hotel rooms for writing sessions. SteadyClock FS jitter suppression is the secret sauce — your recordings will sound cleaner than interfaces twice the price.",
         content_es: "RME es legendaria por sus drivers sólidos como una roca y su conversión impecable. La Babyface Pro FS cabe en una mochila pero ofrece sonido de grado estudio. La he llevado de gira y la he usado en habitaciones de hotel para sesiones de escritura. La supresión de jitter SteadyClock FS es la salsa secreta — tus grabaciones sonarán más limpias que con interfaces del doble de precio.",
         products: [17]
+      },
+      {
+        heading: "The Console Sound: Audient iD14 MkII",
+        heading_es: "El Sonido de Consola: Audient iD14 MkII",
+        content: "Audient makes $50,000 recording consoles used in professional studios worldwide. The iD14 MkII puts those same Class-A mic preamps in a compact desktop interface. The JFET DI input gives your guitar or bass the warmth of a valve amp before it even hits your DAW. Dual headphone outputs with independent level control make it ideal for recording duos or teaching. At $299, you're getting console-grade audio in a portable package.",
+        content_es: "Audient fabrica consolas de grabación de $50,000 utilizadas en estudios profesionales de todo el mundo. El iD14 MkII pone esos mismos previos de micrófono Clase A en una interfaz de escritorio compacta. La entrada DI JFET le da a tu guitarra o bajo el calor de un amplificador a válvulas antes incluso de llegar a tu DAW. Las salidas de auriculares duales con control de nivel independiente lo hacen ideal para grabar dúos o enseñar. A $299, obtienes audio de grado consola en un paquete portátil.",
+        products: [53]
+      },
+      {
+        heading: "Best Value: MOTU M2",
+        heading_es: "Mejor Valor: MOTU M2",
+        content: "The MOTU M2 packs features you'd expect at twice the price. The full-color LCD screen shows real-time input and output levels — no more guessing your gain staging. The ESS Sabre32 Ultra DAC delivers the same conversion quality found in interfaces costing $500+. Loopback makes it perfect for streamers and podcasters who need to route computer audio. At $199, nothing else in this price range offers this combination of metering, conversion, and build quality.",
+        content_es: "El MOTU M2 incluye características que esperarías al doble del precio. La pantalla LCD a todo color muestra niveles de entrada y salida en tiempo real — se acabó adivinar tu ganancia. El DAC ESS Sabre32 Ultra ofrece la misma calidad de conversión que se encuentra en interfaces de más de $500. Loopback lo hace perfecto para streamers y podcasters que necesitan enrutar audio del ordenador. A $199, nada más en este rango de precio ofrece esta combinación de medición, conversión y calidad de construcción.",
+        products: [54]
+      },
+      {
+        heading: "UA on a Budget: Universal Audio Volt 2",
+        heading_es: "UA Económico: Universal Audio Volt 2",
+        content: "Universal Audio made their name with high-end DSP interfaces. The Volt 2 brings UA quality to an entry-level price without compromising on features. The Vintage Mic Preamp mode physically changes the circuit to emulate the classic UA 610 tube preamp — it's not a plugin, it's actual analog coloration. MIDI I/O, solid metal construction, and a distinctive retro design that looks as good as it sounds. At $189, it's the most characterful interface in the budget category.",
+        content_es: "Universal Audio se hizo un nombre con interfaces DSP de alta gama. El Volt 2 trae calidad UA a un precio de entrada sin comprometer características. El modo Vintage Mic Preamp cambia físicamente el circuito para emular el clásico previo de tubo UA 610 — no es un plugin, es coloración analógica real. MIDI I/O, construcción metálica sólida y un distintivo diseño retro que se ve tan bien como suena. A $189, es la interfaz con más carácter en la categoría económica.",
+        products: [55]
       }
     ],
     conclusion: "Buy the Scarlett 2i2 if you're starting out. Get the SSL 2+ if you want character. Invest in the Apollo Twin X if you're ready to go pro. And if portability is your priority, the Babyface Pro FS is unbeatable. You can't go wrong with any of these — I've used them all professionally.",
@@ -126,6 +147,20 @@ const guides = [
         content: "The MDR-7506 has been everywhere since 1991 — broadcast trucks, film sets, podcast studios. They're $99, fold flat, and sound remarkably good. The mids are forward, which makes vocals cut through, and they're brutally honest about flaws. I keep a pair in my travel bag at all times.",
         content_es: "Los MDR-7506 han estado en todas partes desde 1991 — camiones de transmisión, sets de filmación, estudios de podcast. Cuestan $99, se pliegan planos y suenan notablemente bien. Los medios son frontales, lo que hace que las voces destaquen, y son brutalmente honestos sobre los defectos.",
         products: [26]
+      },
+      {
+        heading: "Open-Back Precision: Beyerdynamic DT 990 Pro",
+        heading_es: "Precisión Abierta: Beyerdynamic DT 990 Pro",
+        content: "The DT 990 Pro is the open-back sibling of the legendary DT 770 Pro. Where the DT 770 isolates for tracking, the DT 990 opens up for mixing — the expansive soundstage lets you place every instrument in three-dimensional space. The treble is more present than the DT 770, giving you surgical precision on reverb tails, sibilance, and high-frequency details. The velour pads and lightweight design make them comfortable for marathon mixing sessions. At $169, they're the analytical companion every mixing engineer needs alongside closed-back cans.",
+        content_es: "El DT 990 Pro es el hermano abierto del legendario DT 770 Pro. Donde el DT 770 aísla para grabación, el DT 990 se abre para mezcla — el escenario sonoro expansivo te permite colocar cada instrumento en espacio tridimensional. Los agudos son más presentes que en el DT 770, dándote precisión quirúrgica en colas de reverb, sibilancia y detalles de alta frecuencia. Las almohadillas de velour y el diseño ligero los hacen cómodos para sesiones de mezcla maratonianas. A $169, son el compañero analítico que todo ingeniero de mezcla necesita junto a auriculares cerrados.",
+        products: [56]
+      },
+      {
+        heading: "The Harman Standard: AKG K371",
+        heading_es: "El Estándar Harman: AKG K371",
+        content: "The AKG K371 is tuned to the Harman target curve — the scientific gold standard for headphone frequency response. This means they sound natural, balanced, and translate accurately to speakers. Closed-back design with excellent isolation makes them suitable for both tracking and mobile mixing. Detachable cables (3 included — coiled, short, and long) mean road-worthiness. Foldable design fits in a laptop bag. At $155, they're the most accurate closed-back headphones under $200 by a significant margin.",
+        content_es: "El AKG K371 está sintonizado a la curva objetivo Harman — el estándar de oro científico para respuesta de frecuencia en auriculares. Esto significa que suenan naturales, balanceados y se traducen con precisión a altavoces. El diseño cerrado con excelente aislamiento los hace adecuados tanto para grabación como para mezcla móvil. Cables desmontables (3 incluidos — en espiral, corto y largo) significan resistencia para la carretera. Diseño plegable que cabe en una mochila de portátil. A $155, son los auriculares cerrados más precisos por menos de $200 por un margen significativo.",
+        products: [57]
       }
     ],
     conclusion: "Need one pair for everything? Get the DT 770 Pro. Mixing only? HD 600. Starting out? ATH-M50x. Budget? MDR-7506. Each has its strengths depending on the job. If I could only keep one, it'd be the HD 600 — but that's because I mix more than I track.",
@@ -139,7 +174,7 @@ const guides = [
     title: "Best Microphone for Vocals & Home Recording (2026)",
     title_es: "Mejor Micrófono para Voces y Grabación Casera (2026)",
     category: "microphones",
-    image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=600&h=400&fit=crop",
+    image: "img/mic-guide.jpg",
     badge: "legend",
     intro: "I've sung through everything. From $50 mics in sweaty clubs to $10,000 vintage tube condensers in world-class studios. The good news? You don't need to spend big to sound great. Here are the mics I recommend most, based on what you actually need.",
     intro_es: "He cantado a través de todo. Desde micrófonos de $50 en clubes sudorosos hasta condensadores de tubo vintage de $10,000 en estudios de clase mundial. ¿La buena noticia? No necesitas gastar mucho para sonar genial. Aquí están los micrófonos que más recomiendo, basado en lo que realmente necesitas.",
@@ -147,8 +182,8 @@ const guides = [
       {
         heading: "Best All-Rounder Dynamic: Shure SM57",
         heading_es: "Mejor Dinámico Todo-Terreno: Shure SM57",
-        content: "The SM57 is the most recorded instrument in history. Not hyperbole — it's a fact. It's $99, takes a beating, and sounds fantastic on guitar amps, snares, horns, and vocals. I've used SM57s on Broadway pit orchestras, Glastonbury stages, and studio sessions. Every musician should own one.",
-        content_es: "El SM57 es el instrumento más grabado de la historia. No es exageración — es un hecho. Cuesta $99, aguanta golpes y suena fantástico en amplificadores de guitarra, cajas, trompetas y voces. He usado SM57s en orquestas de foso de Broadway, escenarios de Glastonbury y sesiones de estudio. Todo músico debería tener uno.",
+        content: "The SM57 is the most recorded microphone in history. Not hyperbole — it's a fact. It's $99, takes a beating, and sounds fantastic on guitar amps, snares, horns, and vocals. I've used SM57s on Broadway pit orchestras, Glastonbury stages, and studio sessions. Every musician should own one.",
+        content_es: "El SM57 es el micrófono más grabado de la historia. No es exageración — es un hecho. Cuesta $99, aguanta golpes y suena fantástico en amplificadores de guitarra, cajas, trompetas y voces. He usado SM57s en orquestas de foso de Broadway, escenarios de Glastonbury y sesiones de estudio. Todo músico debería tener uno.",
         products: [5]
       },
       {
@@ -178,6 +213,27 @@ const guides = [
         content: "This is the mic. The U 87 has been on more hit records than any other condenser microphone. I recorded at Abbey Road with one and I understand why it's the standard. Three polar patterns, legendary build quality, and that unmistakable Neumann top-end. At $3,599, it's an investment — but if you're building a professional studio, there's no substitute.",
         content_es: "Este es EL micrófono. El U 87 ha estado en más éxitos discográficos que cualquier otro micrófono de condensador. Grabé en Abbey Road con uno y entiendo por qué es el estándar. Tres patrones polares, calidad de construcción legendaria, y ese inconfundible brillo Neumann. A $3,599, es una inversión — pero si estás construyendo un estudio profesional, no hay sustituto.",
         products: [2]
+      },
+      {
+        heading: "The Live Vocal Legend: Shure SM58",
+        heading_es: "La Leyenda Vocal en Vivo: Shure SM58",
+        content: "If the SM57 is the instrument mic, the SM58 is its vocal twin. Same indestructible build, same legendary reliability, but with a tailored frequency response that flatters the human voice. The built-in spherical pop filter reduces plosives and wind noise — no external pop filter needed. At $99, the SM58 has been on more stages than any other microphone in history. From pub gigs to stadiums, it's the sound of live vocals.",
+        content_es: "Si el SM57 es el micrófono de instrumento, el SM58 es su gemelo vocal. La misma construcción indestructible, la misma fiabilidad legendaria, pero con una respuesta de frecuencia adaptada que favorece la voz humana. El filtro antipop esférico incorporado reduce oclusivas y ruido de viento — sin necesidad de filtro antipop externo. A $99, el SM58 ha estado en más escenarios que cualquier otro micrófono en la historia. Desde conciertos de pub hasta estadios, es el sonido de las voces en vivo.",
+        products: [50]
+      },
+      {
+        heading: "The Instrument Specialist: Sennheiser MD 421",
+        heading_es: "El Especialista en Instrumentos: Sennheiser MD 421",
+        content: "The MD 421 is a studio workhorse with a unique five-position bass roll-off switch that lets you dial in the exact low-end response for any source. It handles SPLs up to 160dB — you can stick it inside a kick drum, in front of a cranked Marshall stack, or on a screaming vocalist. Toms recorded with MD 421s have that punchy, articulate attack that's defined rock drum sounds since the 60s. At $399, it's an investment that pays for itself in one session.",
+        content_es: "El MD 421 es un caballo de batalla de estudio con un exclusivo interruptor de corte de graves de cinco posiciones que te permite ajustar la respuesta exacta de graves para cualquier fuente. Maneja SPLs de hasta 160dB — puedes meterlo dentro de un bombo, frente a un amplificador Marshall a tope, o en un vocalista gritando. Los toms grabados con MD 421s tienen ese ataque potente y articulado que ha definido los sonidos de batería de rock desde los años 60. A $399, es una inversión que se paga sola en una sesión.",
+        products: [51]
+      },
+      {
+        heading: "The Broadcast King: Electro-Voice RE20",
+        heading_es: "El Rey de la Transmisión: Electro-Voice RE20",
+        content: "The RE20 uses Variable-D technology — essentially no proximity effect, meaning you can work the mic close without bass buildup. This makes it the gold standard for broadcast, podcasting, and voiceover work. But don't pigeonhole it — the RE20 is also a secret weapon on kick drums and bass cabs. The internal shock mount reduces handling noise, and the mid-range presence makes voices sound authoritative. At $449, it's the last broadcast mic you'll ever buy.",
+        content_es: "El RE20 utiliza tecnología Variable-D — esencialmente sin efecto de proximidad, lo que significa que puedes trabajar el micrófono de cerca sin acumulación de graves. Esto lo convierte en el estándar de oro para transmisión, podcasting y locución. Pero no lo encasilles — el RE20 también es un arma secreta en bombos y gabinetes de bajo. La montura antigolpes interna reduce el ruido de manejo, y la presencia en medios hace que las voces suenen autoritarias. A $449, es el último micrófono de transmisión que comprarás.",
+        products: [52]
       }
     ],
     conclusion: "Start with an SM57 — every musician needs one. Add the NT1-A when you want cleaner vocal recordings. The SM7B is perfect if you do a lot of spoken word or want that broadcast sound. The C414 and U87 are pro-level investments. I own all of these and each has its place in my mic locker.",
@@ -254,6 +310,27 @@ const guides = [
         content: "Soundtoys is where you go when you want to break the rules. Decapitator is my secret weapon for adding analog warmth and grit. EchoBoy does delay like nothing else — from pristine digital to warped tape. Little AlterBoy is great for vocal effects. The new SuperPlate reverb and SpaceBlender add modern spatial effects. It's the most creative bundle in my arsenal.",
         content_es: "Soundtoys es a donde vas cuando quieres romper las reglas. Decapitator es mi arma secreta para añadir calidez analógica y textura. EchoBoy hace delay como nada más — desde digital impecable hasta cinta deformada. Little AlterBoy es genial para efectos vocales. El nuevo reverb SuperPlate y SpaceBlender añaden efectos espaciales modernos. Es el bundle más creativo en mi arsenal.",
         products: [32]
+      },
+      {
+        heading: "Reverb Perfection: Valhalla VintageVerb",
+        heading_es: "Perfección de Reverb: Valhalla VintageVerb",
+        content: "Valhalla VintageVerb is the reverb plugin that made expensive hardware verbs obsolete. 19 algorithms model the classic digital reverbs of the 1970s and 80s — Lexicon 224-style concert halls, EMT 250-style plates, and lush modulated spaces that defined decades of recorded music. Three color modes let you dial in the exact era of vibe you need. The interface is deceptively simple — three knobs control a universe of ambience. At $50, there is no better value in audio software. Period.",
+        content_es: "Valhalla VintageVerb es el plugin de reverb que hizo obsoletas las reverbs de hardware caras. 19 algoritmos modelan las reverbs digitales clásicas de los años 70 y 80 — salas de concierto estilo Lexicon 224, placas estilo EMT 250 y exuberantes espacios modulados que definieron décadas de música grabada. Tres modos de color te permiten elegir la era exacta de ambiente que necesitas. La interfaz es engañosamente simple — tres perillas controlan un universo de ambiente. A $50, no hay mejor valor en software de audio. Punto.",
+        products: [58]
+      },
+      {
+        heading: "The Modern Synth: Xfer Serum 2",
+        heading_es: "El Sintetizador Moderno: Xfer Serum 2",
+        content: "Serum defined a generation of electronic music. Serum 2 takes that legacy further with spectral morphing, granular synthesis, dual wavetable oscillators, and an upgraded arpeggiator. The visual feedback makes sound design intuitive — you see the waveform change as you tweak. From Skrillex-style growls to cinematic pads, Serum 2 covers the full spectrum of modern synthesis. The built-in effects rack (16 effects including the new spectral FX) means you can build complete patches without leaving the plugin.",
+        content_es: "Serum definió una generación de música electrónica. Serum 2 lleva ese legado más lejos con morphing espectral, síntesis granular, osciladores wavetable duales y un arpegiador mejorado. La retroalimentación visual hace el diseño de sonido intuitivo — ves la forma de onda cambiar mientras ajustas. Desde growls estilo Skrillex hasta pads cinematográficos, Serum 2 cubre el espectro completo de la síntesis moderna. El rack de efectos integrado (16 efectos incluyendo los nuevos FX espectrales) significa que puedes crear patches completos sin salir del plugin.",
+        products: [59]
+      },
+      {
+        heading: "Your Orchestra Awaits: Spitfire BBC Symphony Orchestra",
+        heading_es: "Tu Orquesta Te Espera: Spitfire BBC Symphony Orchestra",
+        content: "Recorded at the legendary Maida Vale Studios by Spitfire Audio, BBC Symphony Orchestra puts 35 instruments and 47 articulations at your fingertips. Start with the free Discover version to get a taste, then upgrade to Core for $49 to unlock the full range of articulations including legato. The same plugin engine used by composers like Hans Zimmer and Ólafur Arnalds. For film scoring, game music, or adding orchestral textures to pop productions, this is the most accessible entry point into professional orchestral sampling.",
+        content_es: "Grabada en los legendarios Maida Vale Studios por Spitfire Audio, BBC Symphony Orchestra pone 35 instrumentos y 47 articulaciones a tu alcance. Empieza con la versión Discover gratuita para probar, luego actualiza a Core por $49 para desbloquear el rango completo de articulaciones incluyendo legato. El mismo motor de plugin usado por compositores como Hans Zimmer y Ólafur Arnalds. Para bandas sonoras, música de videojuegos o añadir texturas orquestales a producciones pop, este es el punto de entrada más accesible al sampling orquestal profesional.",
+        products: [60]
       }
     ],
     conclusion: "Start with FabFilter Pro-Q 4 (part of the Total Bundle). Add Ozone 12 when you need mastering tools. Get Soundtoys when you want to get creative. These three cover everything from surgical mixing to experimental sound design. I use at least one of them in every session.",
@@ -330,12 +407,6 @@ const guides = [
         content: "Nothing worse than a mic stand slowly sinking during a vocal take or a loose clip dropping your mic. K&M stands are the industry standard — German engineering, zinc die-cast bases, and they last decades. The 210/2 is the standard for good reason. Pair it with a Shure A25D mic clip for SM57/SM58 mics — it's break-resistant and grips the mic like a vise. For studio monitors, the K&M 26725 stands get your speakers to ear height with decoupling spikes for cleaner low end.",
         content_es: "Nada peor que un soporte de micrófono hundiéndose lentamente durante una toma vocal o un clip suelto dejando caer tu micrófono. Uso soportes K&M exclusivamente — ingeniería alemana, bases de zinc fundido a presión, y duran décadas. El 210/2 es el estándar por buenas razones. Combínalo con un clip de micrófono Shure A25D para micrófonos SM57/SM58 — es resistente a roturas y agarra el micrófono como un tornillo de banco. Para monitores de estudio, los soportes K&M 26725 ponen tus altavoces a la altura del oído con puntas de desacoplamiento para graves más limpios.",
         products: [38]
-      },
-      {
-        heading: "Guitar & Bass Cases: Protect Your Instrument",
-        heading_es: "Fundas de Guitarra y Bajo: Protege Tu Instrumento",
-        content: "Your instrument deserves better than leaning against the wall. For everyday transport, the Gator GBE gig bags are padded, rip-resistant, and have backpack straps — the ELECTRIC fits every Strat, Tele, and Les Paul, while the BASS version accommodates full-scale 34' basses. After losing a guitar to a baggage handler in Miami, I never tour without a proper case.",
-        content_es: "Tu instrumento merece algo mejor que apoyarse contra la pared. Para transporte diario, las fundas Gator GBE están acolchadas, son resistentes a desgarros y tienen correas de mochila — la ELECTRIC se adapta a cada Strat, Tele y Les Paul, mientras que la versión BASS acomoda bajos de escala completa de 34'. Después de perder una guitarra por un maletero en Miami, nunca salgo de gira sin un estuche adecuado."
       },
       {
         heading: "Bonus: Studio Essentials Worth Every Penny",
@@ -659,7 +730,7 @@ const guides = [
         heading_es: "Sácalos de Tu Escritorio: Soportes de Monitor K&M",
         content: "Putting monitors on your desk is the single most common mixing mistake. Your desk vibrates, creating resonances that muddy your low end. Desk reflections comb-filter your midrange. The solution? Proper monitor stands. The K&M 26725 stands are German-engineered steel, height-adjustable to get tweeters exactly at ear level, and include floor spikes that mechanically decouple the speaker from the floor — tightening your bass response dramatically. At $89 a pair, monitor stands are the cheapest upgrade that makes the biggest difference. This is not optional.",
         content_es: "Poner monitores en tu escritorio es el error de mezcla más común. Tu escritorio vibra, creando resonancias que embarran tus graves. Las reflexiones del escritorio filtran en peine tus medios. ¿La solución? Soportes de monitor adecuados. Los soportes K&M 26725 son de acero con ingeniería alemana, ajustables en altura para poner los tweeters exactamente al nivel del oído, e incluyen puntas de piso que desacoplan mecánicamente el altavoz del suelo — ajustando dramáticamente tu respuesta de graves. A $89 el par, los soportes de monitor son la mejora más barata que marca la mayor diferencia. Esto no es opcional.",
-        products: [38]
+        products: []
       }
     ],
     conclusion: "Spend $698 on Yamaha HS8s and $89 on K&M stands. That's $787 total for a monitoring setup that will reveal more about your mixes than $3,000 monitors sitting on a desk. The stands matter almost as much as the speakers — don't skip them. Once your monitors are properly positioned, you can hear what your room actually sounds like and make informed treatment decisions.",

@@ -99,6 +99,66 @@ const products = [
       musikproduktiv: "https://www.musik-produktiv.de/shure-sm57.html"
     }
   },
+  {
+    id: 50,
+    title: "Shure SM58",
+    title_es: "Shure SM58",
+    category: "microphones",
+    price: 99,
+    rating: 4.8,
+    reviews: 35678,
+    badge: "legend",
+    desc: "The world's most popular vocal microphone. Used by presidents, pop stars, and pub singers alike. Built like a tank with a tailored frequency response for vocals that cut through any mix.",
+    desc_es: "El micrófono vocal más popular del mundo. Usado por presidentes, estrellas pop y cantantes de bar por igual. Construido como un tanque con respuesta de frecuencia adaptada para voces que cortan cualquier mezcla.",
+    img: "img/sm58.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/SM58--shure-sm58-cardioid-dynamic-vocal-microphone",
+      thomann: "https://www.thomann.co.uk/shure_sm_58_lce.htm",
+      gear4music: "https://www.gear4music.com/PA-DJ-and-Lighting/Shure-SM58-Vocal-Microphone/G5D",
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      amazon: "https://www.amazon.com/dp/B000CZ0R42"
+    }
+  },
+  {
+    id: 51,
+    title: "Sennheiser MD 421",
+    title_es: "Sennheiser MD 421",
+    category: "microphones",
+    price: 399,
+    rating: 4.7,
+    reviews: 8765,
+    badge: "topQuality",
+    desc: "The tom-tom king and guitar cab legend. Five-position bass roll-off switch, handles SPLs up to 160dB. The industry standard dynamic for instruments since 1960.",
+    desc_es: "El rey de los toms y leyenda de gabinetes de guitarra. Interruptor de corte de graves de cinco posiciones, maneja SPLs de hasta 160dB. El dinámico estándar de la industria para instrumentos desde 1960.",
+    img: "img/md421.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/MD421II--sennheiser-md-421-ii-cardioid-dynamic-microphone",
+      thomann: "https://www.thomann.co.uk/sennheiser_md_421_ii.htm",
+      gear4music: "https://www.gear4music.com/PA-DJ-and-Lighting/Sennheiser-MD421-II/1ZX",
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      amazon: "https://www.amazon.com/dp/B0002H0RBS"
+    }
+  },
+  {
+    id: 52,
+    title: "Electro-Voice RE20",
+    title_es: "Electro-Voice RE20",
+    category: "microphones",
+    price: 449,
+    rating: 4.8,
+    reviews: 6543,
+    badge: "legend",
+    desc: "The broadcast standard. Variable-D technology eliminates proximity effect. The definitive choice for podcasting, voiceover, and kick drums.",
+    desc_es: "El estándar de transmisión. La tecnología Variable-D elimina el efecto de proximidad. La elección definitiva para podcasting, locución y bombos.",
+    img: "img/re20.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/RE20--electro-voice-re20-broadcast-microphone",
+      thomann: "https://www.thomann.co.uk/electro_voice_re20.htm",
+      gear4music: "https://www.gear4music.com/PA-DJ-and-Lighting/Electro-Voice-RE20/2KVR",
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      amazon: "https://www.amazon.com/dp/B08P7QTZM5"
+    }
+  },
 
   // ===== GUITARS =====
   {
@@ -360,6 +420,63 @@ const products = [
       musikproduktiv: "https://www.musik-produktiv.de/search"
     }
   },
+  {
+    id: 53,
+    title: "Audient iD14 MkII",
+    title_es: "Audient iD14 MkII",
+    category: "interfaces",
+    price: 299,
+    rating: 4.7,
+    reviews: 3456,
+    badge: "topQuality",
+    desc: "Console-grade preamps in a compact interface. The same Class-A mic pres found in Audient's $50,000 ASP8024 console. Dual headphone outputs and JFET DI input for instruments.",
+    desc_es: "Preamplificadores de grado consola en una interfaz compacta. Los mismos previos de micrófono Clase A que se encuentran en la consola ASP8024 de $50,000 de Audient. Salidas de auriculares duales y entrada DI JFET para instrumentos.",
+    img: "img/audient-id14.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/iD14mkII--audient-id14-mkii-usb-audio-interface",
+      thomann: "https://www.thomann.co.uk/audient_id14_mkii.htm",
+      gear4music: "https://www.gear4music.com/Recording-and-Computers/Audient-iD14-MKII-USB-Audio-Interface/3L4B",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 54,
+    title: "MOTU M2",
+    title_es: "MOTU M2",
+    category: "interfaces",
+    price: 199,
+    rating: 4.6,
+    reviews: 4567,
+    badge: "recommended",
+    desc: "The best value in its class. Full-color LCD metering, ESS Sabre32 Ultra DAC, and loopback for streaming. The only interface under $200 with real-time level monitoring.",
+    desc_es: "El mejor valor en su clase. Medición LCD a todo color, DAC ESS Sabre32 Ultra y loopback para streaming. La única interfaz por menos de $200 con monitoreo de nivel en tiempo real.",
+    img: "img/motu-m2.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/M2--motu-m2-2x2-usb-c-audio-interface",
+      thomann: "https://www.thomann.co.uk/motu_m2.htm",
+      gear4music: "https://www.gear4music.com/Recording-and-Computers/MOTU-M2-2x2-USB-C-Audio-Interface/3GRT",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 55,
+    title: "Universal Audio Volt 2",
+    title_es: "Universal Audio Volt 2",
+    category: "interfaces",
+    price: 189,
+    rating: 4.5,
+    reviews: 2345,
+    badge: "bestSeller",
+    desc: "UA quality at an entry-level price. Vintage Mic Preamp mode emulates the classic UA 610 tube preamp. MIDI I/O and solid build quality with a retro design that stands out.",
+    desc_es: "Calidad UA a precio de entrada. El modo Vintage Mic Preamp emula el clásico previo de tubo UA 610. MIDI I/O y construcción sólida con diseño retro que destaca.",
+    img: "img/ua-volt2.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/Volt2--universal-audio-volt-2-usb-audio-interface",
+      thomann: "https://www.thomann.co.uk/universal_audio_volt_2.htm",
+      gear4music: "https://www.gear4music.com/Recording-and-Computers/Universal-Audio-Volt-2-USB-Audio-Interface/5N5B",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
 
   // ===== MONITORS =====
   {
@@ -523,6 +640,44 @@ const products = [
       musikproduktiv: "https://www.musik-produktiv.de/sony-mdr-7506.html"
     }
   },
+  {
+    id: 56,
+    title: "Beyerdynamic DT 990 Pro",
+    title_es: "Beyerdynamic DT 990 Pro",
+    category: "headphones",
+    price: 169,
+    rating: 4.7,
+    reviews: 28901,
+    badge: "legend",
+    desc: "Open-back mixing headphones with legendary bass extension. The spacious soundstage reveals reverb tails and stereo placement with surgical precision. The DT 770's open-back sibling.",
+    desc_es: "Auriculares de mezcla abiertos con legendaria extensión de graves. El escenario sonoro espacioso revela colas de reverb y colocación estéreo con precisión quirúrgica. El hermano abierto del DT 770.",
+    img: "img/dt990pro.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/DT990Pro--beyerdynamic-dt-990-pro-250-ohm-open-back-studio-headphones",
+      thomann: "https://www.thomann.co.uk/beyerdynamic_dt990pro.htm",
+      gear4music: "https://www.gear4music.com/Recording-and-Computers/beyerdynamic-DT-990-Pro-Headphones-250-Ohm/8GW",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 57,
+    title: "AKG K371",
+    title_es: "AKG K371",
+    category: "headphones",
+    price: 155,
+    rating: 4.5,
+    reviews: 12340,
+    badge: "recommended",
+    desc: "Harman-target tuned for the most natural closed-back sound under $200. Foldable design, detachable cables, and the flattest frequency response in its class.",
+    desc_es: "Sintonizado al objetivo Harman para el sonido cerrado más natural por menos de $200. Diseño plegable, cables desmontables y la respuesta de frecuencia más plana en su clase.",
+    img: "img/akg-k371.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/K371--akg-k371-closed-back-professional-studio-headphones",
+      thomann: "https://www.thomann.co.uk/akg_k371.htm",
+      gear4music: "https://www.gear4music.com/PA-DJ-and-Lighting/AKG-K371-Closed-Back-Studio-Headphones/4Q7C",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
 
   // ===== PLUGINS =====
   {
@@ -602,6 +757,57 @@ const products = [
       pluginboutique: "https://www.pluginboutique.com/product/81-Bundles/89-Complete-Collection/15254-Soundtoys-5-5",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/Soundtoys-55/7F1S",
 
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 58,
+    title: "Valhalla VintageVerb",
+    title_es: "Valhalla VintageVerb",
+    category: "plugins",
+    price: 50,
+    rating: 4.9,
+    reviews: 15678,
+    badge: "legend",
+    desc: "The reverb plugin that changed everything. 19 vintage digital reverb algorithms. Concert halls, plates, chambers, and modulated spaces. At $50, the best value in audio software.",
+    desc_es: "El plugin de reverb que lo cambió todo. 19 algoritmos de reverb digital vintage. Salas de concierto, placas, cámaras y espacios modulados. A $50, el mejor valor en software de audio.",
+    img: "https://valhalladsp.com/wp-content/uploads/2019/05/VintageVerb-GUI-2.2.0-1024x517.png",
+    stores: {
+      pluginboutique: "https://www.pluginboutique.com/product/2-Effects/17-Reverb/1098-Valhalla-VintageVerb",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 59,
+    title: "Xfer Serum 2",
+    title_es: "Xfer Serum 2",
+    category: "plugins",
+    price: 189,
+    rating: 4.8,
+    reviews: 23456,
+    badge: "bestSeller",
+    desc: "The definitive wavetable synthesizer. Spectral morphing, granular synthesis, dual wavetable oscillators, and an arpeggiator. From growling basses to lush pads.",
+    desc_es: "El sintetizador wavetable definitivo. Morphing espectral, síntesis granular, osciladores wavetable duales y un arpegiador. Desde bajos rugientes hasta pads exuberantes.",
+    img: "https://xferrecords.com/cdn/shop/files/Serum2_1.png",
+    stores: {
+      pluginboutique: "https://www.pluginboutique.com/product/1-Instruments/4-Synth/15392-Serum-2",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 60,
+    title: "Spitfire BBC Symphony Orchestra",
+    title_es: "Spitfire BBC Symphony Orchestra",
+    category: "plugins",
+    price: 49,
+    rating: 4.7,
+    reviews: 8901,
+    badge: "recommended",
+    desc: "A full symphony orchestra at your fingertips. Recorded at Maida Vale Studios. 35 instruments, 47 articulations. Start free, upgrade to Core for $49.",
+    desc_es: "Una orquesta sinfónica completa a tu alcance. Grabada en Maida Vale Studios. 35 instrumentos, 47 articulaciones. Empieza gratis, actualiza a Core por $49.",
+    img: "https://d1ph2z1nl1tbmr.cloudfront.net/spitfireaudio.com/originals/BBC_SO_Discover/BBCSO_Artwork_Discover.jpg",
+    stores: {
+      pluginboutique: "https://www.pluginboutique.com/product/1-Instruments/58-Virtual-Instrument/7288-BBC-Symphony-Orchestra-Discover",
       musikproduktiv: "https://www.musik-produktiv.de/search"
     }
   },
@@ -844,7 +1050,8 @@ const storeNames = {
   pluginboutique: "Plugin Boutique",
   gear4music: "Gear4Music",
   sweetwater: "Sweetwater",
-  musikproduktiv: "Musik Produktiv"
+  musikproduktiv: "Musik Produktiv",
+  amazon: "Amazon"
 };
 
 const storeColors = {
@@ -852,7 +1059,8 @@ const storeColors = {
   pluginboutique: "#6366f1",
   gear4music: "#8b5cf6",
   sweetwater: "#6b7280",
-  musikproduktiv: "#78716c"
+  musikproduktiv: "#78716c",
+  amazon: "#ff9900"
 };
 
 const storeIcons = {
@@ -860,5 +1068,6 @@ const storeIcons = {
   pluginboutique: '<img src="img/pluginboutique-icon.png" alt="Plugin Boutique" class="store-icon-img">',
   gear4music: '<img src="img/gear4music-icon.png" alt="Gear4Music" class="store-icon-img">',
   sweetwater: '<img src="img/sweetwater-icon.png" alt="Sweetwater" class="store-icon-img">',
-  musikproduktiv: '<img src="img/musikproduktiv-icon.png" alt="Musik Produktiv" class="store-icon-img" style="width:28px">'
+  musikproduktiv: '<img src="img/musikproduktiv-icon.png" alt="Musik Produktiv" class="store-icon-img" style="width:28px">',
+  amazon: '<i class="fa-brands fa-amazon" style="font-size:15px;"></i>'
 };

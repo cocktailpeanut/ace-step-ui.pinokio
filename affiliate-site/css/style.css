@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -63,10 +61,13 @@ header {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
 }
+
 
 .header-inner {
   max-width: 100%;
@@ -175,7 +176,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-left: auto;
 }
 
 .header-social-link {
@@ -355,6 +355,17 @@ nav {
   color: var(--white);
   margin-bottom: 20px;
   letter-spacing: -1.5px;
+  background: linear-gradient(90deg, var(--white) 0%, var(--white) 40%, #fff 50%, #a0c4ff 55%, var(--white) 60%, var(--white) 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: textShine 2.5s ease-in-out 0.3s;
+}
+
+@keyframes textShine {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 
 .hero h1 span {
@@ -1001,9 +1012,9 @@ nav {
 
 .stores-logos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  max-width: 500px;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  max-width: 360px;
   margin: 0 auto;
   position: relative;
 }
@@ -1011,17 +1022,19 @@ nav {
 .store-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 14px 24px;
+  gap: 4px;
+  padding: 8px 10px;
   border-radius: var(--radius);
   background: var(--bg-card);
   border: 1px solid var(--border);
   color: var(--text-secondary);
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 700;
   text-decoration: none;
   transition: var(--transition);
   justify-content: center;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .store-logo:hover {
@@ -1035,9 +1048,14 @@ nav {
   .stores-logos {
     display: flex;
     gap: 16px;
+    max-width: none;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: none;
+  }
+  .store-logo {
+    padding: 14px 24px;
+    font-size: 14px;
+    gap: 8px;
   }
 }
 
@@ -1215,7 +1233,7 @@ footer ul li a:hover { color: var(--accent); }
   position: fixed;
   top: 0;
   right: 16px;
-  padding-top: 4px;
+  padding-top: 52px;
   z-index: 101;
   opacity: 0;
   pointer-events: none;
@@ -1785,19 +1803,13 @@ footer ul li a:hover { color: var(--accent); }
   display: none;
 }
 
+.guide-detail { scroll-margin-top: 64px; }
+
 /* Responsive */
 @media (max-width: 768px) {
-  .guides-section { padding: 40px 16px; }
-  .guide-grid { grid-template-columns: 1fr; gap: 16px; }
-  .guide-card-title { font-size: 16px; }
-  .guide-detail-title { font-size: 26px; }
-  .guide-detail-img img { aspect-ratio: 16/9; }
-  .guide-detail-intro { font-size: 16px; }
-  .guide-section-heading { font-size: 19px; }
-  .guide-detail-img, .guide-detail-img img { max-height: 300px; }
-  .guide-featured-grid { grid-template-columns: 1fr; }
-  .guide-conclusion { padding: 24px 20px; }
-  .guide-verdict { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .product-search-wrap { max-width: 180px !important; }
+  .product-search-wrap input { font-size: 13px !important; padding: 8px 10px 8px 30px !important; }
+  .product-search-wrap i { font-size: 12px !important; left: 10px !important; }
 }
 
 /* ===== EXISTING RULES BELOW ===== */
@@ -1951,8 +1963,15 @@ footer ul li a:hover { color: var(--accent); }
   .guide-products-cards { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 600px) {
-  .guide-products-cards { grid-template-columns: 1fr; }
+.product-search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .product-search-grid { grid-template-columns: 1fr; gap: 16px; }
 }
 .bg-video {
   position: fixed;
@@ -1969,12 +1988,12 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.75);
   z-index: 1;
   pointer-events: none;
 }
 
-header, .hero, .stats-bar, .featured-cats, .guides-section, .audio-mini, .audio-mini-mobile, .my-setup, .about-section, .stores-section, .mobile-social, footer, .disclosure, .toast, body > *:not(.bg-video):not(#disclosureModal):not(#toast) {
+.hero, .stats-bar, .featured-cats, .guides-section, .audio-mini, .audio-mini-mobile, .my-setup, .about-section, .stores-section, .mobile-social, footer, .disclosure, .toast, body > *:not(header):not(.bg-video):not(#disclosureModal):not(#toast) {
   position: relative;
   z-index: 2;
 }

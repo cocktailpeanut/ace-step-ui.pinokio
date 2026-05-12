@@ -133,6 +133,12 @@ function getResolvedStores(product) {
       s[key] = url;
     }
   });
+  if (product.category !== 'plugins' && product.category !== 'tres') {
+    s.amazon = `https://www.amazon.com/s?k=${encodeURIComponent(product.title)}&tag=topmusicg-20`;
+    if (product.stores.amazon && product.stores.amazon.startsWith('https://www.amazon.com/dp/')) {
+      s.amazon = product.stores.amazon + '?tag=topmusicg-20';
+    }
+  }
   return s;
 }
 
@@ -192,14 +198,11 @@ function renderGuideGrid() {
   }
   grid.innerHTML = filtered.map(g => {
     const catName = getCatName(g.category);
-    const badgeText = g.badge ? t("badge_" + g.badge) : null;
-    const badgeClass = g.badge ? getBadgeClass(g.badge) : "";
     return `
       <div class="guide-card" data-guide="${g.id}">
         <div class="guide-card-img">
           <img src="${g.image}" alt="${currentLang === 'es' && g.title_es ? g.title_es : g.title}" loading="lazy">
           <span class="guide-card-cat">${catName}</span>
-          ${badgeText ? `<span class="guide-card-badge ${badgeClass}">${badgeText}</span>` : ""}
         </div>
         <div class="guide-card-body">
           <h3 class="guide-card-title">${currentLang === 'es' && g.title_es ? g.title_es : g.title}</h3>
@@ -349,7 +352,6 @@ function renderAbout() {
       <div class="about-photo-wrapper">
         <img src="img/me.jpg" alt="Top Musician Gear — Founder" onerror="this.parentElement.innerHTML='<div style=\\'display:flex;align-items:center;justify-content:center;height:100%;font-size:64px;color:var(--accent);\\'>🎵</div>'">
       </div>
-      <a href="mailto:danielcarnago@gmail.com" class="about-email-link"><i class="fa-solid fa-envelope"></i> danielcarnago@gmail.com</a>
     </div>
     <div class="about-content">
       <h2>${t("aboutTitle")}<span>${t("aboutName")}</span></h2>
@@ -500,7 +502,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const te = (p.title_es || "").toLowerCase();
       const d = p.desc.toLowerCase();
       const de = (p.desc_es || "").toLowerCase();
-      return t.includes(q) || te.includes(q) || d.includes(q) || de.includes(q);
+      const c = p.category.toLowerCase();
+      return t.includes(q) || te.includes(q) || d.includes(q) || de.includes(q) || c.includes(q);
     });
     if (filtered.length === 0) {
       results.style.display = "block";
@@ -508,7 +511,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
     results.style.display = "block";
-    results.innerHTML = '<div class="guide-products-cards">' + filtered.map(p => renderProductCard(p.id)).join("") + '</div>';
+    results.innerHTML = '<div class="product-search-grid">' + filtered.map(p => renderProductCard(p.id)).join("") + '</div>';
     results.querySelectorAll(".guide-products-title").forEach(el => el.remove());
   });
 
