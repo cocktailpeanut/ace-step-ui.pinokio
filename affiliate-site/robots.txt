@@ -1,3 +1,17 @@
 User-agent: *
 Allow: /
+Disallow: /js/
+Disallow: /css/
+Sitemap: https://topmusiciangear.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Sitemap: https://topmusiciangear.com/sitemap.xml
+
+User-agent: Bingbot
+Allow: /
+Sitemap: https://topmusiciangear.com/sitemap.xml
+
+User-agent: DuckDuckBot
+Allow: /
 Sitemap: https://topmusiciangear.com/sitemap.xml

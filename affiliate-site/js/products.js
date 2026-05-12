@@ -760,57 +760,6 @@ const products = [
       musikproduktiv: "https://www.musik-produktiv.de/search"
     }
   },
-  {
-    id: 58,
-    title: "Valhalla VintageVerb",
-    title_es: "Valhalla VintageVerb",
-    category: "plugins",
-    price: 50,
-    rating: 4.9,
-    reviews: 15678,
-    badge: "legend",
-    desc: "The reverb plugin that changed everything. 19 vintage digital reverb algorithms. Concert halls, plates, chambers, and modulated spaces. At $50, the best value in audio software.",
-    desc_es: "El plugin de reverb que lo cambió todo. 19 algoritmos de reverb digital vintage. Salas de concierto, placas, cámaras y espacios modulados. A $50, el mejor valor en software de audio.",
-    img: "https://valhalladsp.com/wp-content/uploads/2019/05/VintageVerb-GUI-2.2.0-1024x517.png",
-    stores: {
-      pluginboutique: "https://www.pluginboutique.com/product/2-Effects/17-Reverb/1098-Valhalla-VintageVerb",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
-    }
-  },
-  {
-    id: 59,
-    title: "Xfer Serum 2",
-    title_es: "Xfer Serum 2",
-    category: "plugins",
-    price: 189,
-    rating: 4.8,
-    reviews: 23456,
-    badge: "bestSeller",
-    desc: "The definitive wavetable synthesizer. Spectral morphing, granular synthesis, dual wavetable oscillators, and an arpeggiator. From growling basses to lush pads.",
-    desc_es: "El sintetizador wavetable definitivo. Morphing espectral, síntesis granular, osciladores wavetable duales y un arpegiador. Desde bajos rugientes hasta pads exuberantes.",
-    img: "https://xferrecords.com/cdn/shop/files/Serum2_1.png",
-    stores: {
-      pluginboutique: "https://www.pluginboutique.com/product/1-Instruments/4-Synth/15392-Serum-2",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
-    }
-  },
-  {
-    id: 60,
-    title: "Spitfire BBC Symphony Orchestra",
-    title_es: "Spitfire BBC Symphony Orchestra",
-    category: "plugins",
-    price: 49,
-    rating: 4.7,
-    reviews: 8901,
-    badge: "recommended",
-    desc: "A full symphony orchestra at your fingertips. Recorded at Maida Vale Studios. 35 instruments, 47 articulations. Start free, upgrade to Core for $49.",
-    desc_es: "Una orquesta sinfónica completa a tu alcance. Grabada en Maida Vale Studios. 35 instrumentos, 47 articulaciones. Empieza gratis, actualiza a Core por $49.",
-    img: "https://d1ph2z1nl1tbmr.cloudfront.net/spitfireaudio.com/originals/BBC_SO_Discover/BBCSO_Artwork_Discover.jpg",
-    stores: {
-      pluginboutique: "https://www.pluginboutique.com/product/1-Instruments/58-Virtual-Instrument/7288-BBC-Symphony-Orchestra-Discover",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
-    }
-  },
 
   // ===== PERCUSSION =====
   {
@@ -1051,7 +1000,8 @@ const storeNames = {
   gear4music: "Gear4Music",
   sweetwater: "Sweetwater",
   musikproduktiv: "Musik Produktiv",
-  amazon: "Amazon"
+  amazon: "Amazon",
+  reverb: "Reverb"
 };
 
 const storeColors = {
@@ -1060,7 +1010,8 @@ const storeColors = {
   gear4music: "#8b5cf6",
   sweetwater: "#6b7280",
   musikproduktiv: "#78716c",
-  amazon: "#ff9900"
+  amazon: "#ff9900",
+  reverb: "#d6562b"
 };
 
 const storeIcons = {
@@ -1069,5 +1020,6 @@ const storeIcons = {
   gear4music: '<img src="img/gear4music-icon.png" alt="Gear4Music" class="store-icon-img">',
   sweetwater: '<img src="img/sweetwater-icon.png" alt="Sweetwater" class="store-icon-img">',
   musikproduktiv: '<img src="img/musikproduktiv-icon.png" alt="Musik Produktiv" class="store-icon-img" style="width:28px">',
-  amazon: '<i class="fa-brands fa-amazon" style="font-size:15px;"></i>'
+  amazon: '<i class="fa-brands fa-amazon" style="font-size:15px;"></i>',
+  reverb: "<span style='font-weight:900;font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;background:#d6562b;color:#fff;border-radius:2px;vertical-align:middle;'>R</span>"
 };

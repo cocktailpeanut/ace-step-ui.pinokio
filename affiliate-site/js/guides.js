@@ -311,27 +311,6 @@ const guides = [
         content_es: "Soundtoys es a donde vas cuando quieres romper las reglas. Decapitator es mi arma secreta para añadir calidez analógica y textura. EchoBoy hace delay como nada más — desde digital impecable hasta cinta deformada. Little AlterBoy es genial para efectos vocales. El nuevo reverb SuperPlate y SpaceBlender añaden efectos espaciales modernos. Es el bundle más creativo en mi arsenal.",
         products: [32]
       },
-      {
-        heading: "Reverb Perfection: Valhalla VintageVerb",
-        heading_es: "Perfección de Reverb: Valhalla VintageVerb",
-        content: "Valhalla VintageVerb is the reverb plugin that made expensive hardware verbs obsolete. 19 algorithms model the classic digital reverbs of the 1970s and 80s — Lexicon 224-style concert halls, EMT 250-style plates, and lush modulated spaces that defined decades of recorded music. Three color modes let you dial in the exact era of vibe you need. The interface is deceptively simple — three knobs control a universe of ambience. At $50, there is no better value in audio software. Period.",
-        content_es: "Valhalla VintageVerb es el plugin de reverb que hizo obsoletas las reverbs de hardware caras. 19 algoritmos modelan las reverbs digitales clásicas de los años 70 y 80 — salas de concierto estilo Lexicon 224, placas estilo EMT 250 y exuberantes espacios modulados que definieron décadas de música grabada. Tres modos de color te permiten elegir la era exacta de ambiente que necesitas. La interfaz es engañosamente simple — tres perillas controlan un universo de ambiente. A $50, no hay mejor valor en software de audio. Punto.",
-        products: [58]
-      },
-      {
-        heading: "The Modern Synth: Xfer Serum 2",
-        heading_es: "El Sintetizador Moderno: Xfer Serum 2",
-        content: "Serum defined a generation of electronic music. Serum 2 takes that legacy further with spectral morphing, granular synthesis, dual wavetable oscillators, and an upgraded arpeggiator. The visual feedback makes sound design intuitive — you see the waveform change as you tweak. From Skrillex-style growls to cinematic pads, Serum 2 covers the full spectrum of modern synthesis. The built-in effects rack (16 effects including the new spectral FX) means you can build complete patches without leaving the plugin.",
-        content_es: "Serum definió una generación de música electrónica. Serum 2 lleva ese legado más lejos con morphing espectral, síntesis granular, osciladores wavetable duales y un arpegiador mejorado. La retroalimentación visual hace el diseño de sonido intuitivo — ves la forma de onda cambiar mientras ajustas. Desde growls estilo Skrillex hasta pads cinematográficos, Serum 2 cubre el espectro completo de la síntesis moderna. El rack de efectos integrado (16 efectos incluyendo los nuevos FX espectrales) significa que puedes crear patches completos sin salir del plugin.",
-        products: [59]
-      },
-      {
-        heading: "Your Orchestra Awaits: Spitfire BBC Symphony Orchestra",
-        heading_es: "Tu Orquesta Te Espera: Spitfire BBC Symphony Orchestra",
-        content: "Recorded at the legendary Maida Vale Studios by Spitfire Audio, BBC Symphony Orchestra puts 35 instruments and 47 articulations at your fingertips. Start with the free Discover version to get a taste, then upgrade to Core for $49 to unlock the full range of articulations including legato. The same plugin engine used by composers like Hans Zimmer and Ólafur Arnalds. For film scoring, game music, or adding orchestral textures to pop productions, this is the most accessible entry point into professional orchestral sampling.",
-        content_es: "Grabada en los legendarios Maida Vale Studios por Spitfire Audio, BBC Symphony Orchestra pone 35 instrumentos y 47 articulaciones a tu alcance. Empieza con la versión Discover gratuita para probar, luego actualiza a Core por $49 para desbloquear el rango completo de articulaciones incluyendo legato. El mismo motor de plugin usado por compositores como Hans Zimmer y Ólafur Arnalds. Para bandas sonoras, música de videojuegos o añadir texturas orquestales a producciones pop, este es el punto de entrada más accesible al sampling orquestal profesional.",
-        products: [60]
-      }
     ],
     conclusion: "Start with FabFilter Pro-Q 4 (part of the Total Bundle). Add Ozone 12 when you need mastering tools. Get Soundtoys when you want to get creative. These three cover everything from surgical mixing to experimental sound design. I use at least one of them in every session.",
     conclusion_es: "Empieza con FabFilter Pro-Q 4 (parte del Total Bundle). Añade Ozone 12 cuando necesites herramientas de masterización. Consigue Soundtoys cuando quieras ser creativo. Estos tres cubren todo, desde mezcla quirúrgica hasta diseño de sonido experimental. Uso al menos uno de ellos en cada sesión.",

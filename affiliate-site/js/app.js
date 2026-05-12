@@ -139,6 +139,7 @@ function getResolvedStores(product) {
       s.amazon = product.stores.amazon + '?tag=topmusicg-20';
     }
   }
+  s.reverb = `https://reverb.com/marketplace?query=${encodeURIComponent(product.title)}`;
   return s;
 }
 
