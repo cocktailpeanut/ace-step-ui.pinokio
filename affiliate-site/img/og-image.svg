@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#ffffff"/>
+  <rect x="200" y="120" width="200" height="200" rx="30" fill="#3b82f6"/>
+  <text x="300" y="240" dominant-baseline="central" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-weight="900" font-size="120" letter-spacing="-2" fill="#ffffff">T</text>
+  <text x="300" y="310" dominant-baseline="central" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-weight="900" font-size="48" letter-spacing="-1" fill="#111111">TopMusicianGear</text>
+</svg>

@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
   <rect width="48" height="48" rx="10" fill="#ffffff"/>
-  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-weight="900" font-size="20" letter-spacing="-0.5" fill="#3b82f6">Tmg</text>
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-weight="900" font-size="20" letter-spacing="-0.5">
+    <tspan fill="#3b82f6">T</tspan><tspan fill="#111111">mg</tspan>
+  </text>
 </svg>
