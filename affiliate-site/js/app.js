@@ -140,6 +140,7 @@ function getResolvedStores(product) {
     }
   }
   s.reverb = `https://reverb.com/marketplace?query=${encodeURIComponent(product.title)}`;
+  s.ebay = `https://www.ebay.com/sch/i.html?_nkw=${encodeURIComponent(product.title)}`;
   return s;
 }
 
