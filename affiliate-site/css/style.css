@@ -1224,11 +1224,11 @@ footer ul li a:hover { color: var(--accent); }
 .mobile-nav {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   position: fixed;
   top: 0;
   right: 16px;
-  padding-top: 52px;
+  padding-top: 8px;
   z-index: 101;
   opacity: 0;
   pointer-events: none;
@@ -1840,7 +1840,7 @@ footer ul li a:hover { color: var(--accent); }
   nav { display: none; }
   .audio-mini { display: none; }
   .hamburger { display: flex; }
-  .hero { padding: 20px 20px 56px; }
+  .hero { padding: 8px 20px 40px; }
   .hero h1 { font-size: 30px; margin-bottom: 4px; }
   .hero p { margin-bottom: 16px; }
   .hero-badge { margin-bottom: 8px; }
