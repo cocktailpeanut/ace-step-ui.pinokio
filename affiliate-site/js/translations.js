@@ -2,7 +2,7 @@ const translations = {
   en: {
     disclosureBar: "This site contains affiliate links. We earn a commission if you buy through them at no extra cost to you.",
     disclosureLink: "More info",
-    footerDisclosureText: '<strong>TopMusicianGear</strong> is a participant in affiliate programs including Thomann, Plugin Boutique, Musik Produktiv, Gear4Music, Amazon, Reverb, eBay, and Sweetwater. As an affiliate, we earn from qualifying purchases at no additional cost to you. <a href="#" id="disclosureLink">More info</a>',
+    footerDisclosureText: '<strong>TopMusicianGear</strong> is a participant in affiliate programs including Thomann, Plugin Boutique, Musik Produktiv, Gear4Music, Amazon, Reverb, and Sweetwater. As an affiliate, we earn from qualifying purchases at no additional cost to you. <a href="#" id="disclosureLink">More info</a>',
     heroBadge: "Trusted by musicians worldwide",
     heroTitle: "From Studio To Stage — <span>Gear Reviewed By A Pro Musician</span>",
     heroDesc: "Trusted by a musician with over 20 years of experience on the world's biggest stages — from Glastonbury to Broadway, Abbey Road to the silver screen.",
@@ -78,7 +78,7 @@ const translations = {
     footerContact: "Contact:",
     disclosureTitle: "Affiliate Disclosure",
     disclosureGotIt: "Got it",
-    disclosureText: "TopMusicianGear is a participant in affiliate marketing programs designed to provide a means for sites to earn advertising fees by advertising and linking to partner retailers including Thomann, Plugin Boutique, Musik Produktiv, Gear4Music, Amazon, Reverb, eBay, and Sweetwater. When you click on a product link on this site and make a purchase, we may earn a small commission at no additional cost to you. This helps support the site and allows us to continue creating honest reviews and recommendations. As a Thomann, Musik Produktiv, Gear4Music, Plugin Boutique, Amazon, Reverb, eBay, and Sweetwater affiliate, we earn from qualifying purchases made through our links. All opinions expressed on this site are our own. We only recommend products we genuinely believe in and have personally used or thoroughly researched.",
+    disclosureText: "TopMusicianGear is a participant in affiliate marketing programs designed to provide a means for sites to earn advertising fees by advertising and linking to partner retailers including Thomann, Plugin Boutique, Musik Produktiv, Gear4Music, Amazon, Reverb, and Sweetwater. When you click on a product link on this site and make a purchase, we may earn a small commission at no additional cost to you. This helps support the site and allows us to continue creating honest reviews and recommendations. As a Thomann, Musik Produktiv, Gear4Music, Plugin Boutique, Amazon, Reverb, and Sweetwater affiliate, we earn from qualifying purchases made through our links. All opinions expressed on this site are our own. We only recommend products we genuinely believe in and have personally used or thoroughly researched.",
     catDesc_microphones: "Capture every nuance with the best microphones for studio, broadcast, and stage.",
     catDesc_strings: "Guitars, basses, and everything with strings.",
     catDesc_keyboards: "Pianos, synths, and controllers for every player.",
@@ -125,7 +125,7 @@ const translations = {
   es: {
     disclosureBar: "Este sitio contiene enlaces de afiliado. Ganamos una comisión si compras a través de ellos sin costo extra para ti.",
     disclosureLink: "Más info",
-    footerDisclosureText: '<strong>TopMusicianGear</strong> participa en programas de afiliados incluyendo Thomann, Plugin Boutique, Musik Produktiv, Gear4Music, Amazon, Reverb, eBay, y Sweetwater. Como afiliado, ganamos comisiones por compras realizadas sin costo adicional para ti. <a href="#" id="disclosureLink">Más info</a>',
+    footerDisclosureText: '<strong>TopMusicianGear</strong> participa en programas de afiliados incluyendo Thomann, Plugin Boutique, Musik Produktiv, Gear4Music, Amazon, Reverb, y Sweetwater. Como afiliado, ganamos comisiones por compras realizadas sin costo adicional para ti. <a href="#" id="disclosureLink">Más info</a>',
     heroBadge: "Confiado por músicos de todo el mundo",
     heroTitle: "Del Estudio al Escenario — <span>Equipo Reseñado por un Profesional</span>",
     heroDesc: "Recomendado por un músico con más de 20 años de experiencia en los escenarios más grandes del mundo — de Glastonbury a Broadway, de Abbey Road a la pantalla grande.",

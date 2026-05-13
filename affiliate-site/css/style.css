@@ -1649,7 +1649,6 @@ footer ul li a:hover { color: var(--accent); }
 
 .chip-store:hover { opacity: .85; }
 .chip-store:active { transform: scale(0.9); opacity: 0.6; filter: brightness(1.4); transition: none !important; }
-.chip-store[style*="background:#ffffff"], .chip-store[style*="background: #ffffff"], .chip-store[style*="background:rgb(255"] { color: #333; border: 1px solid #ddd; font-weight: 700; }
 
 .chip-store .icon { display: flex; align-items: center; }
 
@@ -1830,9 +1829,6 @@ footer ul li a:hover { color: var(--accent); }
 
 @media (max-width: 768px) {
   .header-inner { padding: 0 16px; gap: 12px; }
-  html { overflow-x: hidden; }
-  ::-webkit-scrollbar { width: 0 !important; height: 0 !important; display: none !important; }
-  body { overscroll-behavior-x: none; -ms-overflow-style: none; scrollbar-width: none; }
   nav { display: none; }
   nav { display: none; }
   .audio-mini { display: none; }

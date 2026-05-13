@@ -377,7 +377,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/ApolloTXDHE--universal-audio-apollo-twin-by-duo-heritage-edition-10x6-thunderbolt-audio-interface-with-uad-dsp",
       thomann: "https://www.thomann.co.uk/universal_audio_apollo_twin_x_usb_heritage.htm",
 
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      baxmusic: "https://www.bax-shop.co.uk/external-audio-interfaces/universal-audio-apollo-twin-x-quad-gen-2-studio-edition-audio-interface"
     }
   },
   {
@@ -1002,7 +1003,9 @@ const storeNames = {
   musikproduktiv: "Musik Produktiv",
   amazon: "Amazon",
   reverb: "Reverb",
-  ebay: "eBay"
+  andertons: "Andertons",
+  baxmusic: "Bax Music",
+  musicstore: "Music Store"
 };
 
 const storeColors = {
@@ -1013,7 +1016,9 @@ const storeColors = {
   musikproduktiv: "#78716c",
   amazon: "#ff9900",
   reverb: "#d6562b",
-  ebay: "#ffffff"
+  andertons: "#00a8b0",
+  baxmusic: "#e03e2d",
+  musicstore: "#1a3a5c"
 };
 
 const storeIcons = {
@@ -1024,5 +1029,7 @@ const storeIcons = {
   musikproduktiv: '<img src="img/musikproduktiv-icon.png" alt="Musik Produktiv" class="store-icon-img" style="width:28px">',
   amazon: '<i class="fa-brands fa-amazon" style="font-size:15px;"></i>',
   reverb: "<span style='font-weight:900;font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;background:#d6562b;color:#fff;border-radius:2px;vertical-align:middle;'>R</span>",
-  ebay: '<img src="img/ebay-icon.png" alt="eBay" class="store-icon-img">'
+  andertons: "<span style='font-weight:900;font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;background:#00a8b0;color:#fff;border-radius:2px;vertical-align:middle;'>A</span>",
+  baxmusic: '<img src="img/baxmusic-icon.png" alt="Bax Music" class="store-icon-img">',
+  musicstore: '<img src="img/musicstore-icon.png" alt="Music Store" class="store-icon-img">'
 };
