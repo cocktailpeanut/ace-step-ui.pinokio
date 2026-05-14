@@ -137,15 +137,15 @@ function getResolvedStores(product) {
     }
   });
   if (product.category !== 'plugins' && product.category !== 'tres') {
-    s.amazon = `https://www.amazon.com/s?k=${encodeURIComponent(product.title)}&tag=topmusicg-20`;
-    if (product.stores.amazon && product.stores.amazon.startsWith('https://www.amazon.com/dp/')) {
-      s.amazon = product.stores.amazon + '?tag=topmusicg-20';
+    s.amazon = `https://www.amazon.co.uk/s?k=${encodeURIComponent(product.title)}&tag=topmusicg-20`;
+    if (product.stores.amazon && product.stores.amazon.includes('/dp/')) {
+      s.amazon = product.stores.amazon.replace('https://www.amazon.com/', 'https://www.amazon.co.uk/') + '?tag=topmusicg-20';
     }
   }
   s.reverb = `https://reverb.com/marketplace?query=${encodeURIComponent(product.title)}`;
   if (!product.stores.andertons) s.andertons = `https://www.andertons.co.uk/search.php?search_query=${encodeURIComponent(product.title)}&irgwc=1&irpid=7292297`;
   if (!product.stores.baxmusic) s.baxmusic = `https://www.bax-shop.co.uk/catalogsearch/result/?q=${encodeURIComponent(product.title)}`;
-  if (!product.stores.musicstore) s.musicstore = `https://www.musicstore.com/search?q=${encodeURIComponent(product.title)}`;
+  if (!product.stores.musicstore) s.musicstore = `https://www.musicstore.com/en_GB/GBP/search?SearchTerm=${encodeURIComponent(product.title)}`;
   return s;
 }
 
