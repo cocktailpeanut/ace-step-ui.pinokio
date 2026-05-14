@@ -997,6 +997,177 @@ const products = [
     stores: {
       thomann: "https://www.thomann.co.uk/thomann_tres_cubano_deluxe_ccw.htm"
     }
+  },
+  {
+    id: 61,
+    title: "Fender Player Stratocaster",
+    title_es: "Fender Player Stratocaster",
+    category: "guitars",
+    price: 849,
+    rating: 4.6,
+    reviews: 6789,
+    badge: "bestSeller",
+    desc: "The gateway to Fender's iconic sound. Alder body, maple neck with 9.5-inch radius fingerboard, and three Player Series pickups. The Strat that launched a thousand bands — from indie rock to Latin pop, this is the most versatile guitar money can buy.",
+    desc_es: "La puerta de entrada al sonido icónico de Fender. Cuerpo de aliso, mástil de arce con diapasón de radio 9.5 pulgadas y tres pastillas Player Series. La Strat que lanzó mil bandas — desde indie rock hasta pop latino, esta es la guitarra más versátil que el dinero puede comprar.",
+    img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/517168.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/StratPlayerMNBL--fender-player-stratocaster-maple-black",
+      thomann: "https://www.thomann.co.uk/fender_player_stratocaster_mn_blk.htm",
+      gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Player-Stratocaster-Olympic-White/27HN",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 62,
+    title: "Fender Player Telecaster",
+    title_es: "Fender Player Telecaster",
+    category: "guitars",
+    price: 849,
+    rating: 4.6,
+    reviews: 5432,
+    badge: "bestSeller",
+    desc: "The working musician's guitar. Two Player Series single-coils deliver that unmistakable Tele twang — from Nashville to Havana, the Telecaster has defined country, rock, blues, and Latin music for over 70 years. Simple, rugged, and absolutely timeless.",
+    desc_es: "La guitarra del músico trabajador. Dos pastillas single-coil Player Series ofrecen ese inconfundible twang de Telecaster — desde Nashville hasta La Habana, la Telecaster ha definido el country, rock, blues y la música latina por más de 70 años. Simple, robusta y absolutamente atemporal.",
+    img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/517173.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/TelePlayerMNBL--fender-player-telecaster-maple-black",
+      thomann: "https://www.thomann.co.uk/fender_player_telecaster_mn_blk.htm",
+      gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Player-Telecaster-Black/27HR",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 63,
+    title: "Fender American Professional II Telecaster",
+    title_es: "Fender American Professional II Telecaster",
+    category: "guitars",
+    price: 1799,
+    rating: 4.7,
+    reviews: 3456,
+    badge: "premium",
+    desc: "Professional-grade Telecaster with V-Mod II pickups for enhanced clarity and punch. Deep C neck profile fits your hand like a glove. The Tele that bridges vintage soul with modern performance — ideal for session players and touring musicians.",
+    desc_es: "Telecaster de grado profesional con pastillas V-Mod II para claridad y potencia mejoradas. Perfil de mástil Deep C que se adapta a tu mano como un guante. La Tele que une el alma vintage con el rendimiento moderno — ideal para músicos de sesión y giras.",
+    img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/500466.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/TeleAP2BCH--fender-american-professional-ii-telecaster-butterscotch-blonde",
+      thomann: "https://www.thomann.co.uk/fender_american_professional_ii_telecaster.htm",
+      gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-American-Professional-II-Telecaster-Butterscotch-Blonde/5M4A",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 64,
+    title: "Fender American Ultra Stratocaster",
+    title_es: "Fender American Ultra Stratocaster",
+    category: "guitars",
+    price: 2299,
+    rating: 4.8,
+    reviews: 2345,
+    badge: "premium",
+    desc: "Fender's most advanced Stratocaster. Ultra Noiseless pickups, sculpted neck heel for upper fret access, and a compound-radius fingerboard. From delicate jazz chords to screaming Latin rock leads, this is the ultimate Strat for the discerning professional.",
+    desc_es: "La Stratocaster más avanzada de Fender. Pastillas Ultra Noiseless, talón esculpido para acceso a trastes superiores y diapasón de radio compuesto. Desde delicados acordes de jazz hasta desgarradores leads de rock latino, esta es la Strat definitiva para el profesional exigente.",
+    img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/574158.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/UltraStratCSB--fender-american-ultra-stratocaster-cosmic-sapphire",
+      thomann: "https://www.thomann.co.uk/fender_american_ultra_stratocaster_csb.htm",
+      gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-American-Ultra-Stratocaster-Cosmic-Sapphire-Rosewood/6XIU",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 65,
+    title: "Fender Player II Jazzmaster",
+    title_es: "Fender Player II Jazzmaster",
+    category: "guitars",
+    price: 949,
+    rating: 4.5,
+    reviews: 1890,
+    badge: "recommended",
+    desc: "The offset icon reborn. Player II pickups with the distinctive Jazzmaster tone — warm, round, and complex. The floating vibrato adds shimmer and depth. Loved by surf, indie, and alternative players worldwide. A cult classic that became a legend.",
+    desc_es: "El icono offset renacido. Pastillas Player II con el distintivo tono Jazzmaster — cálido, redondo y complejo. El vibrato flotante añade brillo y profundidad. Amado por músicos de surf, indie y alternativa mundialmente. Un clásico de culto que se convirtió en leyenda.",
+    img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/566033.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/JazzmasterP2MN--fender-player-ii-jazzmaster-maple-3-color-sunburst",
+      thomann: "https://www.thomann.co.uk/fender_player_ii_jazzmaster_3cs.htm",
+      gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Player-II-Jazzmaster-3-Color-Sunburst-Maple/65A3",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 66,
+    title: "Fender Player Precision Bass",
+    title_es: "Fender Player Precision Bass",
+    category: "guitars",
+    price: 899,
+    rating: 4.6,
+    reviews: 4567,
+    badge: "legend",
+    desc: "The bass that invented modern music. The P-Bass delivers that punchy, authoritative low-end that drives salsa, funk, rock, and Latin jazz. Split-coil pickup for rich, balanced tone. The foundation of every great rhythm section — from James Brown to Buena Vista.",
+    desc_es: "El bajo que inventó la música moderna. El P-Bass ofrece ese golpe grave y autoritario que impulsa la salsa, el funk, el rock y el jazz latino. Pastilla split-coil para un tono rico y equilibrado. La base de cada gran sección rítmica — desde James Brown hasta Buena Vista.",
+    img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/517174.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/PBassPlayerMNBL--fender-player-precision-bass-maple-black",
+      thomann: "https://www.thomann.co.uk/fender_player_precision_bass_mn_blk.htm",
+      gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Player-Precision-Bass-Black/27HL",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 67,
+    title: "Fender Player Jazz Bass",
+    title_es: "Fender Player Jazz Bass",
+    category: "guitars",
+    price: 899,
+    rating: 4.6,
+    reviews: 4321,
+    badge: "legend",
+    desc: "The voice of modern bass. Two single-coil pickups deliver that punchy, articulate tone that cuts through any mix. The slim neck profile makes complex Latin bass lines and jazz walking lines effortless. From Jaco to today, the Jazz Bass defines bass tone.",
+    desc_es: "La voz del bajo moderno. Dos pastillas single-coil ofrecen ese tono golpeado y articulado que corta cualquier mezcla. El perfil de mástil delgado hace que las líneas de bajo latino complejas y las líneas de walking jazz sean sin esfuerzo. Desde Jaco hasta hoy, el Jazz Bass define el tono del bajo.",
+    img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/517175.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/JBassPlayerMNBL--fender-player-jazz-bass-maple-black",
+      thomann: "https://www.thomann.co.uk/fender_player_jazz_bass_mn_blk.htm",
+      gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Player-Jazz-Bass-Black/27HQ",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 68,
+    title: "Fender CD-60S Acoustic",
+    title_es: "Fender CD-60S Acústica",
+    category: "guitars",
+    price: 219,
+    rating: 4.4,
+    reviews: 18907,
+    badge: "bestSeller",
+    desc: "The acoustic that started it all for millions of players. Solid spruce top with mahogany back and sides delivers warm, balanced tone. Easy-playing neck profile makes it the ideal first acoustic or reliable campfire companion. Fender quality at an unbeatable price.",
+    desc_es: "La acústica que lo empezó todo para millones de músicos. Tapa sólida de abeto con fondo y aros de caoba ofrece un tono cálido y equilibrado. El perfil de mástil fácil de tocar la convierte en la acústica ideal para principiantes o compañera de fogata. Calidad Fender a un precio imbatible.",
+    img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/515157.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/CD60S--fender-cd-60s-dreadnought-acoustic-guitar-natural",
+      thomann: "https://www.thomann.co.uk/fender_cd_60s_dreadnought_nat.htm",
+      gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-CD-60S-Dreadnought-Acoustic-Natural/17FJ",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 69,
+    title: "Fender Paramount OM-78E Acoustic-Electric",
+    title_es: "Fender Paramount OM-78E Acústico-Eléctrica",
+    category: "guitars",
+    price: 749,
+    rating: 4.6,
+    reviews: 1234,
+    badge: "topQuality",
+    desc: "Fender's premium acoustic series. Solid mahogany top with mahogany back and sides delivers rich, complex tone. Orchestra Model body shape is perfect for fingerstyle and Latin guitar techniques. Fishman electronics for stage-ready amplified sound.",
+    desc_es: "La serie acústica premium de Fender. Tapa maciza de caoba con fondo y aros de caoba ofrece un tono rico y complejo. La forma de cuerpo Orchestra Model es perfecta para fingerstyle y técnicas de guitarra latina. Electrónica Fishman para sonido amplificado listo para el escenario.",
+    img: "https://thumbs.static-thomann.de/thumb/thumb600x600/pics/prod/574163.jpg",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/ParamountOM78E--fender-paramount-om-78e-acoustic-electric-guitar",
+      thomann: "https://www.thomann.co.uk/fender_paramount_om_78e.htm",
+      gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Paramount-OM-78E-Acoustic-Electric-Guitar-Natural/4YN4",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
   }
 ];
 

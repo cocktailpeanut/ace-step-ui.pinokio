@@ -212,6 +212,16 @@ nav {
   .header-social {
     display: none;
   }
+  .header-social-col {
+    display: none !important;
+  }
+}
+
+.header-social-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
 
 .lang-btn {
