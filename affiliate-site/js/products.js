@@ -1014,7 +1014,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/StratPlayerMNBL--fender-player-stratocaster-maple-black",
       thomann: "https://www.thomann.co.uk/fender_player_stratocaster_mn_blk.htm",
       gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Player-Stratocaster-Olympic-White/27HN",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      fender: "https://www.fender.com/search?type=product&q=Fender%20Player%20Stratocaster"
     }
   },
   {
@@ -1033,7 +1034,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/TelePlayerMNBL--fender-player-telecaster-maple-black",
       thomann: "https://www.thomann.co.uk/fender_player_telecaster_mn_blk.htm",
       gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Player-Telecaster-Black/27HR",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      fender: "https://www.fender.com/search?type=product&q=Fender%20Player%20Telecaster"
     }
   },
   {
@@ -1052,7 +1054,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/TeleAP2BCH--fender-american-professional-ii-telecaster-butterscotch-blonde",
       thomann: "https://www.thomann.co.uk/fender_american_professional_ii_telecaster.htm",
       gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-American-Professional-II-Telecaster-Butterscotch-Blonde/5M4A",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      fender: "https://www.fender.com/search?type=product&q=Fender%20American%20Professional%20II%20Telecaster"
     }
   },
   {
@@ -1071,7 +1074,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/UltraStratCSB--fender-american-ultra-stratocaster-cosmic-sapphire",
       thomann: "https://www.thomann.co.uk/fender_american_ultra_stratocaster_csb.htm",
       gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-American-Ultra-Stratocaster-Cosmic-Sapphire-Rosewood/6XIU",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      fender: "https://www.fender.com/search?type=product&q=Fender%20American%20Ultra%20Stratocaster"
     }
   },
   {
@@ -1090,7 +1094,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/JazzmasterP2MN--fender-player-ii-jazzmaster-maple-3-color-sunburst",
       thomann: "https://www.thomann.co.uk/fender_player_ii_jazzmaster_3cs.htm",
       gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Player-II-Jazzmaster-3-Color-Sunburst-Maple/65A3",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      fender: "https://www.fender.com/search?type=product&q=Fender%20Player%20II%20Jazzmaster"
     }
   },
   {
@@ -1109,7 +1114,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/PBassPlayerMNBL--fender-player-precision-bass-maple-black",
       thomann: "https://www.thomann.co.uk/fender_player_precision_bass_mn_blk.htm",
       gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Player-Precision-Bass-Black/27HL",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      fender: "https://www.fender.com/search?type=product&q=Fender%20Player%20Precision%20Bass"
     }
   },
   {
@@ -1128,7 +1134,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/JBassPlayerMNBL--fender-player-jazz-bass-maple-black",
       thomann: "https://www.thomann.co.uk/fender_player_jazz_bass_mn_blk.htm",
       gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Player-Jazz-Bass-Black/27HQ",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      fender: "https://www.fender.com/search?type=product&q=Fender%20Player%20Jazz%20Bass"
     }
   },
   {
@@ -1147,7 +1154,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/CD60S--fender-cd-60s-dreadnought-acoustic-guitar-natural",
       thomann: "https://www.thomann.co.uk/fender_cd_60s_dreadnought_nat.htm",
       gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-CD-60S-Dreadnought-Acoustic-Natural/17FJ",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      fender: "https://www.fender.com/search?type=product&q=Fender%20CD-60S%20Acoustic"
     }
   },
   {
@@ -1166,14 +1174,15 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/ParamountOM78E--fender-paramount-om-78e-acoustic-electric-guitar",
       thomann: "https://www.thomann.co.uk/fender_paramount_om_78e.htm",
       gear4music: "https://www.gear4music.com/Guitar-and-Bass/Fender-Paramount-OM-78E-Acoustic-Electric-Guitar-Natural/4YN4",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      fender: "https://www.fender.com/search?type=product&q=Fender%20Paramount%20OM-78E%20Acoustic-Electric"
     }
   }
 ];
 
 const categoryInfo = {
   microphones: { name: "Microphones", icon: '<i class="fa-solid fa-microphone"></i>', desc: "Capture every nuance with the best microphones for studio, broadcast, and stage." },
-  guitars: { name: "Guitars", icon: '<i class="fa-solid fa-guitar"></i>', desc: "From strats to acoustics, find your perfect axe." },
+  guitars: { name: "Guitars & Basses", icon: '<i class="fa-solid fa-guitar"></i>', desc: "From strats to acoustics, find your perfect axe." },
   strings: { name: "Strings", icon: '<i class="fa-solid fa-guitar"></i>', desc: "Guitars, basses, and everything with strings." },
   keyboards: { name: "Keyboards", icon: '<i class="fa-solid fa-keyboard"></i>', desc: "Pianos, synths, and controllers for every player." },
   interfaces: { name: "Interfaces", icon: '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="5" width="22" height="14" rx="2"/><rect x="4" y="9" width="3" height="6" rx="0.8" fill="currentColor" opacity="0.6"/><circle cx="14" cy="12" r="3"/><circle cx="14" cy="12" r="1.2" fill="currentColor"/><rect x="19" y="10" width="1.5" height="4" rx="0.5" fill="currentColor" opacity="0.6"/></svg>', desc: "Connect your sound with pristine audio conversion." },
@@ -1195,7 +1204,8 @@ const storeNames = {
   reverb: "Reverb",
   andertons: "Andertons",
   baxmusic: "Bax Music",
-  musicstore: "Music Store"
+  musicstore: "Music Store",
+  fender: "Fender"
 };
 
 const storeColors = {
@@ -1208,7 +1218,8 @@ const storeColors = {
   reverb: "#d6562b",
   andertons: "#000000",
   baxmusic: "#c30067",
-  musicstore: "#1a3a5c"
+  musicstore: "#1a3a5c",
+  fender: "#000000"
 };
 
 const storeIcons = {
@@ -1220,6 +1231,7 @@ const storeIcons = {
   amazon: '<i class="fa-brands fa-amazon" style="font-size:15px;"></i>',
   reverb: "<span style='font-weight:900;font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;background:#d6562b;color:#fff;border-radius:2px;vertical-align:middle;'>R</span>",
   andertons: "<span style='font-weight:900;font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;background:#000;color:#fff;border-radius:2px;vertical-align:middle;'>A</span>",
-  baxmusic: "<span style='display:inline-flex;align-items:end;justify-content:center;gap:1px;width:16px;height:16px;background:#c30067;border-radius:2px;overflow:hidden;vertical-align:middle;padding:0 0 2px;'><span style='display:block;width:2px;height:6px;background:#000;border-radius:1px 1px 0 0;'></span><span style='display:block;width:2px;height:12px;background:#000;border-radius:1px 1px 0 0;'></span><span style='display:block;width:2px;height:9px;background:#000;border-radius:1px 1px 0 0;'></span><span style='display:block;width:2px;height:14px;background:#000;border-radius:1px 1px 0 0;'></span></span>",
-  musicstore: '<img src="img/musicstore-icon.png" alt="Music Store" class="store-icon-img">'
+  baxmusic: "<span style='display:inline-flex;align-items:center;justify-content:center;gap:2px;width:16px;height:16px;background:#c30067;color:#000;border-radius:2px;overflow:hidden;vertical-align:middle;'><span style='display:block;width:2px;height:10px;background:#000;border-radius:1px;'></span><span style='display:block;width:2px;height:10px;background:#000;border-radius:1px;'></span><span style='display:block;width:2px;height:10px;background:#000;border-radius:1px;'></span><span style='display:block;width:2px;height:10px;background:#000;border-radius:1px;'></span></span>",
+  musicstore: '<img src="img/musicstore-icon.png" alt="Music Store" class="store-icon-img">',
+  fender: '<img src="img/fender-icon.svg" alt="Fender" class="store-icon-img">'
 };
