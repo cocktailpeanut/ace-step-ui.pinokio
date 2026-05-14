@@ -17,7 +17,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/shure_sm_7_db.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/Shure-SM7B-Dynamic-Studio-Microphone/G6X",
 
-      musikproduktiv: "https://www.musik-produktiv.de/shure-sm7b.html"
+      musikproduktiv: "https://www.musik-produktiv.de/shure-sm7b.html",
+      baxmusic: "https://www.bax-shop.co.uk/dynamic-vocal-microphones/shure-sm7b-dynamic-vocal-studio-microphone"
     }
   },
   {
@@ -37,7 +38,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/neumann_u87_ai.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/Neumann-U87-AI-Studio-Microphone-Set-Nickel/6ED",
 
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      baxmusic: "https://www.bax-shop.co.uk/large-diaphragm-condenser-microphones/neumann-u-87-ai-studio-set-large-diaphragm-condenser-microphone"
     }
   },
   {
@@ -56,7 +58,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/rode_nt1a_complete_vocal_recording.htm",
       gear4music: "https://www.gear4music.com/G4M/Rode-NT1A-Studio-Condenser-Secondhand/7XKK",
 
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      baxmusic: "https://www.bax-shop.co.uk/large-diaphragm-condenser-microphones/rode-nt1-signature-series-black-large-diaphragm-condenser-microphone"
     }
   },
   {
@@ -76,7 +79,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/akg_c414_xlii.htm",
       gear4music: "https://www.gear4music.com/PA-DJ-and-Lighting/AKG-C414XL-II-Condenser-Microphone/1ZV",
 
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      baxmusic: "https://www.bax-shop.co.uk/large-diaphragm-condenser-microphones/akg-c-414-xlii-studio-condenser-microphone"
     }
   },
   {
@@ -96,7 +100,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/shure_sm57_lc.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/Shure-SM57-Dynamic-Instrument-Microphone/4ZV",
 
-      musikproduktiv: "https://www.musik-produktiv.de/shure-sm57.html"
+      musikproduktiv: "https://www.musik-produktiv.de/shure-sm57.html",
+      baxmusic: "https://www.bax-shop.co.uk/dynamic-instrument-microphones/shure-sm-57-dynamic-instrument-microphone"
     }
   },
   {
@@ -116,7 +121,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/shure_sm_58_lce.htm",
       gear4music: "https://www.gear4music.com/PA-DJ-and-Lighting/Shure-SM58-Vocal-Microphone/G5D",
       musikproduktiv: "https://www.musik-produktiv.de/search",
-      amazon: "https://www.amazon.com/dp/B000CZ0R42"
+      amazon: "https://www.amazon.com/dp/B000CZ0R42",
+      baxmusic: "https://www.bax-shop.co.uk/dynamic-vocal-microphones/shure-sm-58-dynamic-vocal-microphone"
     }
   },
   {
@@ -358,7 +364,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/focusrite_scarlett_2i2_studio_4th_gen.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/Focusrite-Scarlett-2i2-4th-Gen-Audio-Interface/5O8G",
 
-      musikproduktiv: "https://www.musik-produktiv.de/focusrite-scarlett-2i2-4th-gen.html"
+      musikproduktiv: "https://www.musik-produktiv.de/focusrite-scarlett-2i2-4th-gen.html",
+      baxmusic: "https://www.bax-shop.co.uk/external-audio-interfaces/focusrite-scarlett-2i2-4th-gen-audio-interface"
     }
   },
   {
@@ -398,7 +405,9 @@ const products = [
       thomann: "https://www.thomann.co.uk/rme_babyface_pro_fs.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/RME-Babyface-Pro-FS/37CM",
 
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      andertons: "https://www.andertons.co.uk/rme-babyface-pro-fs-24-channel-192-khz-bus-powered-pro-usb-20-audio-interface/",
+      baxmusic: "https://www.bax-shop.co.uk/external-audio-interface/rme-babyface-pro-fs-audio-interface"
     }
   },
   {
@@ -418,7 +427,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/ssl_2_mkii_601306.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/SSL-2and-MKII-2-Channel-USB-Audio-Interface/6OZA",
 
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      baxmusic: "https://www.bax-shop.co.uk/external-audio-interfaces/solid-state-logic-ssl-2-mkii-audio-interface"
     }
   },
   {
@@ -437,7 +447,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/iD14mkII--audient-id14-mkii-usb-audio-interface",
       thomann: "https://www.thomann.co.uk/audient_id14_mkii.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/Audient-iD14-MKII-USB-Audio-Interface/3L4B",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      baxmusic: "https://www.bax-shop.co.uk/external-audio-interface/audient-id14-mkii-usb-c-audio-interface"
     }
   },
   {
@@ -456,7 +467,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/M2--motu-m2-2x2-usb-c-audio-interface",
       thomann: "https://www.thomann.co.uk/motu_m2.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/MOTU-M2-2x2-USB-C-Audio-Interface/3GRT",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      baxmusic: "https://www.bax-shop.co.uk/external-audio-interface/motu-m2-audio-interface"
     }
   },
   {
@@ -497,7 +509,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/yamaha_hs_8_bundle.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/Yamaha-HS8-Active-Studio-Monitor-Pair/6V1J",
 
-      musikproduktiv: "https://www.musik-produktiv.de/yamaha-hs-8.html"
+      musikproduktiv: "https://www.musik-produktiv.de/yamaha-hs-8.html",
+      baxmusic: "https://www.bax-shop.co.uk/studio-monitor/yamaha-hs8-mp-matched-pair-active-studio-monitors-set-of-2-black"
     }
   },
   {
@@ -537,7 +550,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/adam_a7v.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/ADAM-Audio-A7V-Active-Studio-Monitor-Single/4QAJ",
 
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      baxmusic: "https://www.bax-shop.co.uk/studio-monitor/adam-a7v-active-studio-monitor-single-unit"
     }
   },
   {
@@ -579,7 +593,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/beyerdynamic_dt770pro.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/beyerdynamic-DT-770-Pro-Headphones-250-Ohm/8GU",
 
-      musikproduktiv: "https://www.musik-produktiv.de/beyerdynamic-dt-770-pro-250-ohm.html"
+      musikproduktiv: "https://www.musik-produktiv.de/beyerdynamic-dt-770-pro-250-ohm.html",
+      baxmusic: "https://www.bax-shop.co.uk/studio-headphones/beyerdynamic-dt770-pro-80-ohm"
     }
   },
   {
@@ -638,7 +653,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/sony_mdr7506_kopfhoerer.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/Sony-MDR-7506-1-Professional-Stereo-Headphones/26Z8",
 
-      musikproduktiv: "https://www.musik-produktiv.de/sony-mdr-7506.html"
+      musikproduktiv: "https://www.musik-produktiv.de/sony-mdr-7506.html",
+      baxmusic: "https://www.bax-shop.co.uk/studio-headphones/sony-mdr-7506-headphones"
     }
   },
   {
@@ -676,7 +692,8 @@ const products = [
       sweetwater: "https://www.sweetwater.com/store/detail/K371--akg-k371-closed-back-professional-studio-headphones",
       thomann: "https://www.thomann.co.uk/akg_k371.htm",
       gear4music: "https://www.gear4music.com/PA-DJ-and-Lighting/AKG-K371-Closed-Back-Studio-Headphones/4Q7C",
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      baxmusic: "https://www.bax-shop.co.uk/studio-headphones/akg-k371-closed-folding-studio-headphones"
     }
   },
 
@@ -697,7 +714,8 @@ const products = [
       pluginboutique: "https://www.pluginboutique.com/product/1-Instruments/55-Kontakt-Instrument/13633-Kontakt-8",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/Native-Instruments-Kontakt-8/6NPI",
 
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      baxmusic: "https://www.bax-shop.co.uk/instrument-plugins/native-instruments-kontakt-8-download"
     }
   },
   {
@@ -912,7 +930,8 @@ const products = [
       thomann: "https://www.thomann.co.uk/ssl_uf8.htm",
       gear4music: "https://www.gear4music.com/Recording-and-Computers/SSL-UF8-Advanced-DAW-Controller/3QTK",
 
-      musikproduktiv: "https://www.musik-produktiv.de/search"
+      musikproduktiv: "https://www.musik-produktiv.de/search",
+      baxmusic: "https://www.bax-shop.co.uk/midi-studio-controllers/solid-state-logic-uf8-daw-controller"
     }
   },
   {
@@ -1016,8 +1035,8 @@ const storeColors = {
   musikproduktiv: "#78716c",
   amazon: "#ff9900",
   reverb: "#d6562b",
-  andertons: "#00a8b0",
-  baxmusic: "#e03e2d",
+  andertons: "#000000",
+  baxmusic: "#c30067",
   musicstore: "#1a3a5c"
 };
 
@@ -1029,7 +1048,7 @@ const storeIcons = {
   musikproduktiv: '<img src="img/musikproduktiv-icon.png" alt="Musik Produktiv" class="store-icon-img" style="width:28px">',
   amazon: '<i class="fa-brands fa-amazon" style="font-size:15px;"></i>',
   reverb: "<span style='font-weight:900;font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;background:#d6562b;color:#fff;border-radius:2px;vertical-align:middle;'>R</span>",
-  andertons: "<span style='font-weight:900;font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;background:#00a8b0;color:#fff;border-radius:2px;vertical-align:middle;'>A</span>",
-  baxmusic: '<img src="img/baxmusic-icon.png" alt="Bax Music" class="store-icon-img">',
+  andertons: "<span style='font-weight:900;font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;background:#000;color:#fff;border-radius:2px;vertical-align:middle;'>A</span>",
+  baxmusic: "<span style='display:inline-flex;align-items:end;justify-content:center;gap:1px;width:16px;height:16px;background:#c30067;border-radius:2px;overflow:hidden;vertical-align:middle;padding:0 0 2px;'><span style='display:block;width:2px;height:6px;background:#000;border-radius:1px 1px 0 0;'></span><span style='display:block;width:2px;height:12px;background:#000;border-radius:1px 1px 0 0;'></span><span style='display:block;width:2px;height:9px;background:#000;border-radius:1px 1px 0 0;'></span><span style='display:block;width:2px;height:14px;background:#000;border-radius:1px 1px 0 0;'></span></span>",
   musicstore: '<img src="img/musicstore-icon.png" alt="Music Store" class="store-icon-img">'
 };
