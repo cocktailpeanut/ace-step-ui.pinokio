@@ -2,6 +2,8 @@ User-agent: *
 Allow: /
 Disallow: /js/
 Disallow: /css/
+Disallow: /video/
+Disallow: /audio/
 Sitemap: https://topmusiciangear.com/sitemap.xml
 
 User-agent: Googlebot

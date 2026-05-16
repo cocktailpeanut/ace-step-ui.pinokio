@@ -132,20 +132,14 @@ function getResolvedStores(product) {
     } else {
       s[key] = url;
     }
-    if (key === 'andertons' && !url.includes('irpid')) {
-      s[key] = url + (url.includes('?') ? '&' : '?') + 'irgwc=1&irpid=7292297';
-    }
   });
   if (product.category !== 'plugins' && product.category !== 'tres') {
-    s.amazon = `https://www.amazon.co.uk/s?k=${encodeURIComponent(product.title)}&tag=topmusicg-20`;
-    if (product.stores.amazon && product.stores.amazon.includes('/dp/')) {
-      s.amazon = product.stores.amazon.replace('https://www.amazon.com/', 'https://www.amazon.co.uk/') + '?tag=topmusicg-20';
+    s.amazon = `https://www.amazon.com/s?k=${encodeURIComponent(product.title)}&tag=topmusicg-20`;
+    if (product.stores.amazon && product.stores.amazon.startsWith('https://www.amazon.com/dp/')) {
+      s.amazon = product.stores.amazon + '?tag=topmusicg-20';
     }
   }
   s.reverb = `https://reverb.com/marketplace?query=${encodeURIComponent(product.title)}`;
-  if (!product.stores.andertons) s.andertons = `https://www.andertons.co.uk/search.php?search_query=${encodeURIComponent(product.title)}&irgwc=1&irpid=7292297`;
-  if (!product.stores.baxmusic) s.baxmusic = `https://www.bax-shop.co.uk/catalogsearch/result/?q=${encodeURIComponent(product.title)}`;
-  if (!product.stores.musicstore) s.musicstore = `https://www.musicstore.com/en_GB/GBP/search?SearchTerm=${encodeURIComponent(product.title)}`;
   return s;
 }
 
@@ -398,7 +392,7 @@ function handleNavClick(target) {
     renderGuideGrid();
     setTimeout(() => {
       const el = document.querySelector("#guides .section-header") || document.getElementById("guides");
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (el) el.scrollIntoView({ behavior: "smooth" });
     }, 200);
   } else if (target === "mysetup") {
     setTimeout(() => {
@@ -467,31 +461,30 @@ document.addEventListener("DOMContentLoaded", () => {
   document.documentElement.lang = currentLang;
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   initLangSwitcher();
-  setTimeout(() => {
-    renderGuideCats();
-    const q = new URLSearchParams(window.location.search).get('g');
-    if (q && guides.find(g => g.id === q)) {
-      history.replaceState({}, '', '/?g=' + q);
-      renderGuideDetail(q);
-    } else if (location.hash) {
-      const h = location.hash.slice(1);
-      const guide = guides.find(g => g.id === h);
-      if (guide) {
-        history.replaceState({}, '', '/?g=' + h);
-        renderGuideDetail(h);
-      } else {
-        window.scrollTo({ top: 0, behavior: 'auto' });
-        renderGuideGrid();
-      }
+  renderGuideCats();
+  const q = new URLSearchParams(window.location.search).get('g');
+  if (q && guides.find(g => g.id === q)) {
+    history.replaceState({}, '', '/?g=' + q);
+    renderGuideDetail(q);
+  } else if (location.hash) {
+    const h = location.hash.slice(1);
+    const guide = guides.find(g => g.id === h);
+    if (guide) {
+      history.replaceState({}, '', '/?g=' + h);
+      renderGuideDetail(h);
     } else {
-      window.scrollTo({ top: 0, behavior: 'auto' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       renderGuideGrid();
     }
-    renderAudioMini();
-    renderMySetup();
-    renderAbout();
-    translatePage();
-  }, 300);
+  } else {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    renderGuideGrid();
+  }
+  renderAudioMini();
+  renderMySetup();
+  renderAbout();
+  initVideoIntro();
+  translatePage();
 
   document.getElementById("searchInput").addEventListener("input", e => {
     searchQuery = e.target.value;

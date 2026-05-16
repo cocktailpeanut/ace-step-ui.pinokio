@@ -212,16 +212,6 @@ nav {
   .header-social {
     display: none;
   }
-  .header-social-col {
-    display: none !important;
-  }
-}
-
-.header-social-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
 }
 
 .lang-btn {
@@ -1234,11 +1224,11 @@ footer ul li a:hover { color: var(--accent); }
 .mobile-nav {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
   position: fixed;
   top: 0;
   right: 16px;
-  padding-top: 8px;
+  padding-top: 52px;
   z-index: 101;
   opacity: 0;
   pointer-events: none;
@@ -1838,12 +1828,17 @@ footer ul li a:hover { color: var(--accent); }
 }
 
 @media (max-width: 768px) {
+  .guides-section,
+  .my-setup,
+  .about-section { scroll-margin-top: 42px; }
   .header-inner { padding: 0 16px; gap: 12px; }
-  nav { display: none; }
+  html { overflow-x: hidden; overscroll-behavior-x: none; touch-action: pan-y; }
+  ::-webkit-scrollbar { width: 0 !important; height: 0 !important; }
+  body { overscroll-behavior-x: none; touch-action: pan-y; -ms-overflow-style: none; scrollbar-width: none; }
   nav { display: none; }
   .audio-mini { display: none; }
   .hamburger { display: flex; }
-  .hero { padding: 8px 20px 40px; }
+  .hero { padding: 20px 20px 56px; }
   .hero h1 { font-size: 30px; margin-bottom: 4px; }
   .hero p { margin-bottom: 16px; }
   .hero-badge { margin-bottom: 8px; }
@@ -1868,8 +1863,7 @@ footer ul li a:hover { color: var(--accent); }
   .newsletter-form { flex-direction: column; }
   .newsletter-form button { width: 100%; }
   footer { padding: 40px 16px 0; }
-  .footer-bottom { padding: 8px 0 0; line-height: 1; border-top: none; }
-  .back-to-top { margin-top: 4px; }
+  .footer-bottom { padding: 12px 0 0; line-height: 1; }
   .footer-grid { gap: 12px; justify-content: center; flex-wrap: nowrap; }
   .footer-col { flex: 1 1 33%; text-align: center; overflow-wrap: break-word; }
   footer h3 { font-size: 11px; margin-bottom: 10px; }
