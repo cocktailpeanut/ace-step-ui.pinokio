@@ -1794,6 +1794,12 @@ footer ul li a:hover { color: var(--accent); }
   line-height: 1.8;
 }
 
+.guide-related { margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--border); }
+.guide-related h3 { font-size: 1.2rem; margin-bottom: 16px; color: var(--text); }
+.guide-related-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.guide-related-link { display: inline-block; padding: 8px 16px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); color: var(--accent); font-size: 0.9rem; text-decoration: none; transition: var(--transition); }
+.guide-related-link:hover { background: var(--bg-card-hover); border-color: var(--accent); transform: translateY(-1px); }
+
 /* Guide detail override for grid container - hides filter/search in detail view */
 .guide-detail-open .cat-grid,
 .guide-detail-open .sort-bar {

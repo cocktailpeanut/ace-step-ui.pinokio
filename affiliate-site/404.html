@@ -6,11 +6,18 @@
   <title>TopMusicianGear</title>
   <script>
     var path = window.location.pathname.replace(/\/+$/, '');
-    var guide = path.split('/').pop();
-    if (guide && guide !== '404.html') {
-      window.location.replace('/?g=' + guide);
+    // Handle /guides/something.html -> /?g=something
+    var match = path.match(/\/guides\/(.+?)(?:_es)?(?:\.html)?$/);
+    if (match) {
+      window.location.replace('/?g=' + match[1]);
     } else {
-      window.location.replace('/');
+      // Try to extract filename as guide id
+      var guide = path.split('/').pop().replace(/\.html$/, '').replace(/_es$/, '');
+      if (guide && guide !== '404.html') {
+        window.location.replace('/?g=' + guide);
+      } else {
+        window.location.replace('/');
+      }
     }
   </script>
 </head>

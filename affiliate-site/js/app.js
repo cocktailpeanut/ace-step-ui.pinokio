@@ -23,6 +23,15 @@ function setLang(lang) {
   translatePage();
   renderGuideCats();
   if (currentGuideId) {
+    var guide = guides.find(function(g) { return g.id === currentGuideId; });
+    if (guide) {
+      document.title = (lang === 'es' && guide.title_es ? guide.title_es : guide.title) + ' | TopMusicianGear';
+      var metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        var descText = lang === 'es' && guide.intro_es ? guide.intro_es : guide.intro;
+        metaDesc.content = descText.substring(0, 200);
+      }
+    }
     skipDetailScroll = true;
     renderGuideDetail(currentGuideId);
   } else {
@@ -268,7 +277,7 @@ function renderGuideDetail(id) {
       <div class="guide-detail-header">
         <h1 class="guide-detail-title">${currentLang === 'es' && guide.title_es ? guide.title_es : guide.title}</h1>
       </div>
-      <div class="guide-detail-img"><img src="${guide.image}" alt="${currentLang === 'es' && guide.title_es ? guide.title_es : guide.title}"></div>
+      <div class="guide-detail-img"><img src="${guide.image}" alt="${currentLang === 'es' && guide.title_es ? guide.title_es : guide.title}" loading="lazy"></div>
       <div class="guide-detail-intro"><p>${currentLang === 'es' && guide.intro_es ? guide.intro_es : guide.intro}</p></div>
       <div class="guide-detail-sections">${sectionsHtml}</div>
       <div class="guide-verdict">
@@ -279,6 +288,15 @@ function renderGuideDetail(id) {
       <div class="guide-conclusion">
         <h3>${t("finalThoughts")}</h3>
         <p>${currentLang === 'es' && guide.conclusion_es ? guide.conclusion_es : guide.conclusion}</p>
+      </div>
+      <div class="guide-related">
+        <h3>${t("relatedGuides")}</h3>
+        <div class="guide-related-list">
+          ${guides.filter(g => g.id !== guide.id && g.category === guide.category).slice(0, 4).map(g => {
+            var gt = currentLang === 'es' && g.title_es ? g.title_es : g.title;
+            return '<a href="/?g=' + g.id + '" class="guide-related-link">' + gt + '</a>';
+          }).join('')}
+        </div>
       </div>
       <button class="guide-back-btn" id="guideBackBtn2"><i class="fa-solid fa-arrow-left"></i> ${t("backToGuides")}</button>
     </div>
@@ -303,6 +321,13 @@ function renderGuideDetail(id) {
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 100);
   }
+  document.title = (lang === 'es' && guide.title_es ? guide.title_es : guide.title) + ' | TopMusicianGear';
+  var metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) {
+    var descText = lang === 'es' && guide.intro_es ? guide.intro_es : guide.intro;
+    metaDesc.content = descText.substring(0, 200);
+  }
+  injectGuideJsonLd(guide);
   skipDetailScroll = false;
 }
 
@@ -455,6 +480,89 @@ function fadeVideoAudio(video, target, duration) {
     if (progress < 1) requestAnimationFrame(step);
   }
   requestAnimationFrame(step);
+}
+
+function injectGuideJsonLd(guide) {
+  document.querySelectorAll('script[data-guide-jsonld]').forEach(el => el.remove());
+  var canon = document.querySelector('link[rel="canonical"]');
+  if (canon) {
+    canon.href = 'https://topmusiciangear.com/guides/' + guide.id + '.html';
+  }
+  var hreflangs = document.querySelectorAll('link[rel="alternate"][hreflang]');
+  if (hreflangs.length) {
+    hreflangs.forEach(function(el) {
+      if (el.getAttribute('hreflang') === 'en') el.href = 'https://topmusiciangear.com/guides/' + guide.id + '.html';
+      if (el.getAttribute('hreflang') === 'es') el.href = 'https://topmusiciangear.com/guides/' + guide.id + '_es.html';
+    });
+  }
+  const lang = currentLang;
+  const title = lang === 'es' && guide.title_es ? guide.title_es : guide.title;
+  const intro = lang === 'es' && guide.intro_es ? guide.intro_es : guide.intro;
+  const conclusion = lang === 'es' && guide.conclusion_es ? guide.conclusion_es : guide.conclusion;
+  const url = 'https://topmusiciangear.com/?g=' + guide.id;
+  const image = guide.image || 'https://topmusiciangear.com/img/og-image.svg';
+
+  const article = {
+    "@context": "https://schema.org", "@type": "Article",
+    "headline": title,
+    "description": intro.substring(0, 200),
+    "author": { "@type": "Person", "name": "Daniel" },
+    "publisher": { "@type": "Organization", "name": "TopMusicianGear", "url": "https://topmusiciangear.com" },
+    "image": image,
+    "datePublished": "2026-01-15", "dateModified": "2026-05-15",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": url }
+  };
+
+  const items = [];
+  guide.featuredProducts.forEach((pid, idx) => {
+    const p = products.find(pr => pr.id === pid);
+    if (p) {
+      items.push({
+        "@type": "ListItem",
+        "position": idx + 1,
+        "item": {
+          "@type": "Product",
+          "name": lang === 'es' && p.title_es ? p.title_es : p.title,
+          "brand": { "@type": "Brand", "name": p.brand || "" },
+          "mpn": p.mpn || "",
+          "description": (lang === 'es' && p.desc_es ? p.desc_es : p.desc).substring(0, 200),
+          "offers": {
+            "@type": "Offer",
+            "price": p.price,
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": p.reviews > 0 ? {
+            "@type": "AggregateRating",
+            "ratingValue": p.rating,
+            "reviewCount": p.reviews
+          } : undefined,
+          "image": p.img
+        }
+      });
+    }
+  });
+
+  function addJsonLd(data) {
+    const s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.dataset.guideJsonld = guide.id;
+    s.textContent = JSON.stringify(data);
+    document.head.appendChild(s);
+  }
+
+  addJsonLd(article);
+  if (items.length) addJsonLd({
+    "@context": "https://schema.org", "@type": "ItemList",
+    "itemListElement": items
+  });
+  addJsonLd({
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://topmusiciangear.com/" },
+      { "@type": "ListItem", "position": 2, "name": title, "item": url }
+    ]
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
