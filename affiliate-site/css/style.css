@@ -36,6 +36,13 @@
 
 html { scroll-behavior: smooth; }
 
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 9999;
+  padding: 8px 16px; background: var(--accent); color: #fff;
+  font-size: 14px; text-decoration: none; border-radius: 0 0 6px 0;
+}
+.skip-link:focus { left: 0; }
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: var(--text);

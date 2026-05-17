@@ -35,14 +35,14 @@ const guides = [
         heading_es: "Accesorios Que Realmente Necesitas",
         content: "Don't waste money on things you don't need. Get a solid mic stand — the K&M 210/2 is German-engineered and will outlast everything else in your studio. A Mogami Gold XLR cable ensures clean signal from day one. That's it. You can add acoustic treatment and pop filters later.",
         content_es: "No gastes dinero en cosas que no necesitas. Consigue un soporte de micrófono sólido — el K&M 210/2 tiene ingeniería alemana y durará más que todo lo demás en tu estudio. Un cable Mogami Gold XLR asegura señal limpia desde el primer día. Eso es todo. Puedes añadir tratamiento acústico y filtros antipop más adelante.",
-        products: [38]
+        products: [38, 58]
       }
     ],
     conclusion: "With this setup — Scarlett 2i2, SM57, ATH-M50x, a K&M stand, and a Mogami cable — you can record, mix, and release professional music for under $700. I've tracked sessions with exactly this chain and the results are broadcast-ready. Start here, learn your craft, and upgrade only when your skill outgrows your gear.",
     conclusion_es: "Con esta configuración — Scarlett 2i2, SM57, ATH-M50x, un soporte K&M y un cable Mogami — puedes grabar, mezclar y publicar música profesional por menos de $700. He grabado sesiones exactamente con esta cadena y los resultados están listos para transmitir. Empieza aquí, aprende tu oficio y actualiza solo cuando tu habilidad supere a tu equipo.",
     verdict: "Best overall starter studio",
     verdict_es: "Mejor estudio inicial completo",
-    featuredProducts: [15, 5, 25, 38]
+    featuredProducts: [15, 5, 25, 38, 58]
   },
   {
     id: "best-interface",
@@ -399,7 +399,7 @@ const guides = [
     conclusion_es: "Los accesorios son los héroes anónimos de cada gran grabación y show en vivo. Invierte en cables de calidad (Mogami), soportes sólidos (K&M), estuches protectores (Gator) y clips de micrófono confiables (Shure). Estas son las cosas que seguirás usando dentro de diez años, cuando el preamplificador de lujo ya se haya vendido y el último sintetizador esté acumulando polvo. Compra bien, compra una vez, y concéntrate en hacer música.",
     verdict: "Mogami cables + K&M stands = the studio standard",
     verdict_es: "Mogami cables + soportes K&M = el estándar de estudio",
-    featuredProducts: [38]
+    featuredProducts: [38, 58, 59]
   },
   {
     id: "budget-mics",
@@ -860,7 +860,8 @@ const guides = [
     conclusion: "Build your studio foundation right. Start with a K&M mic stand ($49) and monitor stands ($89) to position your gear correctly. Add a Mogami XLR cable ($39) for clean, reliable signal. When you're ready to level up your workflow, the SSL UF8 ($1,199) transforms mixing from a screen task into a musical experience. The right furniture and setup isn't an expense — it's the foundation everything else depends on.",
     conclusion_es: "Construye bien la base de tu estudio. Empieza con un soporte de micrófono K&M ($49) y soportes de monitor ($89) para posicionar tu equipo correctamente. Añade un cable Mogami XLR ($39) para señal limpia y confiable. Cuando estés listo para subir de nivel tu flujo de trabajo, el SSL UF8 ($1,199) transforma la mezcla de una tarea de pantalla a una experiencia musical. El mobiliario y la configuración correctos no son un gasto — son la base de la que todo lo demás depende.",
     verdict: "Build your foundation before buying more gear",
-    featuredProducts: [38, 42]
+    verdict_es: "Construye tu base antes de comprar más equipo",
+    featuredProducts: [58, 59, 42]
   },
 
   {

@@ -292,10 +292,7 @@ function renderGuideDetail(id) {
       <div class="guide-related">
         <h3>${t("relatedGuides")}</h3>
         <div class="guide-related-list">
-          ${guides.filter(g => g.id !== guide.id && g.category === guide.category).slice(0, 4).map(g => {
-            var gt = currentLang === 'es' && g.title_es ? g.title_es : g.title;
-            return '<a href="/?g=' + g.id + '" class="guide-related-link">' + gt + '</a>';
-          }).join('')}
+          ${(() => { var related = guides.filter(g => g.id !== guide.id && g.category === guide.category); if (!related.length) related = guides.filter(g => g.id !== guide.id); return related.slice(0, 4).map(g => { var gt = currentLang === 'es' && g.title_es ? g.title_es : g.title; return '<a href="/?g=' + g.id + '" class="guide-related-link">' + gt + '</a>'; }).join(''); })()}
         </div>
       </div>
       <button class="guide-back-btn" id="guideBackBtn2"><i class="fa-solid fa-arrow-left"></i> ${t("backToGuides")}</button>
@@ -499,7 +496,7 @@ function injectGuideJsonLd(guide) {
   const title = lang === 'es' && guide.title_es ? guide.title_es : guide.title;
   const intro = lang === 'es' && guide.intro_es ? guide.intro_es : guide.intro;
   const conclusion = lang === 'es' && guide.conclusion_es ? guide.conclusion_es : guide.conclusion;
-  const url = 'https://topmusiciangear.com/?g=' + guide.id;
+  const url = 'https://topmusiciangear.com/guides/' + guide.id + '.html';
   const image = guide.image || 'https://topmusiciangear.com/img/og-image.svg';
 
   const article = {

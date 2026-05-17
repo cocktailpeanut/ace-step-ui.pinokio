@@ -225,10 +225,7 @@ ${ogMeta}
     <div class="guide-related">
       <h3>${isEs ? 'Guías Relacionadas' : 'Related Guides'}</h3>
       <div class="guide-related-list">
-        ${guides.filter(g => g.id !== guide.id && g.category === guide.category).slice(0, 4).map(g => {
-          var gt = isEs && g.title_es ? g.title_es : g.title;
-          return '<a href="/guides/' + g.id + '.html" class="guide-related-link">' + gt + '</a>';
-        }).join('')}
+        ${(function(){ var r = guides.filter(g => g.id !== guide.id && g.category === guide.category); if (!r.length) r = guides.filter(g => g.id !== guide.id); return r.slice(0, 4).map(g => { var gt = isEs && g.title_es ? g.title_es : g.title; return '<a href="/guides/' + g.id + '.html" class="guide-related-link">' + gt + '</a>'; }).join(''); })()}
       </div>
     </div>
   </div>

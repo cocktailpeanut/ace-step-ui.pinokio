@@ -1077,6 +1077,48 @@ const products = [
     stores: {
       thomann: "https://www.thomann.co.uk/thomann_tres_cubano_deluxe_ccw.htm"
     }
+  },
+  {
+    id: 58,
+    title: "K&M 210/2 Mic Stand",
+    title_es: "Soporte de Micrófono K&M 210/2",
+    brand: "König & Meyer",
+    mpn: "210/2",
+    category: "accessories",
+    price: 49,
+    rating: 4.8,
+    reviews: 12345,
+    badge: "topQuality",
+    desc: "German-engineered mic stand with zinc die-cast base. Telescopic boom arm extends smoothly and locks firmly. Built to last decades in studio and on stage.",
+    desc_es: "Soporte de micrófono con ingeniería alemana y base de zinc fundido a presión. El brazo telescópico se extiende suavemente y se bloquea firmemente. Construido para durar décadas en estudio y escenario.",
+    img: "https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=400&h=400&fit=crop",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/MicStand--k-and-m-210-2-black-mic-stand",
+      thomann: "https://www.thomann.co.uk/km_210_2.htm",
+      gear4music: "https://www.gear4music.com/Recording-and-Computers/KM-2102-Microphone-Stand/2QNV",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
+  },
+  {
+    id: 59,
+    title: "K&M 26725 Monitor Stands (Pair)",
+    title_es: "Soportes de Monitor K&M 26725 (Par)",
+    brand: "König & Meyer",
+    mpn: "26725",
+    category: "accessories",
+    price: 89,
+    rating: 4.7,
+    reviews: 5678,
+    badge: "recommended",
+    desc: "Height-adjustable steel monitor stands with floor spikes for mechanical decoupling. Get tweeters at ear level for accurate monitoring. The cheapest upgrade that makes the biggest difference.",
+    desc_es: "Soportes de monitor de acero ajustables en altura con puntas de piso para desacoplamiento mecánico. Coloca los tweeters al nivel del oído para monitoreo preciso. La mejora más barata que marca la mayor diferencia.",
+    img: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400&h=400&fit=crop",
+    stores: {
+      sweetwater: "https://www.sweetwater.com/store/detail/26725-000-55--k-and-m-26725-speaker-stand-pair-black",
+      thomann: "https://www.thomann.co.uk/km_26725.htm",
+      gear4music: "https://www.gear4music.com/Recording-and-Computers/KM-26725-Speaker-Stand-Black-Pair/3P7V",
+      musikproduktiv: "https://www.musik-produktiv.de/search"
+    }
   }
 ];
 
