@@ -1070,5 +1070,282 @@ const guides = [
     verdict: "Deluxe for the studio, Standard CCW for gigging, K&K Pure Mini for the stage",
     verdict_es: "Deluxe para el estudio, Standard CCW para directo, K&K Pure Mini para el escenario",
     featuredProducts: [43, 46, 45, 44]
+  },
+  {
+    id: "sm57-vs-sm58",
+    title: "Shure SM57 vs SM58: Which One Do You Actually Need? (2026)",
+    title_es: "Shure SM57 vs SM58: ¿Cuál Necesitas Realmente? (2026)",
+    category: "microphones",
+    image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=600&h=400&fit=crop",
+    badge: null,
+    intro: "The SM57 and SM58 are the most famous microphones in history — and the most confused. They look similar, cost the same, and both say Shure on the side. But they're designed for completely different jobs. I've used both on Broadway, at Glastonbury, and in the studio at Abbey Road. Here's the truth about which one you need.",
+    intro_es: "El SM57 y el SM58 son los micrófonos más famosos de la historia — y los más confundidos. Se ven similares, cuestan lo mismo, y ambos dicen Shure en el costado. Pero están diseñados para trabajos completamente diferentes. He usado ambos en Broadway, en Glastonbury y en el estudio de Abbey Road. Aquí está la verdad sobre cuál necesitas.",
+    sections: [
+      {
+        heading: "The Quick Answer: What's the Difference?",
+        heading_es: "La Respuesta Rápida: ¿Cuál es la Diferencia?",
+        content: "The SM57 and SM58 are mechanically identical under the grille — same capsule, same transformer, same frequency response. The ONLY difference is the grille design. The SM58 has a built-in spherical windscreen and pop filter that reduces plosives on vocals. The SM57 has a smaller, open grille designed for instrument miking. That's it. The SM58 is a vocal mic with wind protection. The SM57 is an instrument mic that also works on vocals with a separate pop filter. Both cost $99 new.",
+        content_es: "El SM57 y el SM58 son mecánicamente idénticos debajo de la rejilla — misma cápsula, mismo transformador, misma respuesta de frecuencia. La ÚNICA diferencia es el diseño de la rejilla. El SM58 tiene un parabrisas esférico incorporado y filtro antipop que reduce las explosivas en voces. El SM57 tiene una rejilla más pequeña y abierta diseñada para microfonear instrumentos. Eso es todo. El SM58 es un micrófono vocal con protección contra viento. El SM57 es un micrófono de instrumento que también funciona en voces con un filtro antipop por separado. Ambos cuestan $99 nuevos.",
+        products: [5, 50]
+      },
+      {
+        heading: "SM57: The Instrument Standard",
+        heading_es: "SM57: El Estándar de Instrumentos",
+        content: "The SM57 is the most recorded microphone in history — and for good reason. It's the go-to for guitar amps, snare drums, horns, and kick drums. The tight grille allows you to get right up on a guitar speaker without feedback. On snare, it handles 170dB SPL without distortion. I've used SM57s on Broadway pit orchestras, on guitar cabs at Glastonbury, and on tom drums at Abbey Road. If you record instruments, start with an SM57.",
+        content_es: "El SM57 es el micrófono más grabado en la historia — y por una buena razón. Es el favorito para amplificadores de guitarra, redobles de batería, instrumentos de viento y bombos. La rejilla apretada te permite acercarte mucho al altavoz de guitarra sin retroalimentación. En redoblante, maneja 170dB SPL sin distorsión. He usado SM57s en orquestas de foso de Broadway, en gabinetes de guitarra en Glastonbury y en timbales en Abbey Road. Si grabas instrumentos, empieza con un SM57.",
+        products: [5]
+      },
+      {
+        heading: "SM58: The Vocal Workhorse",
+        heading_es: "SM58: El Caballo de Batalla Vocal",
+        content: "The SM58 is the world's most popular vocal microphone for live sound. The built-in spherical windscreen rejects plosives and wind noise without needing an external pop filter. On stage, the SM58's cardioid pattern provides excellent feedback rejection — which is why every venue in the world has at least a dozen of them. In the studio, it works great for aggressive vocal styles, guitar amps, and kick drums. If you're a vocalist or you do live sound, buy an SM58.",
+        content_es: "El SM58 es el micrófono vocal más popular del mundo para sonido en vivo. El parabrisas esférico incorporado rechaza explosivas y ruido de viento sin necesidad de un filtro antipop externo. En el escenario, el patrón cardioide del SM58 proporciona un excelente rechazo a la retroalimentación — por eso cada venue del mundo tiene al menos una docena de ellos. En el estudio, funciona muy bien para estilos vocales agresivos, amplificadores de guitarra y bombos. Si eres vocalista o haces sonido en vivo, compra un SM58.",
+        products: [50]
+      },
+      {
+        heading: "Verdict: Which Should You Buy?",
+        heading_es: "Veredicto: ¿Cuál Deberías Comprar?",
+        content: "Buy the SM57 if: you record instruments (guitar amps, snare, horns) and you already have a pop filter for vocals. Buy the SM58 if: you're a vocalist performing live, or you want one mic for both stage vocals and recording. The honest answer most pros will give: buy BOTH. They cost $99 each, they're virtually indestructible, and they hold their resale value. Every studio should have an SM57. Every live performer should have an SM58. Having both covers every scenario for under $200.",
+        content_es: "Compra el SM57 si: grabas instrumentos (amplificadores de guitarra, redoblante, vientos) y ya tienes un filtro antipop para voces. Compra el SM58 si: eres vocalista en vivo, o quieres un micrófono tanto para voz en escenario como para grabación. La respuesta honesta que la mayoría de los profesionales te darán: compra AMBOS. Cuestan $99 cada uno, son virtualmente indestructibles, y mantienen su valor de reventa. Todo estudio debería tener un SM57. Todo músico en vivo debería tener un SM58. Tener ambos cubre cada escenario por menos de $200.",
+        products: [5, 50]
+      }
+    ],
+    conclusion: "There's no wrong choice between the SM57 and SM58 — they're the same microphone with different hats on. But understanding the difference means you buy the right tool for your specific needs. For instrument recording: SM57. For live vocals: SM58. For maximum versatility: both. At $99 each, there's no excuse not to own the legendary Shure sound that's defined popular music for over 50 years.",
+    conclusion_es: "No hay mala elección entre el SM57 y el SM58 — son el mismo micrófono con diferentes sombreros. Pero entender la diferencia significa que compras la herramienta correcta para tus necesidades específicas. Para grabación de instrumentos: SM57. Para voces en vivo: SM58. Para máxima versatilidad: ambos. A $99 cada uno, no hay excusa para no tener el legendario sonido Shure que ha definido la música popular por más de 50 años.",
+    verdict: "SM57 for instruments, SM58 for vocals — or buy both for $198",
+    verdict_es: "SM57 para instrumentos, SM58 para voces — o compra ambos por $198",
+    featuredProducts: [5, 50]
+  },
+  {
+    id: "scarlett-vs-ssl",
+    title: "Focusrite Scarlett 2i2 vs SSL 2+: Which Audio Interface Wins? (2026)",
+    title_es: "Focusrite Scarlett 2i2 vs SSL 2+: ¿Qué Interfaz de Audio Gana? (2026)",
+    category: "interfaces",
+    image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop",
+    badge: null,
+    intro: "The Focusrite Scarlett 2i2 and the SSL 2+ are the two most popular audio interfaces in the under-$300 range — and for different reasons. The Scarlett is the people's champion: affordable, reliable, everywhere. The SSL 2+ brings legendary console preamps to your desktop. I've recorded with both extensively. Here's the honest comparison.",
+    intro_es: "La Focusrite Scarlett 2i2 y la SSL 2+ son las dos interfaces de audio más populares en el rango de menos de $300 — y por diferentes razones. La Scarlett es la campeona del pueblo: asequible, confiable, en todas partes. La SSL 2+ trae los legendarios preamplificadores de consola a tu escritorio. He grabado extensamente con ambas. Aquí está la comparación honesta.",
+    sections: [
+      {
+        heading: "Preamps: The Scarlett's Clarity vs SSL's Character",
+        heading_es: "Preamplificadores: Claridad de la Scarlett vs Carácter de la SSL",
+        content: "The Scarlett 2i2 4th Gen has excellent preamps — clean, transparent, with 120dB dynamic range. They're a significant upgrade over previous generations. But the SSL 2+'s preamps are in a different league for one reason: the 4K Legacy switch. This analog EQ circuit adds presence and punch that makes vocals sit in the mix instantly. It's not a gimmick — it's the same design philosophy from SSL's legendary 4000 series consoles. If you want clean, get the Scarlett. If you want character, get the SSL.",
+        content_es: "La Scarlett 2i2 4ta Gen tiene preamplificadores excelentes — limpios, transparentes, con 120dB de rango dinámico. Son una mejora significativa sobre generaciones anteriores. Pero los preamplificadores de la SSL 2+ están en otra liga por una razón: el interruptor 4K Legacy. Este circuito analógico de EQ añade presencia y punch que hace que las voces se sitúen en la mezcla instantáneamente. No es un truco — es la misma filosofía de diseño de las legendarias consolas serie 4000 de SSL. Si quieres limpio, compra la Scarlett. Si quieres carácter, compra la SSL.",
+        products: [15, 18]
+      },
+      {
+        heading: "Connectivity: What's On the Back?",
+        heading_es: "Conectividad: ¿Qué Hay Detrás?",
+        content: "The Scarlett 2i2 gives you 2 inputs, 2 outputs, MIDI I/O, and a headphone output with dedicated volume. The USB-C bus-powered design means no power cable needed. The SSL 2+ gives you 2 inputs, 4 outputs (for 2x monitor sets), MIDI I/O, dual headphone outputs with independent mixes, and USB-C. The extra outputs let you A/B between monitors and headphones without repatching. For a home studio with multiple monitoring needs, the SSL wins on connectivity.",
+        content_es: "La Scarlett 2i2 te da 2 entradas, 2 salidas, MIDI I/O, y una salida de auriculares con volumen dedicado. El diseño alimentado por USB-C significa que no necesitas cable de corriente. La SSL 2+ te da 2 entradas, 4 salidas (para 2 pares de monitores), MIDI I/O, salidas de auriculares duales con mezclas independientes, y USB-C. Las salidas extra te permiten alternar entre monitores y auriculares sin cambiar cables. Para un home studio con múltiples necesidades de monitoreo, la SSL gana en conectividad.",
+        products: [15, 18]
+      },
+      {
+        heading: "The Talkback Mic: SSL's Secret Weapon",
+        heading_es: "El Micrófono de Talkback: El Arma Secreta de SSL",
+        content: "The SSL 2+ has a built-in talkback microphone — a feature normally found on $500+ interfaces. It routes to the headphone outputs so you can communicate with talent without leaving your seat. The Scarlett doesn't have this. If you record other musicians or voiceover talent, the talkback mic is a workflow game-changer that makes the SSL worth the extra $100.",
+        content_es: "La SSL 2+ tiene un micrófono de talkback incorporado — una característica que normalmente se encuentra en interfaces de $500+. Se enruta a las salidas de auriculares para que puedas comunicarte con el talento sin levantarte de tu silla. La Scarlett no tiene esto. Si grabas otros músicos o talento de voz, el micrófono de talkback cambia las reglas del juego y hace que la SSL valga los $100 extra.",
+        products: [18]
+      },
+      {
+        heading: "Verdict: Which Should You Buy?",
+        heading_es: "Veredicto: ¿Cuál Deberías Comprar?",
+        content: "At $199, the Scarlett 2i2 is the best value in audio interfaces. It's clean, reliable, and does everything a beginner to intermediate producer needs. At $299, the SSL 2+ costs $100 more but gives you character preamps (4K mode), extra outputs, dual headphone mixes, and a talkback mic. If you're on a strict budget: Scarlett. If you want professional workflow features and that SSL console sound on your vocals: the SSL 2+ is worth every penny of the upgrade.",
+        content_es: "A $199, la Scarlett 2i2 es la mejor relación calidad-precio en interfaces de audio. Es limpia, confiable, y hace todo lo que un productor principiante a intermedio necesita. A $299, la SSL 2+ cuesta $100 más pero te da preamplificadores con carácter (modo 4K), salidas extra, mezclas de auriculares duales, y un micrófono de talkback. Si tienes un presupuesto ajustado: Scarlett. Si quieres características de flujo de trabajo profesional y ese sonido de consola SSL en tus voces: la SSL 2+ vale cada centavo de la mejora.",
+        products: [15, 18]
+      }
+    ],
+    conclusion: "The Focusrite Scarlett 2i2 and SSL 2+ are both excellent interfaces, but they serve different users. The Scarlett is the smart choice for beginners and budget-conscious producers. The SSL 2+ is for anyone who wants professional preamp character, better monitoring flexibility, and studio workflow features. I own both. The Scarlett stays in my travel bag. The SSL 2+ lives on my desk.",
+    conclusion_es: "La Focusrite Scarlett 2i2 y la SSL 2+ son ambas excelentes interfaces, pero sirven a diferentes usuarios. La Scarlett es la elección inteligente para principiantes y productores con presupuesto ajustado. La SSL 2+ es para cualquiera que quiera carácter de preamplificador profesional, mejor flexibilidad de monitoreo, y características de flujo de trabajo de estudio. Tengo ambas. La Scarlett se queda en mi bolsa de viaje. La SSL 2+ vive en mi escritorio.",
+    verdict: "Scarlett 2i2 ($199) for value, SSL 2+ ($299) for pro features",
+    verdict_es: "Scarlett 2i2 ($199) para valor, SSL 2+ ($299) para características profesionales",
+    featuredProducts: [15, 18]
+  },
+  {
+    id: "dt770-vs-dt990",
+    title: "Beyerdynamic DT 770 Pro vs DT 990 Pro: Closed vs Open (2026)",
+    title_es: "Beyerdynamic DT 770 Pro vs DT 990 Pro: Cerrados vs Abiertos (2026)",
+    category: "headphones",
+    image: "https://images.unsplash.com/photo-1599669454699-248893623440?w=600&h=400&fit=crop",
+    badge: null,
+    intro: "The Beyerdynamic DT 770 Pro and DT 990 Pro are legendary German headphones that every producer debates. Closed-back tracking vs open-back mixing. Isolation vs soundstage. Bass boost vs treble emphasis. I've mixed entire albums on both. Here's the definitive comparison so you can stop wondering and start buying.",
+    intro_es: "Los Beyerdynamic DT 770 Pro y DT 990 Pro son legendarios auriculares alemanes que todo productor debate. Seguimiento cerrado vs mezcla abierta. Aislamiento vs escenario sonoro. Refuerzo de graves vs énfasis en agudos. He mezclado álbumes enteros en ambos. Aquí está la comparación definitiva para que dejes de preguntarte y empieces a comprar.",
+    sections: [
+      {
+        heading: "DT 770 Pro: The Tracking King",
+        heading_es: "DT 770 Pro: El Rey del Seguimiento",
+        content: "The DT 770 Pro (closed-back) is the industry standard for tracking — recording vocals, instruments, and overdubs where you need isolation. The closed-back design keeps sound from bleeding into your microphone and blocks out room noise. The bass boost (+5dB at 70Hz) helps you feel the groove during takes. Comfortable for hours with velour earpads. If you record with microphones in the same room, get the DT 770.",
+        content_es: "El DT 770 Pro (cerrado) es el estándar de la industria para seguimiento — grabar voces, instrumentos y overdubs donde necesitas aislamiento. El diseño cerrado evita que el sonido se filtre a tu micrófono y bloquea el ruido de la sala. El realce de graves (+5dB a 70Hz) te ayuda a sentir el groove durante las tomas. Cómodo por horas con almohadillas de velour. Si grabas con micrófonos en la misma sala, compra el DT 770.",
+        products: [23]
+      },
+      {
+        heading: "DT 990 Pro: The Mixing Master",
+        heading_es: "DT 990 Pro: El Maestro de la Mezcla",
+        content: "The DT 990 Pro (open-back) excels at mixing and critical listening. The open-back design creates a wide, airy soundstage that rivals studio monitors. You hear natural stereo separation, reverb tails, and depth that closed-back headphones simply can't reproduce. The treble emphasis (+6dB at 10kHz) reveals detail and sibilance issues in your mix — but can be fatiguing for long sessions. If you mix and master, get the DT 990.",
+        content_es: "El DT 990 Pro (abierto) sobresale en mezcla y escucha crítica. El diseño abierto crea un escenario sonoro amplio y aireado que rivaliza con los monitores de estudio. Escuchas separación estéreo natural, colas de reverberación y profundidad que los auriculares cerrados simplemente no pueden reproducir. El énfasis en agudos (+6dB a 10kHz) revela detalles y problemas de sibilancia en tu mezcla — pero puede ser fatigante para sesiones largas. Si mezclas y masterizas, compra el DT 990.",
+        products: [56]
+      },
+      {
+        heading: "The Amp Problem You Didn't Know About",
+        heading_es: "El Problema de Amplificador Que No Sabías",
+        content: "Both headphones are 250 ohms — they need a headphone amplifier to reach proper volume. Plugging them directly into a laptop or phone will give you quiet, thin sound. The Scarlett 2i2, SSL 2+, and most audio interfaces can drive them adequately. But for the best performance, add a dedicated headphone amp like the JDS Labs Atom or Schiit Magni. With proper amplification, both headphones transform from good to exceptional.",
+        content_es: "Ambos auriculares son de 250 ohmios — necesitan un amplificador de auriculares para alcanzar el volumen adecuado. Conectarlos directamente a un portátil o teléfono te dará un sonido bajo y fino. La Scarlett 2i2, SSL 2+, y la mayoría de las interfaces de audio pueden manejarlos adecuadamente. Pero para el mejor rendimiento, añade un amplificador de auriculares dedicado como el JDS Labs Atom o Schiit Magni. Con la amplificación adecuada, ambos auriculares pasan de buenos a excepcionales.",
+        products: [23, 56]
+      },
+      {
+        heading: "Verdict: Which Should You Buy?",
+        heading_es: "Veredicto: ¿Cuál Deberías Comprar?",
+        content: "The honest answer most engineers will give: buy BOTH. The DT 770 Pro ($159) for tracking and the DT 990 Pro ($169) for mixing. If you can only buy one, your use case decides: if you record with mics in the same room, the DT 770 Pro is non-negotiable for bleed prevention. If you only produce electronic music with no live recording, the DT 990 Pro's soundstage makes mixing faster and more accurate. Skip whichever compromises your workflow less — then save up for the other one.",
+        content_es: "La respuesta honesta que la mayoría de los ingenieros te darán: compra AMBOS. El DT 770 Pro ($159) para seguimiento y el DT 990 Pro ($169) para mezcla. Si solo puedes comprar uno, tu caso de uso decide: si grabas con micrófonos en la misma sala, el DT 770 Pro es no negociable para evitar sangrado. Si solo produces música electrónica sin grabación en vivo, el escenario sonoro del DT 990 Pro hace que la mezcla sea más rápida y precisa. Salta el que comprometa menos tu flujo de trabajo — luego ahorra para el otro.",
+        products: [23, 56]
+      }
+    ],
+    conclusion: "The DT 770 Pro and DT 990 Pro are the Batman and Superman of studio headphones — different but both essential. The DT 770 Pro gives you isolation for tracking and a satisfying bass response. The DT 990 Pro rewards you with breathtaking soundstage for mixing. At their price points ($159-$169), no other headphones offer this combination of German build quality, comfort, and performance. The only wrong answer is buying neither.",
+    conclusion_es: "El DT 770 Pro y el DT 990 Pro son el Batman y Superman de los auriculares de estudio — diferentes pero ambos esenciales. El DT 770 Pro te da aislamiento para seguimiento y una respuesta de graves satisfactoria. El DT 990 Pro te recompensa con un escenario sonoro impresionante para mezclar. A sus precios ($159-$169), ningún otro auricular ofrece esta combinación de calidad de construcción alemana, comodidad y rendimiento. La única respuesta incorrecta es no comprar ninguno.",
+    verdict: "DT 770 Pro ($159) for tracking, DT 990 Pro ($169) for mixing — or both for $328",
+    verdict_es: "DT 770 Pro ($159) para seguimiento, DT 990 Pro ($169) para mezcla — o ambos por $328",
+    featuredProducts: [23, 56]
+  },
+  {
+    id: "best-electric-guitar",
+    title: "Best Electric Guitar for Home Recording & Live (2026)",
+    title_es: "Mejor Guitarra Eléctrica para Grabación Casera y Directo (2026)",
+    category: "guitars",
+    image: "https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?w=600&h=400&fit=crop",
+    badge: null,
+    intro: "I've played guitar for over 20 years — from $200 beaters to $4,299 PRS customs on stage at Glastonbury. The right electric guitar isn't about specs; it's about how it feels in your hands and how it sits in your mix. These are the five electric guitars I trust for studio and stage across every budget.",
+    intro_es: "He tocado guitarra por más de 20 años — desde guitarras de $200 hasta PRS de $4,299 en el escenario de Glastonbury. La guitarra eléctrica correcta no se trata de especificaciones; se trata de cómo se siente en tus manos y cómo se sitúa en tu mezcla. Estas son las cinco guitarras eléctricas que recomiendo para estudio y escenario en cada presupuesto.",
+    sections: [
+      {
+        heading: "The Best All-Rounder: Fender American Professional II Stratocaster",
+        heading_es: "La Mejor Todo Terreno: Fender American Professional II Stratocaster",
+        content: "The Stratocaster is the most recorded electric guitar in history — and the American Pro II is the best modern version of the classic. The Deep C neck profile fits naturally in your hand, the V-Mod II pickups deliver that signature chime and quack, and the push-push tone pot gives you series wiring for humbucker-like thickness. I've recorded an entire album with just this guitar. At $1,799, it's the best do-it-all electric guitar you can buy.",
+        content_es: "La Stratocaster es la guitarra eléctrica más grabada en la historia — y la American Pro II es la mejor versión moderna del clásico. El perfil de mástil Deep C encaja naturalmente en tu mano, las pastillas V-Mod II ofrecen ese característico brillo y graznido, y el potenciómetro de tono push-push te da cableado en serie para grosor tipo humbucker. He grabado un álbum completo solo con esta guitarra. A $1,799, es la mejor guitarra eléctrica todo terreno que puedes comprar.",
+        products: [6]
+      },
+      {
+        heading: "For Rock & Heavy Tones: Gibson Les Paul Standard '60s",
+        heading_es: "Para Rock y Tonos Pesados: Gibson Les Paul Standard '60s",
+        content: "Nothing sounds like a Les Paul through a cranked Marshall — that thick, singing sustain is the sound of rock history. The Burstbucker pickups deliver that PAF magic, the slim taper neck is fast and comfortable, and the weight relief makes it manageable for long gigs. I've played Les Pauls on Broadway and at festivals across Europe. At $2,699, it's an investment in the sound that defined rock and roll.",
+        content_es: "Nada suena como una Les Paul a través de un Marshall saturado — ese sustain grueso y cantarín es el sonido de la historia del rock. Las pastillas Burstbucker ofrecen esa magia PAF, el mástil slim taper es rápido y cómodo, y el alivio de peso lo hace manejable para shows largos. He tocado Les Pauls en Broadway y en festivales por toda Europa. A $2,699, es una inversión en el sonido que definió el rock and roll.",
+        products: [7]
+      },
+      {
+        heading: "Best Value: Ibanez RG550 Genesis",
+        heading_es: "Mejor Valor: Ibanez RG550 Genesis",
+        content: "The RG550 is the guitar that proves you don't need to spend $2,000+ for a pro-quality instrument. The Wizard neck is paper-thin and lightning fast, the Edge locking tremolo stays in tune through dive bombs, and the V7/V8 pickups deliver clear, punchy tone. At $999, it's the best value in the electric guitar world — used by everyone from metal shredders to session pros.",
+        content_es: "La RG550 es la guitarra que demuestra que no necesitas gastar $2,000+ por un instrumento de calidad profesional. El mástil Wizard es fino como papel y rapidísimo, el trémolo de bloqueo Edge se mantiene afinado a través de bombas de inmersión, y las pastillas V7/V8 ofrecen un tono claro y contundente. A $999, es el mejor valor en el mundo de la guitarra eléctrica — usada por todos, desde shredders de metal hasta profesionales de sesión.",
+        products: [9]
+      },
+      {
+        heading: "Premium Choice: PRS McCarty 594",
+        heading_es: "Elección Premium: PRS McCarty 594",
+        content: "The PRS McCarty 594 is what happens when you combine the best elements of a Les Paul and a vintage Gibson — and then improve everything. The 58/15 LT pickups are the best humbuckers PRS has ever made, with clarity that lets every note breathe even under high gain. The pattern vintage neck profile feels like your favorite vintage guitar. At $4,299, it's the most expensive but also the most versatile high-end guitar here. I've used mine for everything from jazz to hard rock.",
+        content_es: "La PRS McCarty 594 es lo que sucede cuando combinas los mejores elementos de una Les Paul y una Gibson vintage — y luego mejoras todo. Las pastillas 58/15 LT son los mejores humbuckers que PRS ha hecho, con claridad que deja respirar cada nota incluso bajo alta ganancia. El perfil de mástil pattern vintage se siente como tu guitarra vintage favorita. A $4,299, es la más cara pero también la más versátil de gama alta. He usado la mía para todo, desde jazz hasta hard rock.",
+        products: [10]
+      },
+      {
+        heading: "Acoustic-Electric: Taylor 314ce",
+        heading_es: "Acústica-Eléctrica: Taylor 314ce",
+        content: "Not all electric guitars need to be solid-body. The Taylor 314ce gives you the best of both worlds — a premium acoustic with Taylor's legendary playability and ES2 pickup system that sounds incredible through a PA or DI. The Grand Auditorium body shape is the most versatile in Taylor's lineup, equally at home fingerpicking or strumming. If you need an acoustic that can hang on stage, this is it.",
+        content_es: "No todas las guitarras eléctricas necesitan ser de cuerpo sólido. La Taylor 314ce te da lo mejor de ambos mundos — una acústica premium con la legendaria tocabilidad de Taylor y el sistema de pastilla ES2 que suena increíble a través de un PA o DI. La forma de cuerpo Grand Auditorium es la más versátil en la línea de Taylor, igualmente cómoda para fingerpicking o rasgueo. Si necesitas una acústica que funcione en el escenario, esta es.",
+        products: [8]
+      }
+    ],
+    conclusion: "The Fender American Pro II Stratocaster ($1,799) is my top recommendation for versatility — it covers everything from clean pop to crunchy rock. But every guitar here serves a purpose: the Ibanez RG550 ($999) for incredible value, the Les Paul ($2,699) for rock authenticity, the Taylor 314ce ($1,899) for acoustic-electric needs, and the PRS McCarty ($4,299) for uncompromising quality. Try them in person, trust your hands, and buy the one that makes you want to play.",
+    conclusion_es: "La Fender American Pro II Stratocaster ($1,799) es mi principal recomendación por versatilidad — cubre todo desde pop limpio hasta rock saturado. Pero cada guitarra aquí tiene un propósito: la Ibanez RG550 ($999) por valor increíble, la Les Paul ($2,699) por autenticidad rockera, la Taylor 314ce ($1,899) por necesidades acústico-eléctricas, y la PRS McCarty ($4,299) por calidad sin concesiones. Pruébalas en persona, confía en tus manos, y compra la que te haga querer tocar.",
+    verdict: "Strat ($1,799) for versatility, RG550 ($999) for value, Les Paul ($2,699) for rock",
+    verdict_es: "Strat ($1,799) para versatilidad, RG550 ($999) para valor, Les Paul ($2,699) para rock",
+    featuredProducts: [6, 7, 8, 9, 10]
+  },
+  {
+    id: "best-keyboard",
+    title: "Best Keyboard & Digital Piano for Home Studio (2026)",
+    title_es: "Mejor Teclado y Piano Digital para Home Studio (2026)",
+    category: "keyboards",
+    image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop",
+    badge: null,
+    intro: "From Nord stages at Glastonbury to weighted keys in my home studio, I've played every type of keyboard professionally. The right keyboard for you depends on what you play — piano feel, synth action, or controller flexibility. These four keyboards cover every scenario from composing to performing.",
+    intro_es: "Desde Nords en Glastonbury hasta teclas contrapesadas en mi estudio casero, he tocado todo tipo de teclado profesionalmente. El teclado correcto para ti depende de lo que toques — sensación de piano, acción de sintetizador, o flexibilidad de controlador. Estos cuatro teclados cubren cada escenario, desde componer hasta tocar en vivo.",
+    sections: [
+      {
+        heading: "The Pro Stage Piano: Nord Stage 4 88",
+        heading_es: "El Piano de Escenario Profesional: Nord Stage 4 88",
+        content: "The Nord Stage 4 is the most versatile stage piano ever made. The new Virtual Hammer Action TP/100 keybed feels closer to a grand piano than any Nord before it. The Layer section lets you blend acoustic pianos, synth pads, and organs seamlessly. I've played Nords at nearly every gig for the last decade — they're the industry standard for a reason. At $4,999, it's an investment in the sound that defines modern live performance.",
+        content_es: "El Nord Stage 4 es el piano de escenario más versátil jamás creado. El nuevo teclado Virtual Hammer Action TP/100 se siente más cerca de un piano de cola que cualquier Nord anterior. La sección Layer te permite mezclar pianos acústicos, pads de sintetizador y órganos sin problemas. He tocado Nords en casi todos los conciertos de la última década — son el estándar de la industria por una razón. A $4,999, es una inversión en el sonido que define la actuación en vivo moderna.",
+        products: [11]
+      },
+      {
+        heading: "Workstation Powerhouse: Yamaha Montage M8x",
+        heading_es: "Potencia de Estación de Trabajo: Yamaha Montage M8x",
+        content: "The Yamaha Montage M replaces the legendary Motif as Yamaha's flagship workstation. The M8x features the flagship Grand Touch keybed — Yamaha's best weighted action — combined with the AN-X virtual analog engine for synth sounds and the flagship FM-X engine for digital. If you produce in the box but want hardware hands-on control, the Montage M8x is the most powerful keyboard workstation on earth. It's also $4,699.",
+        content_es: "El Yamaha Montage M reemplaza al legendario Motif como la estación de trabajo insignia de Yamaha. El M8x cuenta con el teclado Grand Touch insignia — la mejor acción contrapesada de Yamaha — combinado con el motor AN-X de analógico virtual para sonidos de sintetizador y el motor FM-X insignia para digital. Si produces en la computadora pero quieres control táctil de hardware, el Montage M8x es la estación de trabajo de teclado más potente de la tierra. Cuesta $4,699.",
+        products: [12]
+      },
+      {
+        heading: "Best MIDI Controller: Arturia KeyLab Essential 61 MkIII",
+        heading_es: "Mejor Controlador MIDI: Arturia KeyLab Essential 61 MkIII",
+        content: "The Arturia KeyLab Essential 61 MkIII is the best MIDI controller for producers who work in a DAW. The synth-action keybed feels great for pad and lead playing, the Analog Lab software gives you thousands of iconic synth sounds, and the integration with Ableton Live, Logic, and FL Studio is seamless. The built-in arpeggiator and chord mode spark creativity instantly. At $299, it's unbeatable for bedroom producers.",
+        content_es: "El Arturia KeyLab Essential 61 MkIII es el mejor controlador MIDI para productores que trabajan en un DAW. El teclado de acción de sintetizador se siente genial para tocar pads y leads, el software Analog Lab te da miles de sonidos de sintetizador icónicos, y la integración con Ableton Live, Logic y FL Studio es perfecta. El arpegiador incorporado y el modo de acordes despiertan la creatividad instantáneamente. A $299, es inmejorable para productores de dormitorio.",
+        products: [13]
+      },
+      {
+        heading: "Komplete Integration: Native Instruments Komplete Kontrol S61",
+        heading_es: "Integración Komplete: Native Instruments Komplete Kontrol S61",
+        content: "If you use Native Instruments Komplete (Kontakt, Massive, Battery), the Komplete Kontrol S61 is the controller you need. The Fatar keybed is the best synth-action in its class, the Light Guide shows you key switches, drum pads, and articulations right on the keys, and the NKS integration means every Kontakt instrument is browsable and playable without touching your mouse. At $599, it's the ultimate production controller for NI users.",
+        content_es: "Si usas Native Instruments Komplete (Kontakt, Massive, Battery), el Komplete Kontrol S61 es el controlador que necesitas. El teclado Fatar es la mejor acción de sintetizador en su clase, la Light Guide te muestra cambios de tecla, pads de batería y articulaciones directamente en las teclas, y la integración NKS significa que cada instrumento Kontakt se puede navegar y tocar sin tocar el mouse. A $599, es el controlador de producción definitivo para usuarios de NI.",
+        products: [14]
+      }
+    ],
+    conclusion: "The Nord Stage 4 88 ($4,999) is the ultimate stage piano for working musicians. The Yamaha Montage M8x ($4,699) is the workstation king for producers. For most home studio producers, the Arturia KeyLab Essential 61 MkIII ($299) or Native Instruments Komplete Kontrol S61 ($599) give you everything you need at a fraction of the price. Start with a controller that matches your software, and upgrade to a hardware workstation when you outgrow it.",
+    conclusion_es: "El Nord Stage 4 88 ($4,999) es el piano de escenario definitivo para músicos profesionales. El Yamaha Montage M8x ($4,699) es el rey de las estaciones de trabajo para productores. Para la mayoría de los productores de home studio, el Arturia KeyLab Essential 61 MkIII ($299) o el Native Instruments Komplete Kontrol S61 ($599) te dan todo lo que necesitas a una fracción del precio. Empieza con un controlador que coincida con tu software, y actualiza a una estación de trabajo de hardware cuando lo superes.",
+    verdict: "KeyLab Essential ($299) for DAW producers, Nord Stage 4 ($4,999) for stage pros",
+    verdict_es: "KeyLab Essential ($299) para productores DAW, Nord Stage 4 ($4,999) para profesionales de escenario",
+    featuredProducts: [11, 12, 13, 14]
+  },
+  {
+    id: "best-drum-machine",
+    title: "Best Drum Machine & Beat Production Gear (2026)",
+    title_es: "Mejor Máquina de Batería y Producción de Beats (2026)",
+    category: "percussion",
+    image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop",
+    badge: null,
+    intro: "I cut my teeth in a bedroom studio programming beats on an MPC. Today, drum machines and groove boxes are more powerful than ever. Whether you make hip-hop, electronic, or live drums, these are the tools I recommend after 20 years of beat-making and stage performance.",
+    intro_es: "Comencé en un dormitorio programando beats en un MPC. Hoy, las máquinas de batería y groove boxes son más potentes que nunca. Ya sea que hagas hip-hop, música electrónica, o batería en vivo, estas son las herramientas que recomiendo después de 20 años haciendo beats y tocando en escenarios.",
+    sections: [
+      {
+        heading: "The Groove Box: Roland TR-8S",
+        heading_es: "La Groove Box: Roland TR-8S",
+        content: "The Roland TR-8S is the modern evolution of the legendary 808 and 909. It combines authentic ACB modeling of vintage Roland drum machines with sample playback for unlimited sound design. The hands-on controls — faders per instrument, real-time step sequencing, and instantly accessible FX — make it the most intuitive drum machine ever made. I've used the TR-8S for live sets at festivals and in the studio. At $749, it's the heartbeat of modern electronic production.",
+        content_es: "La Roland TR-8S es la evolución moderna de las legendarias 808 y 909. Combina auténtico modelado ACB de máquinas de batería vintage Roland con reproducción de samples para diseño de sonido ilimitado. Los controles táctiles — faders por instrumento, secuenciación de pasos en tiempo real y FX instantáneamente accesibles — la convierten en la máquina de batería más intuitiva jamás creada. He usado la TR-8S para sets en vivo en festivales y en el estudio. A $749, es el latido de la producción electrónica moderna.",
+        products: [33]
+      },
+      {
+        heading: "The Classic: Akai MPC One+",
+        heading_es: "El Clásico: Akai MPC One+",
+        content: "The MPC changed music production forever. The MPC One+ continues that legacy with the same MPC workflow that created countless hip-hop classics. The 16 velocity-sensitive pads, built-in synth engines, and the legendary MPC swing quantize make it the most musical beat-making instrument on the market. At $499, it's the most affordable standalone MPC and the best entry point into the MPC ecosystem.",
+        content_es: "El MPC cambió la producción musical para siempre. El MPC One+ continúa ese legado con el mismo flujo de trabajo MPC que creó innumerables clásicos del hip-hop. Los 16 pads sensibles a velocidad, los motores de sintetizador incorporados, y el legendario swing quantize del MPC lo convierten en el instrumento de creación de beats más musical del mercado. A $499, es el MPC independiente más asequible y el mejor punto de entrada al ecosistema MPC.",
+        products: [34]
+      },
+      {
+        heading: "Acoustic Drums: Zildjian K Custom Dark Pack",
+        heading_es: "Batería Acústica: Zildjian K Custom Dark Pack",
+        content: "For drummers who record or perform live, your cymbals define your sound more than any other element. The Zildjian K Custom Dark Pack includes 14\" Hi-Hats, 18\" Crash, and 20\" Ride — the most versatile cymbal setup in professional music. The dark, complex tones sit perfectly in a mix without harsh frequencies. I've played Zildjian Ks at Abbey Road and on Broadway. These are the cymbals that session legends choose.",
+        content_es: "Para bateristas que graban o tocan en vivo, tus platillos definen tu sonido más que cualquier otro elemento. El Zildjian K Custom Dark Pack incluye Hi-Hats de 14\", Crash de 18\" y Ride de 20\" — la configuración de platillos más versátil en la música profesional. Los tonos oscuros y complejos se sitúan perfectamente en una mezcla sin frecuencias duras. He tocado Zildjian Ks en Abbey Road y en Broadway. Estos son los platillos que eligen las leyendas de sesión.",
+        products: [35]
+      },
+      {
+        heading: "Pro Drum Set: Tama Starclassic Walnut/Birch",
+        heading_es: "Batería Profesional: Tama Starclassic Walnut/Birch",
+        content: "The Tama Starclassic Walnut/Birch is the best pro-level drum kit for the price. The walnut/birch shell blend gives you the warmth of walnut with the attack and projection of birch. The Star-Cast mounting system maximizes resonance, and the die-cast hoops provide focused, consistent tuning. If you're a serious drummer looking for a studio-quality kit that also kills on stage, the Starclassic is your drum set.",
+        content_es: "La Tama Starclassic Walnut/Birch es el mejor kit de batería profesional por el precio. La mezcla de cascos de nogal/abedul te da la calidez del nogal con el ataque y proyección del abedul. El sistema de montaje Star-Cast maximiza la resonancia, y los aros fundidos proporcionan una afinación enfocada y consistente. Si eres un baterista serio buscando un kit de calidad de estudio que también mate en el escenario, la Starclassic es tu batería.",
+        products: [36]
+      }
+    ],
+    conclusion: "The Roland TR-8S ($749) is my top pick for electronic producers and live performers — the hands-on workflow is unmatched. The Akai MPC One+ ($499) is the best choice for hip-hop and sample-based production. For acoustic drummers, the Zildjian K Custom Dark Pack ($1,499) and Tama Starclassic ($2,499) are pro-level investments that will serve you for decades. The right choice depends on your genre, but any of these will elevate your beat production immediately.",
+    conclusion_es: "La Roland TR-8S ($749) es mi mejor elección para productores electrónicos y músicos en vivo — el flujo de trabajo táctil es inigualable. La Akai MPC One+ ($499) es la mejor opción para hip-hop y producción basada en samples. Para bateristas acústicos, el Zildjian K Custom Dark Pack ($1,499) y la Tama Starclassic ($2,499) son inversiones de nivel profesional que te servirán por décadas. La elección correcta depende de tu género, pero cualquiera de estas elevará tu producción de beats inmediatamente.",
+    verdict: "TR-8S ($749) for electronic, MPC One+ ($499) for hip-hop, Starclassic ($2,499) for acoustic",
+    verdict_es: "TR-8S ($749) para electrónica, MPC One+ ($499) para hip-hop, Starclassic ($2,499) para acústica",
+    featuredProducts: [33, 34, 35, 36]
   }
 ];
