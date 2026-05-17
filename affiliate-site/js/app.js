@@ -209,7 +209,7 @@ function renderGuideGrid() {
   grid.innerHTML = filtered.map(g => {
     const catName = getCatName(g.category);
     return `
-      <div class="guide-card" data-guide="${g.id}">
+      <a href="/guides/${g.id}.html" class="guide-card" data-guide="${g.id}" onclick="event.preventDefault(); var id=this.dataset.guide; history.pushState({},'','/?g='+id); renderGuideDetail(id);">
         <div class="guide-card-img">
           <img src="${g.image}" alt="${currentLang === 'es' && g.title_es ? g.title_es : g.title}" loading="lazy">
           <span class="guide-card-cat">${catName}</span>
@@ -222,16 +222,9 @@ function renderGuideGrid() {
             <span class="guide-card-btn">${t("readGuide")}</span>
           </div>
         </div>
-      </div>
+      </a>
     `;
   }).join("");
-  grid.querySelectorAll(".guide-card").forEach(card => {
-    card.addEventListener("click", () => {
-      const id = card.dataset.guide;
-      history.pushState({}, '', '/?g=' + id);
-      renderGuideDetail(id);
-    });
-  });
 }
 
 function renderGuideDetail(id) {
@@ -259,7 +252,7 @@ function renderGuideDetail(id) {
     const content = currentLang === 'es' && s.content_es ? s.content_es : s.content;
     return `
       <div class="guide-section">
-        <h3 class="guide-section-heading">${heading}</h3>
+        <h2 class="guide-section-heading">${heading}</h2>
         <div class="guide-section-content">${content}</div>
       </div>
     `;
@@ -271,6 +264,9 @@ function renderGuideDetail(id) {
 
   grid.innerHTML = `
     <div class="guide-detail">
+      <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> / <a href="/#guides">${t("navGuides")}</a> / <span>${currentLang === 'es' && guide.title_es ? guide.title_es : guide.title}</span>
+      </nav>
       <div class="guide-back-row">
         <button class="guide-back-btn" id="guideBackBtn1"><i class="fa-solid fa-arrow-left"></i> ${t("backToGuides")}</button>
       </div>
@@ -284,15 +280,22 @@ function renderGuideDetail(id) {
         <span class="verdict-label">${t("verdict")}</span>
         <span class="verdict-text">${currentLang === 'es' && guide.verdict_es ? guide.verdict_es : guide.verdict}</span>
       </div>
-      ${allProductsHtml ? `<div class="guide-products-grid"><h3 class="guide-products-title">${t("productsInGuide")}</h3><div class="guide-products-cards">${allProductsHtml}</div></div>` : ""}
+      ${allProductsHtml ? `<div class="guide-products-grid"><h2 class="guide-products-title">${t("productsInGuide")}</h2><div class="guide-products-cards">${allProductsHtml}</div></div>` : ""}
       <div class="guide-conclusion">
-        <h3>${t("finalThoughts")}</h3>
+        <h2 class="guide-conclusion-title">${t("finalThoughts")}</h2>
         <p>${currentLang === 'es' && guide.conclusion_es ? guide.conclusion_es : guide.conclusion}</p>
       </div>
       <div class="guide-related">
-        <h3>${t("relatedGuides")}</h3>
+        <h2 class="guide-related-title">${t("relatedGuides")}</h2>
         <div class="guide-related-list">
-          ${(() => { var related = guides.filter(g => g.id !== guide.id && g.category === guide.category); if (!related.length) related = guides.filter(g => g.id !== guide.id); return related.slice(0, 4).map(g => { var gt = currentLang === 'es' && g.title_es ? g.title_es : g.title; return '<a href="/?g=' + g.id + '" class="guide-related-link">' + gt + '</a>'; }).join(''); })()}
+          ${(() => { var related = guides.filter(g => g.id !== guide.id && g.category === guide.category); if (!related.length) related = guides.filter(g => g.id !== guide.id); return related.slice(0, 4).map(g => { var gt = currentLang === 'es' && g.title_es ? g.title_es : g.title; return '<a href="/guides/' + g.id + '.html" class="guide-related-link">' + gt + '</a>'; }).join(''); })()}
+        </div>
+      </div>
+      <div class="guide-author-box">
+        <img src="img/me.jpg" alt="Daniel — TopMusicianGear" class="guide-author-photo" loading="lazy">
+        <div class="guide-author-info">
+          <strong>${t("aboutTitle")}Daniel</strong>
+          <p>${currentLang === 'es' ? 'Músico profesional con más de 20 años de experiencia en los escenarios más grandes del mundo — desde Abbey Road hasta Glastonbury. Esta guía está basada en equipo que he usado personalmente.' : 'Professional musician with 20+ years of experience on the world\'s biggest stages — from Abbey Road to Glastonbury. This guide is based on gear I\'ve personally used.'}</p>
         </div>
       </div>
       <button class="guide-back-btn" id="guideBackBtn2"><i class="fa-solid fa-arrow-left"></i> ${t("backToGuides")}</button>
@@ -324,15 +327,29 @@ function renderGuideDetail(id) {
     var descText = lang === 'es' && guide.intro_es ? guide.intro_es : guide.intro;
     metaDesc.content = descText.substring(0, 200);
   }
+  var ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) ogTitle.content = (lang === 'es' && guide.title_es ? guide.title_es : guide.title);
+  var ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc) ogDesc.content = descText.substring(0, 200);
+  var ogUrl = document.querySelector('meta[property="og:url"]');
+  if (ogUrl) ogUrl.content = 'https://topmusiciangear.com/guides/' + guide.id + '.html';
+  var ogImage = document.querySelector('meta[property="og:image"]');
+  if (ogImage) ogImage.content = guide.image && guide.image.startsWith('http') ? guide.image : 'https://topmusiciangear.com/' + (guide.image || 'img/og-image.svg');
+  var twTitle = document.querySelector('meta[name="twitter:title"]');
+  if (twTitle) twTitle.content = ogTitle ? ogTitle.content : '';
+  var twDesc = document.querySelector('meta[name="twitter:description"]');
+  if (twDesc) twDesc.content = ogDesc ? ogDesc.content : '';
+  var twImage = document.querySelector('meta[name="twitter:image"]');
+  if (twImage) twImage.content = ogImage ? ogImage.content : '';
   injectGuideJsonLd(guide);
   skipDetailScroll = false;
 }
 
 function renderAudioMini() {
   const el = document.getElementById("audioMini");
-  if (el) el.innerHTML = '<div class="audio-mini-inner"><span class="audio-mini-player"><audio controls preload="auto"><source src="audio/solo-tres.mp3" type="audio/mpeg"></audio></span><span class="audio-eq"><i></i><i></i><i></i><i></i></span><span class="audio-mini-label">' + t("audioLabel") + '</span></div>';
+  if (el) el.innerHTML = '<div class="audio-mini-inner"><span class="audio-mini-player"><audio controls preload="none"><source src="audio/solo-tres.mp3" type="audio/mpeg"></audio></span><span class="audio-eq"><i></i><i></i><i></i><i></i></span><span class="audio-mini-label">' + t("audioLabel") + '</span></div>';
   const elm = document.getElementById("audioMiniMobile");
-  if (elm) elm.innerHTML = '<div class="audio-mini-inner"><span class="audio-mini-player"><audio controls preload="auto"><source src="audio/solo-tres.mp3" type="audio/mpeg"></audio></span><span class="audio-eq"><i></i><i></i><i></i><i></i></span><span class="audio-mini-label">' + t("audioLabel") + '</span></div>';
+  if (elm) elm.innerHTML = '<div class="audio-mini-inner"><span class="audio-mini-player"><audio controls preload="none"><source src="audio/solo-tres.mp3" type="audio/mpeg"></audio></span><span class="audio-eq"><i></i><i></i><i></i><i></i></span><span class="audio-mini-label">' + t("audioLabel") + '</span></div>';
   setTimeout(() => {
     document.querySelectorAll('#audioMini audio, #audioMiniMobile audio').forEach(audio => {
       audio.addEventListener('play', () => audio.closest('.audio-mini-inner').classList.add('playing'));
@@ -560,6 +577,66 @@ function injectGuideJsonLd(guide) {
       { "@type": "ListItem", "position": 2, "name": title, "item": url }
     ]
   });
+  var faqBase = {
+    microphones: [
+      { q: "What is the best microphone for recording vocals?", q_es: "¿Cuál es el mejor micrófono para grabar voces?" },
+      { q: "What microphone is best for home recording?", q_es: "¿Qué micrófono es mejor para grabación casera?" },
+      { q: "Do I need a condenser or dynamic microphone?", q_es: "¿Necesito un micrófono de condensador o dinámico?" },
+      { q: "How much should I spend on a good microphone?", q_es: "¿Cuánto debería gastar en un buen micrófono?" },
+      { q: "What is the best microphone under $200?", q_es: "¿Cuál es el mejor micrófono por menos de $200?" }
+    ],
+    interfaces: [
+      { q: "What is the best audio interface for home recording?", q_es: "¿Cuál es la mejor interfaz de audio para grabación casera?" },
+      { q: "How many inputs do I need on an audio interface?", q_es: "¿Cuántas entradas necesito en una interfaz de audio?" },
+      { q: "Is USB or Thunderbolt better for audio interfaces?", q_es: "¿Es mejor USB o Thunderbolt para interfaces de audio?" },
+      { q: "What is the best budget audio interface?", q_es: "¿Cuál es la mejor interfaz de audio económica?" },
+      { q: "Do I need a high-end audio interface as a beginner?", q_es: "¿Necesito una interfaz de audio de alta gama como principiante?" }
+    ],
+    monitors: [
+      { q: "What are the best studio monitors for home recording?", q_es: "¿Cuáles son los mejores monitores de estudio para grabación casera?" },
+      { q: "Do I need a subwoofer for studio monitors?", q_es: "¿Necesito un subwoofer para monitores de estudio?" },
+      { q: "What size studio monitors should I get?", q_es: "¿De qué tamaño deberían ser mis monitores de estudio?" },
+      { q: "How should I position my studio monitors?", q_es: "¿Cómo debería posicionar mis monitores de estudio?" },
+      { q: "Are expensive studio monitors worth it?", q_es: "¿Valen la pena los monitores de estudio caros?" }
+    ],
+    headphones: [
+      { q: "What are the best studio headphones for mixing?", q_es: "¿Cuáles son los mejores auriculares de estudio para mezclar?" },
+      { q: "Open-back vs closed-back headphones for studio?", q_es: "¿Auriculares abiertos vs cerrados para estudio?" },
+      { q: "Can I mix with headphones instead of monitors?", q_es: "¿Puedo mezclar con auriculares en vez de monitores?" },
+      { q: "What is the best budget headphones for music production?", q_es: "¿Cuáles son los mejores auriculares económicos para producción musical?" },
+      { q: "Do I need a headphone amplifier for studio headphones?", q_es: "¿Necesito un amplificador de auriculares para auriculares de estudio?" }
+    ],
+    plugins: [
+      { q: "What are the essential mixing plugins for beginners?", q_es: "¿Cuáles son los plugins de mezcla esenciales para principiantes?" },
+      { q: "Are expensive plugins better than free ones?", q_es: "¿Son los plugins caros mejores que los gratuitos?" },
+      { q: "What is the best EQ plugin for mixing?", q_es: "¿Cuál es el mejor plugin de EQ para mezclar?" },
+      { q: "Do I need analog modeling plugins?", q_es: "¿Necesito plugins de modelado analógico?" },
+      { q: "What plugins do professional mixers use?", q_es: "¿Qué plugins usan los mezcladores profesionales?" }
+    ],
+    accessories: [
+      { q: "What studio accessories do I actually need?", q_es: "¿Qué accesorios de estudio realmente necesito?" },
+      { q: "Are expensive XLR cables worth it?", q_es: "¿Valen la pena los cables XLR caros?" },
+      { q: "What is the best mic stand for studio recording?", q_es: "¿Cuál es el mejor soporte de micrófono para grabación?" },
+      { q: "Do I need monitor stands for my studio?", q_es: "¿Necesito soportes de monitor para mi estudio?" },
+      { q: "What is the best MIDI controller for beginners?", q_es: "¿Cuál es el mejor controlador MIDI para principiantes?" }
+    ],
+    tres: [
+      { q: "What is a Cuban tres guitar?", q_es: "¿Qué es un tres cubano?" },
+      { q: "What is the best Cuban tres for recording?", q_es: "¿Cuál es el mejor tres cubano para grabación?" },
+      { q: "How is a Cuban tres tuned?", q_es: "¿Cómo se afina un tres cubano?" },
+      { q: "Is the Cuban tres difficult to learn?", q_es: "¿Es difícil aprender a tocar el tres cubano?" },
+      { q: "What is the difference between a tres and a guitar?", q_es: "¿Cuál es la diferencia entre un tres y una guitarra?" }
+    ]
+  };
+  var faqs = faqBase[guide.category] || faqBase.interfaces;
+  var faqItems = faqs.map(function(f) {
+    return {
+      "@type": "Question",
+      "name": lang === 'es' && f.q_es ? f.q_es : f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": lang === 'es' && f.q_es ? f.q_es : f.q }
+    };
+  });
+  addJsonLd({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqItems });
 }
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -1,8 +1,8 @@
 const guides = [
   {
     id: "starter-studio",
-    title: "Home Studio Starter Kit: Everything You Need (Under $1,000)",
-    title_es: "Kit de Inicio para Home Studio: Todo lo Que Necesitas (Menos de $1,000)",
+    title: "Home Studio Starter Kit: Everything You Need (Under $1,000) (2026)",
+    title_es: "Kit de Inicio para Home Studio: Todo lo Que Necesitas (Menos de $1,000) (2026)",
     category: "interfaces",
     image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop",
     badge: "bestSeller",
@@ -282,8 +282,8 @@ const guides = [
   },
   {
     id: "best-plugins",
-    title: "Essential Mixing Plugins That Actually Make a Difference",
-    title_es: "Plugins de Mezcla Esenciales Que Realmente Hacen la Diferencia",
+    title: "Essential Mixing Plugins That Actually Make a Difference (2026)",
+    title_es: "Plugins de Mezcla Esenciales Que Realmente Hacen la Diferencia (2026)",
     category: "plugins",
     image: "https://downloads.image-line.com/Press/FLStudio20_SurfaceStudioDesk.jpg",
     badge: "premium",
@@ -320,8 +320,8 @@ const guides = [
   },
   {
     id: "beat-making",
-    title: "Desktop Beat-Making Studio: From Idea to Track",
-    title_es: "Estudio de Creación de Beats: De la Idea al Track",
+    title: "Desktop Beat-Making Studio: From Idea to Track (2026)",
+    title_es: "Estudio de Creación de Beats: De la Idea al Track (2026)",
     category: "interfaces",
     image: "https://cdn11.bigcommerce.com/s-7659a/images/stencil/1280x1280/products/43730/135246/1.MPC_Key_37_Top_Down_View-LowRes__36828.1703861245.jpg?c=2",
     badge: "recommended",
