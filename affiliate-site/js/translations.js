@@ -98,7 +98,6 @@ const translations = {
     credit_warner: "Warner Music Sweden",
     credit_columbia: "Columbia Artists",
     credit_usatours: "USA Tours (CAMI Music)",
-    credit_topaz: "Topaz Sound",
     tagline: "Pro Gear Reviews · Honest Comparisons · Best Prices",
     siteTagline: "Find the Best Deals Across Top Music Stores",
     navMicrophones: "Microphones",

@@ -207,11 +207,11 @@ ${ogMeta}
   </nav>
   <div class="static-guide">
     <div class="lang-toggle">
-      <a href="${isEs ? `/${guide.id}.html` : `/${guide.id}_es.html`}">${isEs ? 'English' : 'Español'}</a>
+      <a href="${isEs ? `/guides/${guide.id}.html` : `/guides/${guide.id}_es.html`}">${isEs ? 'English' : 'Español'}</a>
     </div>
     <a href="/" class="guide-back-link"><i class="fa-solid fa-arrow-left"></i> ${isEs ? 'Todas las Guías' : 'Back to All Guides'}</a>
     <h1>${title}</h1>
-    <div class="guide-detail-img"><img src="${image}" alt="${title}"></div>
+    <div class="guide-detail-img"><img src="${fullImage}" alt="${title}"></div>
     <div class="guide-detail-intro"><p>${intro}</p></div>
     <div class="guide-detail-sections">${sectionsHtml}</div>
     <div class="guide-verdict">
