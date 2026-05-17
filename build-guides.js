@@ -113,6 +113,7 @@ function buildGuidePage(guide, lang) {
   <meta property="og:description" content="${intro.substring(0, 200).replace(/"/g, '&quot;')}">
   <meta property="og:url" content="${canonical}">
   <meta property="og:image" content="${fullImage}">
+  <meta property="og:site_name" content="TopMusicianGear">
   <meta property="og:locale" content="${isEs ? 'es_ES' : 'en_US'}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${title}">
