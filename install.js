@@ -1,4 +1,7 @@
 module.exports = {
+  requires: {
+    bundle: "ai"
+  },
   run: [
     {
       method: "shell.run",
@@ -21,7 +24,8 @@ module.exports = {
       params: {
         path: "app",
         message: [
-          "npm install"
+          "npm install",
+          "npm run build"
         ]
       }
     },
@@ -31,7 +35,8 @@ module.exports = {
         path: "app/server",
         message: [
           "npm install",
-          "npm run db:migrate"
+          "npm run db:migrate",
+          "npm run build"
         ]
       }
     },

@@ -24,14 +24,21 @@ module.exports = {
       method: "shell.run",
       params: {
         path: "app",
-        message: "npm install"
+        message: [
+          "npm install",
+          "npm run build"
+        ]
       }
     },
     {
       method: "shell.run",
       params: {
         path: "app/server",
-        message: "npm install"
+        message: [
+          "npm install",
+          "npm run db:migrate",
+          "npm run build"
+        ]
       }
     }
   ]

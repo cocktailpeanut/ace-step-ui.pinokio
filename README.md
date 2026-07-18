@@ -5,7 +5,8 @@ ACE-Step UI is an open source, local-first interface for ACE-Step 1.5 AI music g
 **What It Does**
 - Installs ACE-Step UI and ACE-Step 1.5 into `app/`
 - Creates a local configuration in `app/.env`
-- Starts the ACE-Step API, backend server, and frontend UI
+- Builds the frontend and backend during installation and updates
+- Starts the ACE-Step API, compiled backend, and built frontend preview server
 
 **Requirements**
 - Node.js 18+
@@ -19,10 +20,10 @@ ACE-Step UI is an open source, local-first interface for ACE-Step 1.5 AI music g
 2. Click **Start** once installation completes.
 3. Open the **Open Web UI** tab.
 
-**Default URLs**
-- UI: `http://127.0.0.1:3000`
+**Local URLs**
+- UI: a dynamically selected `http://127.0.0.1:<PORT>` shown as **Open Web UI**
 - Backend API: `http://127.0.0.1:3001`
-- ACE-Step API: `http://127.0.0.1:8001`
+- ACE-Step API: a dynamically selected local port
 
 **Configuration**
 - Edit the `env` blocks in `start.js` to change ports or set optional keys like `PEXELS_API_KEY`.
