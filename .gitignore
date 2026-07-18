@@ -1,3 +1,9 @@
 app/
 logs/
 .DS_Store
+*.exe
+*.log
+check-enc*.py
+fix-encoding*
+enc-*.txt
+debug.log

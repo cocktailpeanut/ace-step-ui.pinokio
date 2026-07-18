@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Page Not Found — TopMusicianGear</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:#0d0d0d; color:#f0f0f0; font-family:system-ui,-apple-system,sans-serif; display:flex; align-items:center; justify-content:center; min-height:100vh; text-align:center; padding:20px; }
+    h1 { font-size:clamp(28px,5vw,48px); margin-bottom:12px; }
+    p { color:#a0a0a0; margin-bottom:24px; font-size:16px; line-height:1.6; }
+    a { color:#3b82f6; text-decoration:none; font-weight:600; }
+    a:hover { text-decoration:underline; }
+    .links { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+    .links a { background:#1a1a1a; padding:10px 20px; border-radius:8px; border:1px solid #2a2a2a; }
+    .links a:hover { background:#222; }
+  </style>
+  <script>
+    var path = window.location.pathname.replace(/\/+$/, '');
+    var match = path.match(/\/guides\/(.+?)(?:_es)?(?:\.html)?$/);
+    if (match) {
+      window.location.replace('/?g=' + match[1]);
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <h1>404 — Page Not Found</h1>
+    <p>Looks like that page doesn't exist. Let's get you back on track.</p>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/#guides">Buying Guides</a>
+      <a href="/#about">About Me</a>
+    </div>
+  </div>
+</body>
+</html>
